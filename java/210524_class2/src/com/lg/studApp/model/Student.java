@@ -61,7 +61,7 @@ public class Student {
 		System.out.println("성별: " + gender);
 		System.out.println("나이: " + age);
 		System.out.println("주소: " + address);
-		System.out.println();
+		System.out.println("-------------------------------");
 	}
 }
 

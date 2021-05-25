@@ -1,5 +1,5 @@
 package com.lg.studApp.main;
-import java.util.Random;
+//import java.util.Random;
 
 import com.lg.studApp.model.RandData;
 import com.lg.studApp.model.Student;
@@ -14,10 +14,10 @@ public class studMain {
 //		String address[] = { "대구시 동구 신천 1동", "대구시 동구 신천2동", "대구시 동구 신천3동", 
 //				"대구시 동구 신천4동", "대구시 동구 신천5동" };
 
-
+		//클래스를 이용하기 위해서는 반드시 객체를 생성해야한다.
 		RandData rd = new RandData();
 		Student arr[] = new Student[10];
-		Random r = new Random();
+		//Random r = new Random();
 
 		for (int i = 0; i < arr.length; i++) {
 
@@ -40,6 +40,7 @@ public class studMain {
 		arr[9].setGender('남');
 		arr[9].setAddress("조선 한양인근 두메산골");
 		arr[9].showStInfo();
+		//nullpointexception = 객체가 생성되지 않았는데 생성된것처럼 사용했을때
 				
 	}
 }
