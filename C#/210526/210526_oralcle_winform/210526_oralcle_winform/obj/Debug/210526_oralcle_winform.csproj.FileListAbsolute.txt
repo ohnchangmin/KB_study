@@ -1,0 +1,12 @@
+C:\Users\KB\Documents\0426 R\KB_study\C#\210526\210526_oralcle_winform\210526_oralcle_winform\bin\Debug\210526_oralcle_winform.exe.config
+C:\Users\KB\Documents\0426 R\KB_study\C#\210526\210526_oralcle_winform\210526_oralcle_winform\bin\Debug\210526_oralcle_winform.exe
+C:\Users\KB\Documents\0426 R\KB_study\C#\210526\210526_oralcle_winform\210526_oralcle_winform\bin\Debug\210526_oralcle_winform.pdb
+C:\Users\KB\Documents\0426 R\KB_study\C#\210526\210526_oralcle_winform\210526_oralcle_winform\bin\Debug\Oracle.DataAccess.dll
+C:\Users\KB\Documents\0426 R\KB_study\C#\210526\210526_oralcle_winform\210526_oralcle_winform\obj\Debug\210526_oralcle_winform.csprojAssemblyReference.cache
+C:\Users\KB\Documents\0426 R\KB_study\C#\210526\210526_oralcle_winform\210526_oralcle_winform\obj\Debug\_210526_oralcle_winform.Form1.resources
+C:\Users\KB\Documents\0426 R\KB_study\C#\210526\210526_oralcle_winform\210526_oralcle_winform\obj\Debug\_210526_oralcle_winform.Properties.Resources.resources
+C:\Users\KB\Documents\0426 R\KB_study\C#\210526\210526_oralcle_winform\210526_oralcle_winform\obj\Debug\210526_oralcle_winform.csproj.GenerateResource.cache
+C:\Users\KB\Documents\0426 R\KB_study\C#\210526\210526_oralcle_winform\210526_oralcle_winform\obj\Debug\210526_oralcle_winform.csproj.CoreCompileInputs.cache
+C:\Users\KB\Documents\0426 R\KB_study\C#\210526\210526_oralcle_winform\210526_oralcle_winform\obj\Debug\210526_oralcle_winform.csproj.CopyComplete
+C:\Users\KB\Documents\0426 R\KB_study\C#\210526\210526_oralcle_winform\210526_oralcle_winform\obj\Debug\210526_oralcle_winform.exe
+C:\Users\KB\Documents\0426 R\KB_study\C#\210526\210526_oralcle_winform\210526_oralcle_winform\obj\Debug\210526_oralcle_winform.pdb
