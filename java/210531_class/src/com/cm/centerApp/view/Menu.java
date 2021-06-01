@@ -1,7 +1,6 @@
 package com.cm.centerApp.view;
 
 import java.util.Scanner;
-
 import com.cm.centerApp.model.Car;
 import com.cm.centerApp.model.CarModify;
 import com.cm.centerApp.model.Customer;
@@ -15,6 +14,11 @@ public class Menu {
 	public static final int SUB_ADD_RAND = 1;
 	public static final int SUB_ADD_INS = 2;
 	public static final int SUB_ADD_EXIT = 3;
+	
+	public static final int ADMIN_MENU_SALE = 1;
+	public static final int ADMIN_MENU_REPAIR = 2;
+	public static final int ADMIN_MENU_EXIT = 3;
+	
 
 	Scanner sc = new Scanner(System.in);
 
@@ -51,7 +55,7 @@ public class Menu {
 		System.out.println("고객명: ");
 		String name = sc.next();
 		System.out.println("연락처: ");
-		int tel = sc.nextInt();
+		String tel = sc.next();
 		System.out.println("멤버쉽(Y:True N:False): ");
 		boolean mCard = sc.nextBoolean();
 		System.out.println("생일: ");
@@ -70,10 +74,45 @@ public class Menu {
 		int dateOut = sc.nextInt();
 		System.out.println("수리비: ");
 		int price = sc.nextInt();
-		
-		return new Customer(
-				name, tel, mCard, birthday, 
-				new Car(model, year),
-				new CarModify(cause, dateIn, dateOut, price));
+		System.out.println("수리 여부(True/False): ");
+		boolean repair = sc.nextBoolean();
+
+		return new Customer(name, tel, mCard, birthday, email, new Car(model, year),
+				new CarModify(cause, dateIn, dateOut, price, repair));
+	}
+
+	public int getCountRand() {
+		System.out.println("랜덤 생성할 자료의 수 입력: ");
+		return sc.nextInt();
+	}
+
+	public int countRand() {
+		System.out.println("랜덤 생성할 자료의 수 입력: ");
+		sc.nextInt();
+		return sc.nextInt();
+	}
+
+	public String[] loginAdmin() {
+		System.out.println("#####################");
+		System.out.println("#####관리자 로그인######");
+		System.out.println("#####################");
+		System.out.println("ID: ");
+		String id = sc.next();
+		System.out.println("PASSWD: ");
+		String passwd = sc.next();
+		String info[] = {id, passwd};		
+		return info;
+	}
+
+	public int adminMenu() {
+		System.out.println("----------------------");
+		System.out.println("#### 관리자 모드 ####");
+		System.out.println("----------------------");
+		System.out.println("1.일일 매출합계");
+		System.out.println("2.차량수리 내역보기");
+		System.out.println("3.메인 메뉴로 이동");
+		System.out.println("----------------------");
+		System.out.println("메뉴 선택: ");
+		return sc.nextInt();
 	}
 }

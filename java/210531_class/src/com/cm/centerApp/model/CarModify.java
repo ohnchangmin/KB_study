@@ -1,17 +1,29 @@
 package com.cm.centerApp.model;
 
+import com.cm.centerApp.utill.CommUtil;
+
 public class CarModify {
-	private String cause; 	//고장 원인
-	private int dateIn; 	//접수 날짜
-	private int dateOut; //완료 날짜
-	private int price;		//금액
-	
+	private String cause; // 고장 원인
+	private int dateIn; // 접수 날짜
+	private int dateOut; // 완료 날짜
+	private int price; // 금액
+	private boolean repair;
+
 	public CarModify(String cause, int dateIn, int dateOut, int price) {
 		super();
 		this.cause = cause;
 		this.dateIn = dateIn;
 		this.dateOut = dateOut;
 		this.price = price;
+	}
+
+	public CarModify(String cause, int dateIn, int dateOut, int price, boolean repair) {
+		super();
+		this.cause = cause;
+		this.dateIn = dateIn;
+		this.dateOut = dateOut;
+		this.price = price;
+		this.repair = repair;
 	}
 
 	public String getCause() {
@@ -44,18 +56,26 @@ public class CarModify {
 
 	public void setPrice(int price) {
 		this.price = price;
+	}		
+
+	public boolean getRepair() {
+		return repair;
 	}
+
+	public void setRepair(boolean repair) {
+		this.repair = repair;
+	}
+	
+	
 
 	@Override
 	public String toString() {
 		String str = "수리내역: " + cause + "\n";
 		str += "접수날짜: " + dateIn + "\n";
 		str += "수리완료날짜: " + dateOut + "\n";
-		str += "수리비: " + price + "\n";
+		str += "수리비: " + CommUtil.getKorMoney(price) + "\n";
+		str += "차량수리내역: " + repair + "\n";
 		return str;
 	}
-	
-	
-	
-	
+
 }

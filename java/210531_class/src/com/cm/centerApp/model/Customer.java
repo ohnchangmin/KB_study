@@ -1,14 +1,14 @@
 package com.cm.centerApp.model;
 
 public class Customer {
-	private String name;	
-	private String tel;		
-	private boolean mCard;		
-	private String birthday;	
-	private String email; 		
+	private String name;
+	private String tel;
+	private boolean mCard;
+	private String birthday;
+	private String email;
 	private Car car;
 	private CarModify carModify;
-	
+
 	public Customer(String name, String tel, boolean mCard, String birthday, String email) {
 		super();
 		this.name = name;
@@ -28,12 +28,6 @@ public class Customer {
 		this.email = email;
 		this.car = car;
 		this.carModify = carModify;
-	}
-	
-	
-
-	public Customer(String name2, int tel2, boolean mCard2, String birthday2, Car car2, CarModify carModify2) {
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getName() {
@@ -75,7 +69,7 @@ public class Customer {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+
 	public Car getCar() {
 		return car;
 	}
@@ -91,6 +85,8 @@ public class Customer {
 	public void setCarModify(CarModify carModify) {
 		this.carModify = carModify;
 	}
+	
+	
 
 	@Override
 	public String toString() {

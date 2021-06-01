@@ -1,9 +1,9 @@
 package com.cm.centerApp.model;
 
 public class Car {
-	private String model; 	//차량 모델
-	private String year; 	//연식
-	
+	private String model; // 차량 모델
+	private String year; // 연식
+
 	public Car(String model, String year) {
 		super();
 		this.model = model;

@@ -20,6 +20,7 @@ public class RandData {
 	int dateIn[] = {20210520, 20210521, 20210522, 20210523, 20210524};
 	int dateOut[] = {20210620, 20210621, 20210622, 20210623, 20210624};
 	int price[] = {20000, 30000, 40000, 50000, 60000};
+	boolean repair[] = {true, false};
 	
 	public String getName() {
 		return name[r.nextInt(5)];
@@ -53,5 +54,8 @@ public class RandData {
 	}
 	public int getPrice() {
 		return price[r.nextInt(5)];
+	}
+	public boolean getRepair() {
+		return repair[r.nextInt(2)];
 	}
 }
