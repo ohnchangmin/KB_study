@@ -1,0 +1,7 @@
+D:\github\KB_study\C#\210609\Basic\Basic\bin\Debug\Basic.exe.config
+D:\github\KB_study\C#\210609\Basic\Basic\bin\Debug\Basic.exe
+D:\github\KB_study\C#\210609\Basic\Basic\bin\Debug\Basic.pdb
+D:\github\KB_study\C#\210609\Basic\Basic\obj\Debug\Basic.csprojAssemblyReference.cache
+D:\github\KB_study\C#\210609\Basic\Basic\obj\Debug\Basic.csproj.CoreCompileInputs.cache
+D:\github\KB_study\C#\210609\Basic\Basic\obj\Debug\Basic.exe
+D:\github\KB_study\C#\210609\Basic\Basic\obj\Debug\Basic.pdb
