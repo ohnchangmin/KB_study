@@ -1,0 +1,7 @@
+D:\github\KB_study\C#\210610\210610_class_car\210610_class_car\bin\Debug\210610_class_car.exe.config
+D:\github\KB_study\C#\210610\210610_class_car\210610_class_car\bin\Debug\210610_class_car.exe
+D:\github\KB_study\C#\210610\210610_class_car\210610_class_car\bin\Debug\210610_class_car.pdb
+D:\github\KB_study\C#\210610\210610_class_car\210610_class_car\obj\Debug\com.cm.carApp.csproj.CoreCompileInputs.cache
+D:\github\KB_study\C#\210610\210610_class_car\210610_class_car\obj\Debug\210610_class_car.exe
+D:\github\KB_study\C#\210610\210610_class_car\210610_class_car\obj\Debug\210610_class_car.pdb
+D:\github\KB_study\C#\210610\210610_class_car\210610_class_car\obj\Debug\com.cm.carApp.csprojAssemblyReference.cache

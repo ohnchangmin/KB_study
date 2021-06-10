@@ -1,0 +1,7 @@
+D:\github\KB_study\C#\210610\210610_singleton\210610_singleton\bin\Debug\210610_singleton.exe.config
+D:\github\KB_study\C#\210610\210610_singleton\210610_singleton\bin\Debug\210610_singleton.exe
+D:\github\KB_study\C#\210610\210610_singleton\210610_singleton\bin\Debug\210610_singleton.pdb
+D:\github\KB_study\C#\210610\210610_singleton\210610_singleton\obj\Debug\210610_singleton.csprojAssemblyReference.cache
+D:\github\KB_study\C#\210610\210610_singleton\210610_singleton\obj\Debug\210610_singleton.csproj.CoreCompileInputs.cache
+D:\github\KB_study\C#\210610\210610_singleton\210610_singleton\obj\Debug\210610_singleton.exe
+D:\github\KB_study\C#\210610\210610_singleton\210610_singleton\obj\Debug\210610_singleton.pdb

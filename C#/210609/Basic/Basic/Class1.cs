@@ -198,14 +198,17 @@ namespace Basic
             Console.WriteLine("=================EXAM5================");
             int[,] arrExam5_1 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
             int[,] arrExam5_2 = { { 10, 20, 30 }, { 40, 50, 60 }, { 70, 80, 90 } };
-            int[][] arrExam5_result = new int[2][];
+            int[][] arrExam5_result = new int[3][];
 
-            for(int i = 0; i<arrExam5_1.Length; i++)
+            for(int i = 0; i<arrExam5_result.Length; i++)
             {
-                for(int j=0; j<arrExam5_1[i].Length; j++)
+                arrExam5_result[i] = new int[i];
+                for(int j=0; j<arrExam5_result[i].Length; j++)
                 {
-                    arrExam5_result[i][j] = arrExam5_1[i][j] + arrExam5_2[i][j];
+                    arrExam5_result[i][j] = arrExam5_1[i,j] + arrExam5_2[i,j];
+                    Console.Write(arrExam5_result[i][j] + " ");
                 }
+                Console.WriteLine();
             }
         }
     }
