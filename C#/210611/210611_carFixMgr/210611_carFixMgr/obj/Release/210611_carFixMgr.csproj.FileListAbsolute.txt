@@ -1,0 +1,15 @@
+D:\github\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\bin\Release\210611_carFixMgr.exe.config
+D:\github\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\bin\Release\210611_carFixMgr.exe
+D:\github\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\bin\Release\210611_carFixMgr.pdb
+D:\github\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\bin\Release\CxFlatUI.dll
+D:\github\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\bin\Release\MaterialSkin.dll
+D:\github\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\bin\Release\SunnyUI.Common.dll
+D:\github\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\bin\Release\SunnyUI.dll
+D:\github\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\obj\Release\210611_carFixMgr.csprojAssemblyReference.cache
+D:\github\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\obj\Release\_210611_carFixMgr.Properties.Resources.resources
+D:\github\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\obj\Release\_210611_carFixMgr.MainForm.resources
+D:\github\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\obj\Release\210611_carFixMgr.csproj.GenerateResource.cache
+D:\github\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\obj\Release\210611_carFixMgr.csproj.CoreCompileInputs.cache
+D:\github\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\obj\Release\210611_carFixMgr.csproj.CopyComplete
+D:\github\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\obj\Release\210611_carFixMgr.exe
+D:\github\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\obj\Release\210611_carFixMgr.pdb

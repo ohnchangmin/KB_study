@@ -10,18 +10,19 @@ namespace _210610_singleton
     {
         private static SingleTest inst;
         private int data;
+        static Random r = new Random();
 
-        SingleTest()
+        public SingleTest(Random r)
         {
-            Random r = new Random();
-            data = (int)(r.Next(1,100));
+            
+            data = r.Next(1,100);
         }
 
-        public static SingleTest getInstance()
+        public static SingleTest getInstance(Random r)
         {
             if(inst == null)
             {
-                inst = new SingleTest();
+                inst = new SingleTest(r);
             }
             return inst;
         }

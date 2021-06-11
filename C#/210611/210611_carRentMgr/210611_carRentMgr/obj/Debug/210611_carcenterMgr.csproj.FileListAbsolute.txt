@@ -1,0 +1,6 @@
+D:\github\KB_study\C#\210611\210611_carRentMgr\210611_carRentMgr\bin\Debug\210611_carRentMgr.exe.config
+D:\github\KB_study\C#\210611\210611_carRentMgr\210611_carRentMgr\bin\Debug\210611_carRentMgr.exe
+D:\github\KB_study\C#\210611\210611_carRentMgr\210611_carRentMgr\bin\Debug\210611_carRentMgr.pdb
+D:\github\KB_study\C#\210611\210611_carRentMgr\210611_carRentMgr\obj\Debug\210611_carcenterMgr.csproj.CoreCompileInputs.cache
+D:\github\KB_study\C#\210611\210611_carRentMgr\210611_carRentMgr\obj\Debug\210611_carRentMgr.exe
+D:\github\KB_study\C#\210611\210611_carRentMgr\210611_carRentMgr\obj\Debug\210611_carRentMgr.pdb
