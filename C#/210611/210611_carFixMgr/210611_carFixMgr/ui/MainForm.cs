@@ -1,4 +1,5 @@
-﻿using _210611_carFixMgr.ui;
+﻿using _210611_carFixMgr.common;
+using _210611_carFixMgr.ui;
 using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace _210611_carFixMgr
         public MainForm()
         {
             InitializeComponent();
+            CommUtill.initTheme(this);
         }
 
         private void mainExit_Click(object sender, EventArgs e)
@@ -31,7 +33,7 @@ namespace _210611_carFixMgr
 
         private void custFixView_Click(object sender, EventArgs e)
         {
-
+   
         }
 
         private void custFixAddmin_Click(object sender, EventArgs e)
@@ -47,6 +49,11 @@ namespace _210611_carFixMgr
         private void custFixInfo_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void mainMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

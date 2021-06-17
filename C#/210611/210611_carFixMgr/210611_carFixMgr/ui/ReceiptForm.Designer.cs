@@ -31,8 +31,8 @@ namespace _210611_carFixMgr.ui
         {
             this.uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             this.custName = new Sunny.UI.UITextBox();
-            this.uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             this.uiComboBox1 = new Sunny.UI.UIComboBox();
+            this.uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             this.custTelHead = new Sunny.UI.UIComboBox();
             this.custTelBody = new Sunny.UI.UITextBox();
             this.uiComboBox3 = new Sunny.UI.UIComboBox();
@@ -102,20 +102,6 @@ namespace _210611_carFixMgr.ui
             this.custName.TabIndex = 1;
             this.custName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // uiSymbolLabel2
-            // 
-            this.uiSymbolLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.uiSymbolLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolLabel2.Location = new System.Drawing.Point(32, 130);
-            this.uiSymbolLabel2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolLabel2.Name = "uiSymbolLabel2";
-            this.uiSymbolLabel2.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.uiSymbolLabel2.Size = new System.Drawing.Size(113, 37);
-            this.uiSymbolLabel2.Symbol = 57488;
-            this.uiSymbolLabel2.TabIndex = 2;
-            this.uiSymbolLabel2.Text = "연락처";
-            this.uiSymbolLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // uiComboBox1
             // 
             this.uiComboBox1.FillColor = System.Drawing.Color.White;
@@ -130,10 +116,26 @@ namespace _210611_carFixMgr.ui
             this.uiComboBox1.Text = "uiComboBox1";
             this.uiComboBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // uiSymbolLabel2
+            // 
+            this.uiSymbolLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.uiSymbolLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolLabel2.Location = new System.Drawing.Point(32, 130);
+            this.uiSymbolLabel2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolLabel2.Name = "uiSymbolLabel2";
+            this.uiSymbolLabel2.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.uiSymbolLabel2.Size = new System.Drawing.Size(113, 37);
+            this.uiSymbolLabel2.Symbol = 57488;
+            this.uiSymbolLabel2.TabIndex = 2;
+            this.uiSymbolLabel2.Text = "연락처";
+            this.uiSymbolLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // custTelHead
             // 
+            this.custTelHead.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
             this.custTelHead.FillColor = System.Drawing.Color.White;
             this.custTelHead.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.custTelHead.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.custTelHead.Items.AddRange(new object[] {
             "010",
             "011"});
@@ -180,6 +182,7 @@ namespace _210611_carFixMgr.ui
             // 
             // custYear
             // 
+            this.custYear.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
             this.custYear.FillColor = System.Drawing.Color.White;
             this.custYear.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.custYear.Items.AddRange(new object[] {
@@ -239,6 +242,7 @@ namespace _210611_carFixMgr.ui
             // 
             // custMonth
             // 
+            this.custMonth.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
             this.custMonth.FillColor = System.Drawing.Color.White;
             this.custMonth.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.custMonth.Items.AddRange(new object[] {
@@ -266,6 +270,7 @@ namespace _210611_carFixMgr.ui
             // 
             // custDay
             // 
+            this.custDay.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
             this.custDay.FillColor = System.Drawing.Color.White;
             this.custDay.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.custDay.Items.AddRange(new object[] {
@@ -312,11 +317,12 @@ namespace _210611_carFixMgr.ui
             // 
             // carModel
             // 
+            this.carModel.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
             this.carModel.FillColor = System.Drawing.Color.White;
             this.carModel.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.carModel.Items.AddRange(new object[] {
             "아반떼",
-            "벨로슽터",
+            "벨로스터",
             "아이오닉",
             "소나타",
             "그랜져",
@@ -373,6 +379,7 @@ namespace _210611_carFixMgr.ui
             // 
             // carCC
             // 
+            this.carCC.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
             this.carCC.FillColor = System.Drawing.Color.White;
             this.carCC.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.carCC.Items.AddRange(new object[] {
@@ -407,6 +414,7 @@ namespace _210611_carFixMgr.ui
             // 
             // carYear
             // 
+            this.carYear.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
             this.carYear.FillColor = System.Drawing.Color.White;
             this.carYear.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.carYear.Items.AddRange(new object[] {
@@ -529,7 +537,7 @@ namespace _210611_carFixMgr.ui
             this.chk2.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
             this.chk2.Size = new System.Drawing.Size(132, 23);
             this.chk2.TabIndex = 22;
-            this.chk2.Text = "이어컨 필터";
+            this.chk2.Text = "에어컨 필터";
             // 
             // chk3
             // 
@@ -689,6 +697,7 @@ namespace _210611_carFixMgr.ui
             // 
             // staffName
             // 
+            this.staffName.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
             this.staffName.FillColor = System.Drawing.Color.White;
             this.staffName.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.staffName.Items.AddRange(new object[] {

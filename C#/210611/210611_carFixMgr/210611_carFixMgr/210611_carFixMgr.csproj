@@ -63,6 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="common\CommUtill.cs" />
     <Compile Include="handler\OracleHandler.cs" />
     <Compile Include="handler\ReceiptAdapter.cs" />
     <Compile Include="model\Car.cs" />
@@ -70,6 +71,12 @@
     <Compile Include="model\Receipt.cs" />
     <Compile Include="model\RepairItem.cs" />
     <Compile Include="model\Staff.cs" />
+    <Compile Include="ui\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="ui\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +100,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ui\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
