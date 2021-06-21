@@ -1,0 +1,14 @@
+C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\bin\Debug\gymManagement.exe.config
+C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\bin\Debug\gymManagement.exe
+C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\bin\Debug\gymManagement.pdb
+C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\bin\Debug\MetroFramework.Design.dll
+C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\bin\Debug\MetroFramework.dll
+C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.csprojAssemblyReference.cache
+C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.Properties.Resources.resources
+C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.Form1.resources
+C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.csproj.GenerateResource.cache
+C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.csproj.CopyComplete
+C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.exe
+C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.pdb
