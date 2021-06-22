@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace gymManagement.model
 {
-    class Customer
+    class Trainer
     {
         private string name;
         private string tel;
-        private string gender;
         private string birth;
-        private string address;
-        private string regiDate;
-        private string expireDate;
+        private string rank;
+        private string salary;
+        
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace gymManagement.ui
 {
-    public partial class Enterance : Form
+    public partial class SubMenuCus : Form
     {
-        public Enterance()
+        public SubMenuCus()
         {
             InitializeComponent();
         }

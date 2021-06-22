@@ -1,4 +1,4 @@
-﻿using MetroFramework.Forms;
+﻿using gymManagement.ui;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,11 +11,16 @@ using System.Windows.Forms;
 
 namespace gymManagement
 {
-    public partial class MainMenu : MetroForm
+    public partial class MainMenu : MetroFramework.Forms.MetroForm
     {
         public MainMenu()
         {
             InitializeComponent();
+        }
+
+        private void gymNewCus_Click(object sender, EventArgs e)
+        {
+            new NewRegi().ShowDialog();
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace gymManagement.ui
 {
-    partial class newRegi
+    partial class NewRegi
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,17 @@ namespace gymManagement.ui
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // NewRegi
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "newRegi";
+            this.ClientSize = new System.Drawing.Size(573, 632);
+            this.Name = "NewRegi";
+            this.Text = "회원 등록";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

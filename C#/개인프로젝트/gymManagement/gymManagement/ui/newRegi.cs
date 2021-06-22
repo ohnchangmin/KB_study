@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace gymManagement.ui
 {
-    public partial class newRegi : Form
+    public partial class NewRegi : MetroFramework.Forms.MetroForm
     {
-        public newRegi()
+        public NewRegi()
         {
             InitializeComponent();
         }

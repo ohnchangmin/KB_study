@@ -29,95 +29,96 @@ namespace gymManagement
         /// </summary>
         private void InitializeComponent()
         {
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.metroTile2 = new MetroFramework.Controls.MetroTile();
-            this.metroTile3 = new MetroFramework.Controls.MetroTile();
-            this.metroTile4 = new MetroFramework.Controls.MetroTile();
-            this.metroTile5 = new MetroFramework.Controls.MetroTile();
-            this.metroTile6 = new MetroFramework.Controls.MetroTile();
+            this.gymEnter = new MetroFramework.Controls.MetroTile();
+            this.gymNewCus = new MetroFramework.Controls.MetroTile();
+            this.gymCus = new MetroFramework.Controls.MetroTile();
+            this.gymPt = new MetroFramework.Controls.MetroTile();
+            this.gymLocker = new MetroFramework.Controls.MetroTile();
+            this.gymAdmin = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
-            // metroTile1
+            // gymEnter
             // 
-            this.metroTile1.ActiveControl = null;
-            this.metroTile1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.metroTile1.Location = new System.Drawing.Point(106, 121);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(272, 177);
-            this.metroTile1.Style = MetroFramework.MetroColorStyle.Purple;
-            this.metroTile1.TabIndex = 0;
-            this.metroTile1.Text = "회원등록";
-            this.metroTile1.UseSelectable = true;
+            this.gymEnter.ActiveControl = null;
+            this.gymEnter.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gymEnter.Location = new System.Drawing.Point(106, 121);
+            this.gymEnter.Name = "gymEnter";
+            this.gymEnter.Size = new System.Drawing.Size(272, 177);
+            this.gymEnter.Style = MetroFramework.MetroColorStyle.Purple;
+            this.gymEnter.TabIndex = 0;
+            this.gymEnter.Text = "회원입장";
+            this.gymEnter.UseSelectable = true;
             // 
-            // metroTile2
+            // gymNewCus
             // 
-            this.metroTile2.ActiveControl = null;
-            this.metroTile2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.metroTile2.Location = new System.Drawing.Point(384, 121);
-            this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(245, 177);
-            this.metroTile2.TabIndex = 1;
-            this.metroTile2.Text = "metroTile2";
-            this.metroTile2.UseSelectable = true;
+            this.gymNewCus.ActiveControl = null;
+            this.gymNewCus.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gymNewCus.Location = new System.Drawing.Point(384, 121);
+            this.gymNewCus.Name = "gymNewCus";
+            this.gymNewCus.Size = new System.Drawing.Size(245, 177);
+            this.gymNewCus.TabIndex = 1;
+            this.gymNewCus.Text = "회원등록";
+            this.gymNewCus.UseSelectable = true;
+            this.gymNewCus.Click += new System.EventHandler(this.gymNewCus_Click);
             // 
-            // metroTile3
+            // gymCus
             // 
-            this.metroTile3.ActiveControl = null;
-            this.metroTile3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.metroTile3.Location = new System.Drawing.Point(635, 121);
-            this.metroTile3.Name = "metroTile3";
-            this.metroTile3.Size = new System.Drawing.Size(217, 177);
-            this.metroTile3.Style = MetroFramework.MetroColorStyle.Orange;
-            this.metroTile3.TabIndex = 1;
-            this.metroTile3.Text = "metroTile2";
-            this.metroTile3.UseSelectable = true;
+            this.gymCus.ActiveControl = null;
+            this.gymCus.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gymCus.Location = new System.Drawing.Point(635, 121);
+            this.gymCus.Name = "gymCus";
+            this.gymCus.Size = new System.Drawing.Size(217, 177);
+            this.gymCus.Style = MetroFramework.MetroColorStyle.Orange;
+            this.gymCus.TabIndex = 1;
+            this.gymCus.Text = "회원관리";
+            this.gymCus.UseSelectable = true;
             // 
-            // metroTile4
+            // gymPt
             // 
-            this.metroTile4.ActiveControl = null;
-            this.metroTile4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.metroTile4.Location = new System.Drawing.Point(106, 304);
-            this.metroTile4.Name = "metroTile4";
-            this.metroTile4.Size = new System.Drawing.Size(193, 177);
-            this.metroTile4.TabIndex = 2;
-            this.metroTile4.Text = "metroTile4";
-            this.metroTile4.UseSelectable = true;
+            this.gymPt.ActiveControl = null;
+            this.gymPt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gymPt.Location = new System.Drawing.Point(106, 304);
+            this.gymPt.Name = "gymPt";
+            this.gymPt.Size = new System.Drawing.Size(193, 177);
+            this.gymPt.TabIndex = 2;
+            this.gymPt.Text = "PT";
+            this.gymPt.UseSelectable = true;
             // 
-            // metroTile5
+            // gymLocker
             // 
-            this.metroTile5.ActiveControl = null;
-            this.metroTile5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.metroTile5.Location = new System.Drawing.Point(305, 304);
-            this.metroTile5.Name = "metroTile5";
-            this.metroTile5.Size = new System.Drawing.Size(247, 177);
-            this.metroTile5.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile5.TabIndex = 0;
-            this.metroTile5.Text = "metroTile1";
-            this.metroTile5.UseSelectable = true;
+            this.gymLocker.ActiveControl = null;
+            this.gymLocker.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gymLocker.Location = new System.Drawing.Point(305, 304);
+            this.gymLocker.Name = "gymLocker";
+            this.gymLocker.Size = new System.Drawing.Size(247, 177);
+            this.gymLocker.Style = MetroFramework.MetroColorStyle.Green;
+            this.gymLocker.TabIndex = 0;
+            this.gymLocker.Text = "라커룸 관리";
+            this.gymLocker.UseSelectable = true;
             // 
-            // metroTile6
+            // gymAdmin
             // 
-            this.metroTile6.ActiveControl = null;
-            this.metroTile6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.metroTile6.Location = new System.Drawing.Point(558, 304);
-            this.metroTile6.Name = "metroTile6";
-            this.metroTile6.Size = new System.Drawing.Size(294, 177);
-            this.metroTile6.Style = MetroFramework.MetroColorStyle.Red;
-            this.metroTile6.TabIndex = 1;
-            this.metroTile6.Text = "metroTile2";
-            this.metroTile6.UseSelectable = true;
+            this.gymAdmin.ActiveControl = null;
+            this.gymAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gymAdmin.Location = new System.Drawing.Point(558, 304);
+            this.gymAdmin.Name = "gymAdmin";
+            this.gymAdmin.Size = new System.Drawing.Size(294, 177);
+            this.gymAdmin.Style = MetroFramework.MetroColorStyle.Red;
+            this.gymAdmin.TabIndex = 1;
+            this.gymAdmin.Text = "관리자모드";
+            this.gymAdmin.UseSelectable = true;
             // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(956, 575);
-            this.Controls.Add(this.metroTile4);
-            this.Controls.Add(this.metroTile6);
-            this.Controls.Add(this.metroTile3);
-            this.Controls.Add(this.metroTile2);
-            this.Controls.Add(this.metroTile5);
-            this.Controls.Add(this.metroTile1);
+            this.Controls.Add(this.gymPt);
+            this.Controls.Add(this.gymAdmin);
+            this.Controls.Add(this.gymCus);
+            this.Controls.Add(this.gymNewCus);
+            this.Controls.Add(this.gymLocker);
+            this.Controls.Add(this.gymEnter);
             this.Name = "MainMenu";
             this.Style = MetroFramework.MetroColorStyle.Purple;
             this.Text = "GYM";
@@ -127,12 +128,12 @@ namespace gymManagement
 
         #endregion
 
-        private MetroFramework.Controls.MetroTile metroTile1;
-        private MetroFramework.Controls.MetroTile metroTile2;
-        private MetroFramework.Controls.MetroTile metroTile3;
-        private MetroFramework.Controls.MetroTile metroTile4;
-        private MetroFramework.Controls.MetroTile metroTile5;
-        private MetroFramework.Controls.MetroTile metroTile6;
+        private MetroFramework.Controls.MetroTile gymEnter;
+        private MetroFramework.Controls.MetroTile gymNewCus;
+        private MetroFramework.Controls.MetroTile gymCus;
+        private MetroFramework.Controls.MetroTile gymPt;
+        private MetroFramework.Controls.MetroTile gymLocker;
+        private MetroFramework.Controls.MetroTile gymAdmin;
     }
 }
 
