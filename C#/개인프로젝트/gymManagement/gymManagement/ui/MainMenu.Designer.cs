@@ -29,6 +29,7 @@ namespace gymManagement
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.gymEnter = new MetroFramework.Controls.MetroTile();
             this.gymNewCus = new MetroFramework.Controls.MetroTile();
             this.gymCus = new MetroFramework.Controls.MetroTile();
@@ -58,7 +59,11 @@ namespace gymManagement
             this.gymNewCus.Size = new System.Drawing.Size(245, 177);
             this.gymNewCus.TabIndex = 1;
             this.gymNewCus.Text = "회원등록";
+            this.gymNewCus.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.gymNewCus.TileImage = ((System.Drawing.Image)(resources.GetObject("gymNewCus.TileImage")));
+            this.gymNewCus.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.gymNewCus.UseSelectable = true;
+            this.gymNewCus.UseTileImage = true;
             this.gymNewCus.Click += new System.EventHandler(this.gymNewCus_Click);
             // 
             // gymCus
