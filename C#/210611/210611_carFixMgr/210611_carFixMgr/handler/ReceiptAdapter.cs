@@ -1,4 +1,5 @@
 ﻿using _210611_carFixMgr.model;
+using carFixMgr0611.handler;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +12,26 @@ namespace _210611_carFixMgr.handler
     class ReceiptAdapter
     {
         private List<Receipt> receiptList = new List<Receipt>();
+        private OraHandler oraHandler;
+
+        public ReceiptAdapter(OraHandler oraHandler)
+        {
+            this.oraHandler = oraHandler;
+        }
 
 
         public void addReceipt(Receipt recipt)
         {
             receiptList.Add(recipt);
+        }
+
+        public void addReceiptDb()
+        {
+            for(int i = 0; i<receiptList.Count; i++)
+            {
+               
+            }
+            receiptList.Clear();
         }
 
         public void viewReceipt()
@@ -43,7 +59,6 @@ namespace _210611_carFixMgr.handler
                     Console.WriteLine("수리번호: " + itemList[j].Idx);
                     Console.WriteLine("수리항목: " + itemList[j].Repair);
                     Console.WriteLine("수리비용: " + itemList[j].Price);
-
                 }
 
 

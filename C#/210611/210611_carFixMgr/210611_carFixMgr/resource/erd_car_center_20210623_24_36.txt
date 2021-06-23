@@ -17,6 +17,7 @@ START WITH 1
 INCREMENT BY 1;
 /
 
+/*
 CREATE OR REPLACE TRIGGER car_t_AI_TRG
 BEFORE INSERT ON car_t 
 REFERENCING NEW AS NEW FOR EACH ROW 
@@ -25,6 +26,8 @@ BEGIN
     INTO :NEW.car_id
     FROM DUAL;
 END;
+*/
+
 /
 
 --DROP TRIGGER car_t_AI_TRG;
@@ -69,7 +72,8 @@ START WITH 1
 INCREMENT BY 1;
 /
 
-CREATE OR REPLACE TRIGGER customer_t_AI_TRG
+/
+*CREATE OR REPLACE TRIGGER customer_t_AI_TRG
 BEFORE INSERT ON customer_t 
 REFERENCING NEW AS NEW FOR EACH ROW 
 BEGIN 
@@ -77,6 +81,7 @@ BEGIN
     INTO :NEW.cust_id
     FROM DUAL;
 END;
+*/
 /
 
 --DROP TRIGGER customer_t_AI_TRG;
@@ -126,6 +131,7 @@ START WITH 1
 INCREMENT BY 1;
 /
 
+/*
 CREATE OR REPLACE TRIGGER repair_Item_t_AI_TRG
 BEFORE INSERT ON repair_Item_t 
 REFERENCING NEW AS NEW FOR EACH ROW 
@@ -134,6 +140,7 @@ BEGIN
     INTO :NEW.repair_item_id
     FROM DUAL;
 END;
+*/
 /
 
 --DROP TRIGGER repair_Item_t_AI_TRG;
@@ -171,8 +178,8 @@ CREATE TABLE staff_t
 (
     staff_id    INT             NOT NULL, 
     name        VARCHAR2(20)    NOT NULL, 
-    tel         VARCHAR2(20)    NOT NULL, 
-    address     VARCHAR2(20)    NOT NULL, 
+    tel         VARCHAR2(30)    NOT NULL, 
+    address     VARCHAR2(40)    NOT NULL, 
     birth       VARCHAR2(20)    NOT NULL, 
     rank        VARCHAR2(20)    NOT NULL, 
     worktype    VARCHAR2(20)    NOT NULL, 
@@ -186,6 +193,7 @@ START WITH 1
 INCREMENT BY 1;
 /
 
+/*
 CREATE OR REPLACE TRIGGER staff_t_AI_TRG
 BEFORE INSERT ON staff_t 
 REFERENCING NEW AS NEW FOR EACH ROW 
@@ -194,6 +202,8 @@ BEGIN
     INTO :NEW.staff_id
     FROM DUAL;
 END;
+*/
+
 /
 
 --DROP TRIGGER staff_t_AI_TRG;
@@ -235,7 +245,6 @@ CREATE TABLE receipt_t
 (
     receipt_id        INT             NOT NULL, 
     cust_id           INT             NOT NULL, 
-    car_id            INT             NOT NULL, 
     indate            VARCHAR2(20)    NOT NULL, 
     staff_id          INT             NOT NULL, 
     repair_item_id    INT             NOT NULL, 
@@ -249,6 +258,7 @@ START WITH 1
 INCREMENT BY 1;
 /
 
+/*
 CREATE OR REPLACE TRIGGER receipt_t_AI_TRG
 BEFORE INSERT ON receipt_t 
 REFERENCING NEW AS NEW FOR EACH ROW 
@@ -257,6 +267,8 @@ BEGIN
     INTO :NEW.receipt_id
     FROM DUAL;
 END;
+*/
+
 /
 
 --DROP TRIGGER receipt_t_AI_TRG;
@@ -272,9 +284,6 @@ COMMENT ON COLUMN receipt_t.receipt_id IS '접수id'
 /
 
 COMMENT ON COLUMN receipt_t.cust_id IS '고객id'
-/
-
-COMMENT ON COLUMN receipt_t.car_id IS '차량id'
 /
 
 COMMENT ON COLUMN receipt_t.indate IS '접수날짜'

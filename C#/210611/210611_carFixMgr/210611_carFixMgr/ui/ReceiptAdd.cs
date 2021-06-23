@@ -106,6 +106,7 @@ namespace _210611_carFixMgr.ui
                 chk1, chk2, chk3, chk4, chk5, chk6, chk7, chk8, chk9, chk10
             };
 
+            int sum = 0;
             List<RepairItem> repairList = new List<RepairItem>();
 
             for (int i = RepairTable.ENGINE_OIL; i <= RepairTable.ETC_COST; i++)
@@ -113,6 +114,7 @@ namespace _210611_carFixMgr.ui
                 if (checkBox[i].Checked)
                 {
                     repairList.Add(new RepairItem(i, checkBox[i].Text, RepairTable.fixMoney[i]));
+                    sum += RepairTable.fixMoney[i];
                     //RepairItem repairitem = new RepairItem(i, checkBox[i].Text, RepairTable.fixMoney[i]);
                     //Console.WriteLine("수리항목: " + checkBox[i].Text);
                     //Console.WriteLine("수리비: " + RepairTable.fixMoney[i]);
@@ -208,7 +210,7 @@ namespace _210611_carFixMgr.ui
 
             adapter.addReceipt(new Receipt(new Customer(name, telH + telB, year + "-" + month + "-" + day),
                                             (new Car(model, number, cc, caryear)),
-                                            DateTime.Now.ToString("yyyy년MM월dd일"), staff, repairList));
+                                            DateTime.Now.ToString("yyyy년MM월dd일"), staff, repairList, sum));
 
             Close();
         }

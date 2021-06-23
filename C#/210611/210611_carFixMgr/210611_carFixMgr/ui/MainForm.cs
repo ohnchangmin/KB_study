@@ -17,12 +17,15 @@ namespace _210611_carFixMgr
 {
     public partial class MainForm : MaterialForm
     {
-        ReceiptAdapter adapter = new ReceiptAdapter();
-        OraHandler oraHandler = new OraHandler();
+        OraHandler oraHandler;
+        ReceiptAdapter adapter;
+       
         public MainForm()
         {
             InitializeComponent();
             CommUtill.initTheme(this);
+            oraHandler = new OraHandler();
+            adapter = new ReceiptAdapter(oraHandler);
         }
 
         private void mainExit_Click(object sender, EventArgs e)
@@ -32,7 +35,9 @@ namespace _210611_carFixMgr
 
         private void custFixAdd_Click(object sender, EventArgs e)
         {
-            new ReceiptAdd(adapter).ShowDialog();
+            //new ReceiptAdd(adapter).ShowDialog();
+            //adapter.addReceiptDb();
+            oraHandler.insertDB(null);
         }
 
         private void custFixView_Click(object sender, EventArgs e)
