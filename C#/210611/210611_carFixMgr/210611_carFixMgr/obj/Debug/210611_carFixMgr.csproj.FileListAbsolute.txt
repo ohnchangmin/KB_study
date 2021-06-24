@@ -31,3 +31,4 @@ C:\Users\KB\Desktop\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\obj\Deb
 C:\Users\KB\Desktop\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\obj\Debug\_210611_carFixMgr.ui.TestForm.resources
 C:\Users\KB\Desktop\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\obj\Debug\_210611_carFixMgr.ui.ReceiptAdd.resources
 C:\Users\KB\Desktop\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\KB\Desktop\KB_study\C#\210611\210611_carFixMgr\210611_carFixMgr\obj\Debug\_210611_carFixMgr.ui.ReceiptView.resources

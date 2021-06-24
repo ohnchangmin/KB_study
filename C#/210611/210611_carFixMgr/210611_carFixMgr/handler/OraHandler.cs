@@ -93,23 +93,77 @@ namespace carFixMgr0611.handler
                 cmd.CommandText = query;
                 cmd.ExecuteNonQuery();
 
-                for (int i = 0; receipt.ItemList.Count < 3; i++)
+                List<RepairItem> itemList = receipt.ItemList;
+                for (int i = 0; itemList.Count < 3; i++)
                 {
-                    string queryItem = string.Format("insert into REPAIR_ITEM_T values (REPAIR_ITEM_T_SEQ.NEXTVAL, {0}, '{1}', {2}, car_t_SEQ.currval)", receipt.ItemList.);
+                    RepairItem item = itemList[i];
+                    string queryItem = string.Format("insert into REPAIR_ITEM_T values (REPAIR_ITEM_T_SEQ.NEXTVAL, {0}, '{1}', {2}, car_t_SEQ.currval)", item.Idx, item.Repair, item.Price);
                     cmd.Connection = conn;
                     cmd.CommandText = queryItem;
                     cmd.ExecuteNonQuery();
                 }
 
-                string queryReceipt = string.Format("insert into receipt_t values (receipt_t_SEQ.NEXTVAL, customer_t_seq.currval, '{0}', (select staff_t.staff_id from staff_t where staff_t.name = '{1}'), REPAIR_ITEM_T_SEQ.CURRVAL, {2})");
+                string queryReceipt = string.Format("insert into receipt_t values (receipt_t_SEQ.NEXTVAL, customer_t_seq.currval, '{0}', (select staff_t.staff_id from staff_t where staff_t.name = '{1}'), REPAIR_ITEM_T_SEQ.CURRVAL, {2})", receipt.InDate, receipt.TotalPrice);
                 cmd.Connection = conn;
                 cmd.CommandText = queryReceipt;
                 cmd.ExecuteNonQuery();
             }
             catch (OracleException e)
             {
-                errMsg(e);                
+                errMsg(e);
             }
+        }
+
+        public void showDb()
+        {
+            string query = string.Format("select indate as 접수일, total_price as 총결제금액, (select customer_t.name from customer_t where customer_t.cust_id = receipt_t.cust_id) as 고객명, (select staff_t.staff_id from staff_t where staff_t.staff_id = receipt_t.staff_id) as 담당자 from receipt_t");
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+            cmd.CommandType = System.Data.CommandType.Text;
+            OracleDataReader dr = cmd.ExecuteReader();
+            int count = 1;
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    Console.WriteLine("번호: " + count);
+                    Console.WriteLine("접수날짜: " + dr["접수일"]);
+                    Console.WriteLine("결제금액: " + dr["총결제금액"]);
+                    Console.WriteLine("고객명: " + dr["고객명"]);
+                    Console.WriteLine("담당자: " + dr["담당자"]);
+                    Console.WriteLine("============================================");
+                    count++;
+                }
+            }
+            else
+            {
+                Console.WriteLine("데이터가 존재하지 않습니다");
+                Console.WriteLine("=============================");
+            }
+
+            string query2 = "select repair, price from repair_item_t where car_id = (select customer_t.cust_id from customer_t where customer_t.name = '홍길동')";
+            cmd.Connection = conn;
+            cmd.CommandText = query2;
+            cmd.CommandType = System.Data.CommandType.Text;
+            dr = cmd.ExecuteReader();
+            count = 1;
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    Console.WriteLine("번호: " + count);
+                    Console.WriteLine("수리항목: " + dr["수리항목"]);
+                    Console.WriteLine("수리비: " + dr["수리비"]);
+                    Console.WriteLine("============================================");
+                    count++;
+                }
+            }
+            else
+            {
+                Console.WriteLine("데이터가 존재하지 않습니다");
+                Console.WriteLine("=============================");
+            }
+            dr.Close();
         }
     }
 }

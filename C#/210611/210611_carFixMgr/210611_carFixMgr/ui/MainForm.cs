@@ -35,14 +35,15 @@ namespace _210611_carFixMgr
 
         private void custFixAdd_Click(object sender, EventArgs e)
         {
-            //new ReceiptAdd(adapter).ShowDialog();
-            //adapter.addReceiptDb();
-            oraHandler.insertDB(null);
+            new ReceiptAdd(adapter).ShowDialog();
+            adapter.addReceiptDb();
+            //oraHandler.insertDB(null);
         }
 
         private void custFixView_Click(object sender, EventArgs e)
         {
-            adapter.viewReceipt();
+            new ReceiptView(adapter).ShowDialog();
+            //adapter.viewReceiptDb(oraHandler);
         }
 
         private void custFixAddmin_Click(object sender, EventArgs e)

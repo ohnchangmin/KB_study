@@ -29,12 +29,12 @@ namespace _210611_carFixMgr.handler
         {
             for(int i = 0; i<receiptList.Count; i++)
             {
-               
+                oraHandler.insertDB(receiptList[i]);
             }
             receiptList.Clear();
         }
 
-        public void viewReceipt()
+        public void viewReceiptDb()
         {
             for(int i =0; i<receiptList.Count; i++)
             {
@@ -60,9 +60,12 @@ namespace _210611_carFixMgr.handler
                     Console.WriteLine("수리항목: " + itemList[j].Repair);
                     Console.WriteLine("수리비용: " + itemList[j].Price);
                 }
-
-
             }    
+        }
+
+        public void viewReceiptDb(OraHandler oraHandler)
+        {
+            oraHandler.showDb();
         }
     }
 }

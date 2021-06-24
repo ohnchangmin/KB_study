@@ -74,6 +74,12 @@
     <Compile Include="model\Receipt.cs" />
     <Compile Include="model\RepairItem.cs" />
     <Compile Include="model\Staff.cs" />
+    <Compile Include="ui\ReceiptView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\ReceiptView.Designer.cs">
+      <DependentUpon>ReceiptView.cs</DependentUpon>
+    </Compile>
     <Compile Include="ui\TestForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ui\ReceiptAdd.resx">
       <DependentUpon>ReceiptAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\ReceiptView.resx">
+      <DependentUpon>ReceiptView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ui\TestForm.resx">
       <DependentUpon>TestForm.cs</DependentUpon>
