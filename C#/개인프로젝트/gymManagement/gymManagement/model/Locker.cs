@@ -9,6 +9,6 @@ namespace gymManagement.model
     class Locker
     {
         private int lockerNum;
-
+        Customer customer;
     }
 }

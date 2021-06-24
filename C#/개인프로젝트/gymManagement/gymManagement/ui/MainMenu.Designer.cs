@@ -29,101 +29,109 @@ namespace gymManagement
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
-            this.gymEnter = new MetroFramework.Controls.MetroTile();
-            this.gymNewCus = new MetroFramework.Controls.MetroTile();
-            this.gymCus = new MetroFramework.Controls.MetroTile();
-            this.gymPt = new MetroFramework.Controls.MetroTile();
-            this.gymLocker = new MetroFramework.Controls.MetroTile();
-            this.gymAdmin = new MetroFramework.Controls.MetroTile();
+            this.uiButton1 = new Sunny.UI.UIButton();
+            this.uiButton2 = new Sunny.UI.UIButton();
+            this.uiButton3 = new Sunny.UI.UIButton();
+            this.uiButton4 = new Sunny.UI.UIButton();
+            this.uiButton6 = new Sunny.UI.UIButton();
+            this.uiButton5 = new Sunny.UI.UIButton();
             this.SuspendLayout();
             // 
-            // gymEnter
+            // uiButton1
             // 
-            this.gymEnter.ActiveControl = null;
-            this.gymEnter.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gymEnter.Location = new System.Drawing.Point(106, 121);
-            this.gymEnter.Name = "gymEnter";
-            this.gymEnter.Size = new System.Drawing.Size(272, 177);
-            this.gymEnter.Style = MetroFramework.MetroColorStyle.Purple;
-            this.gymEnter.TabIndex = 0;
-            this.gymEnter.Text = "회원입장";
-            this.gymEnter.UseSelectable = true;
+            this.uiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton1.FillColor = System.Drawing.Color.DarkGray;
+            this.uiButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiButton1.Location = new System.Drawing.Point(106, 118);
+            this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton1.Name = "uiButton1";
+            this.uiButton1.RectColor = System.Drawing.Color.Transparent;
+            this.uiButton1.Size = new System.Drawing.Size(192, 178);
+            this.uiButton1.Style = Sunny.UI.UIStyle.Custom;
+            this.uiButton1.TabIndex = 3;
+            this.uiButton1.Text = "uiButton1";
             // 
-            // gymNewCus
+            // uiButton2
             // 
-            this.gymNewCus.ActiveControl = null;
-            this.gymNewCus.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gymNewCus.Location = new System.Drawing.Point(384, 121);
-            this.gymNewCus.Name = "gymNewCus";
-            this.gymNewCus.Size = new System.Drawing.Size(245, 177);
-            this.gymNewCus.TabIndex = 1;
-            this.gymNewCus.Text = "회원등록";
-            this.gymNewCus.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.gymNewCus.TileImage = ((System.Drawing.Image)(resources.GetObject("gymNewCus.TileImage")));
-            this.gymNewCus.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.gymNewCus.UseSelectable = true;
-            this.gymNewCus.UseTileImage = true;
-            this.gymNewCus.Click += new System.EventHandler(this.gymNewCus_Click);
+            this.uiButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton2.FillColor = System.Drawing.Color.CornflowerBlue;
+            this.uiButton2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiButton2.Location = new System.Drawing.Point(304, 118);
+            this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton2.Name = "uiButton2";
+            this.uiButton2.RectColor = System.Drawing.Color.Transparent;
+            this.uiButton2.Size = new System.Drawing.Size(233, 178);
+            this.uiButton2.Style = Sunny.UI.UIStyle.Custom;
+            this.uiButton2.TabIndex = 3;
+            this.uiButton2.Text = "uiButton1";
             // 
-            // gymCus
+            // uiButton3
             // 
-            this.gymCus.ActiveControl = null;
-            this.gymCus.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gymCus.Location = new System.Drawing.Point(635, 121);
-            this.gymCus.Name = "gymCus";
-            this.gymCus.Size = new System.Drawing.Size(217, 177);
-            this.gymCus.Style = MetroFramework.MetroColorStyle.Orange;
-            this.gymCus.TabIndex = 1;
-            this.gymCus.Text = "회원관리";
-            this.gymCus.UseSelectable = true;
+            this.uiButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton3.FillColor = System.Drawing.Color.MediumSeaGreen;
+            this.uiButton3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiButton3.Location = new System.Drawing.Point(543, 118);
+            this.uiButton3.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton3.Name = "uiButton3";
+            this.uiButton3.RectColor = System.Drawing.Color.Transparent;
+            this.uiButton3.Size = new System.Drawing.Size(314, 178);
+            this.uiButton3.Style = Sunny.UI.UIStyle.Custom;
+            this.uiButton3.TabIndex = 3;
+            this.uiButton3.Text = "uiButton1";
             // 
-            // gymPt
+            // uiButton4
             // 
-            this.gymPt.ActiveControl = null;
-            this.gymPt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gymPt.Location = new System.Drawing.Point(106, 304);
-            this.gymPt.Name = "gymPt";
-            this.gymPt.Size = new System.Drawing.Size(193, 177);
-            this.gymPt.TabIndex = 2;
-            this.gymPt.Text = "PT";
-            this.gymPt.UseSelectable = true;
+            this.uiButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton4.FillColor = System.Drawing.Color.Khaki;
+            this.uiButton4.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiButton4.Location = new System.Drawing.Point(106, 302);
+            this.uiButton4.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton4.Name = "uiButton4";
+            this.uiButton4.RectColor = System.Drawing.Color.Transparent;
+            this.uiButton4.Size = new System.Drawing.Size(233, 178);
+            this.uiButton4.Style = Sunny.UI.UIStyle.Custom;
+            this.uiButton4.TabIndex = 3;
+            this.uiButton4.Text = "uiButton1";
             // 
-            // gymLocker
+            // uiButton6
             // 
-            this.gymLocker.ActiveControl = null;
-            this.gymLocker.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gymLocker.Location = new System.Drawing.Point(305, 304);
-            this.gymLocker.Name = "gymLocker";
-            this.gymLocker.Size = new System.Drawing.Size(247, 177);
-            this.gymLocker.Style = MetroFramework.MetroColorStyle.Green;
-            this.gymLocker.TabIndex = 0;
-            this.gymLocker.Text = "라커룸 관리";
-            this.gymLocker.UseSelectable = true;
+            this.uiButton6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton6.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.uiButton6.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiButton6.Location = new System.Drawing.Point(639, 302);
+            this.uiButton6.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton6.Name = "uiButton6";
+            this.uiButton6.RectColor = System.Drawing.Color.Transparent;
+            this.uiButton6.Size = new System.Drawing.Size(218, 178);
+            this.uiButton6.Style = Sunny.UI.UIStyle.Custom;
+            this.uiButton6.TabIndex = 3;
+            this.uiButton6.Text = "uiButton1";
             // 
-            // gymAdmin
+            // uiButton5
             // 
-            this.gymAdmin.ActiveControl = null;
-            this.gymAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gymAdmin.Location = new System.Drawing.Point(558, 304);
-            this.gymAdmin.Name = "gymAdmin";
-            this.gymAdmin.Size = new System.Drawing.Size(294, 177);
-            this.gymAdmin.Style = MetroFramework.MetroColorStyle.Red;
-            this.gymAdmin.TabIndex = 1;
-            this.gymAdmin.Text = "관리자모드";
-            this.gymAdmin.UseSelectable = true;
+            this.uiButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton5.FillColor = System.Drawing.Color.Plum;
+            this.uiButton5.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiButton5.Location = new System.Drawing.Point(345, 302);
+            this.uiButton5.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton5.Name = "uiButton5";
+            this.uiButton5.RectColor = System.Drawing.Color.Transparent;
+            this.uiButton5.Size = new System.Drawing.Size(288, 178);
+            this.uiButton5.Style = Sunny.UI.UIStyle.Custom;
+            this.uiButton5.TabIndex = 3;
+            this.uiButton5.Text = "uiButton1";
             // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(956, 575);
-            this.Controls.Add(this.gymPt);
-            this.Controls.Add(this.gymAdmin);
-            this.Controls.Add(this.gymCus);
-            this.Controls.Add(this.gymNewCus);
-            this.Controls.Add(this.gymLocker);
-            this.Controls.Add(this.gymEnter);
+            this.Controls.Add(this.uiButton6);
+            this.Controls.Add(this.uiButton5);
+            this.Controls.Add(this.uiButton4);
+            this.Controls.Add(this.uiButton3);
+            this.Controls.Add(this.uiButton2);
+            this.Controls.Add(this.uiButton1);
             this.Name = "MainMenu";
             this.Style = MetroFramework.MetroColorStyle.Purple;
             this.Text = "GYM";
@@ -133,12 +141,12 @@ namespace gymManagement
 
         #endregion
 
-        private MetroFramework.Controls.MetroTile gymEnter;
-        private MetroFramework.Controls.MetroTile gymNewCus;
-        private MetroFramework.Controls.MetroTile gymCus;
-        private MetroFramework.Controls.MetroTile gymPt;
-        private MetroFramework.Controls.MetroTile gymLocker;
-        private MetroFramework.Controls.MetroTile gymAdmin;
+        private Sunny.UI.UIButton uiButton1;
+        private Sunny.UI.UIButton uiButton2;
+        private Sunny.UI.UIButton uiButton3;
+        private Sunny.UI.UIButton uiButton4;
+        private Sunny.UI.UIButton uiButton6;
+        private Sunny.UI.UIButton uiButton5;
     }
 }
 
