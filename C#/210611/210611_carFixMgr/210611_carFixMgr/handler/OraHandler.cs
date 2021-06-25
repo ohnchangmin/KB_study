@@ -94,7 +94,7 @@ namespace carFixMgr0611.handler
                 cmd.ExecuteNonQuery();
 
                 List<RepairItem> itemList = receipt.ItemList;
-                for (int i = 0; itemList.Count < 3; i++)
+                for (int i = 0; i<itemList.Count; i++)
                 {
                     RepairItem item = itemList[i];
                     string queryItem = string.Format("insert into REPAIR_ITEM_T values (REPAIR_ITEM_T_SEQ.NEXTVAL, {0}, '{1}', {2}, car_t_SEQ.currval)", item.Idx, item.Repair, item.Price);
@@ -103,7 +103,7 @@ namespace carFixMgr0611.handler
                     cmd.ExecuteNonQuery();
                 }
 
-                string queryReceipt = string.Format("insert into receipt_t values (receipt_t_SEQ.NEXTVAL, customer_t_seq.currval, '{0}', (select staff_t.staff_id from staff_t where staff_t.name = '{1}'), REPAIR_ITEM_T_SEQ.CURRVAL, {2})", receipt.InDate, receipt.TotalPrice);
+                string queryReceipt = string.Format("insert into receipt_t values (receipt_t_SEQ.NEXTVAL, customer_t_seq.currval, '{0}', (select staff_t.staff_id from staff_t where staff_t.name = '{1}'), REPAIR_ITEM_T_SEQ.CURRVAL, {2})", receipt.InDate, receipt.StaffName, receipt.TotalPrice);
                 cmd.Connection = conn;
                 cmd.CommandText = queryReceipt;
                 cmd.ExecuteNonQuery();
@@ -165,6 +165,106 @@ namespace carFixMgr0611.handler
             }
             dr.Close();
         }
+
+        public List<ReceiptVO> getReceipt()
+        {
+            string query = string.Format("select indate as 접수일, total_price as 총결제금액, (select customer_t.name from customer_t where customer_t.cust_id = receipt_t.cust_id) as 고객명, (select staff_t.name from staff_t where staff_t.staff_id = receipt_t.staff_id) as 담당자 from receipt_t");
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+            cmd.CommandType = System.Data.CommandType.Text;
+            OracleDataReader dr = cmd.ExecuteReader();
+            List<ReceiptVO> listReceiptVO = new List<ReceiptVO>();
+            int count = 1;
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    //Console.WriteLine("번호: " + count);
+                    //Console.WriteLine("접수날짜: " + dr["접수일"]);
+                    //Console.WriteLine("결제금액: " + dr["총결제금액"]);
+                    //Console.WriteLine("고객명: " + dr["고객명"]);
+                    //Console.WriteLine("담당자: " + dr["담당자"]);
+                    //Console.WriteLine("============================================");
+                    ReceiptVO receiptVO = new ReceiptVO(dr["접수일"].ToString(), Convert.ToInt32(dr["총결제금액"]), dr["고객명"].ToString(), dr["담당자"].ToString());
+                    listReceiptVO.Add(receiptVO);
+                    count++;
+                }
+            }
+            else
+            {
+                Console.WriteLine("데이터가 존재하지 않습니다");
+                Console.WriteLine("=============================");
+            }
+            dr.Close();
+            return listReceiptVO;
+        }
+
+        public List<RepairItem> getRepairItem()
+        {
+            OracleDataReader dr = cmd.ExecuteReader();
+            int count = 1;
+            string query2 = "select repair_item_id as 번호, repair as 수리항목, price as 수리비 from repair_item_t where car_id = (select customer_t.cust_id from customer_t where customer_t.name = '김쪼아')";
+            cmd.Connection = conn;
+            cmd.CommandText = query2;
+            cmd.CommandType = System.Data.CommandType.Text;
+            dr = cmd.ExecuteReader();
+            List<RepairItem> items = new List<RepairItem>();
+            count = 1;
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    Console.WriteLine("번호: " + count);
+                    Console.WriteLine("수리항목: " + dr["수리항목"]);
+                    Console.WriteLine("수리비: " + dr["수리비"]);
+                    Console.WriteLine("============================================");
+                    count++;
+                    RepairItem repairItem = new RepairItem(Convert.ToInt32(dr["번호"]), dr["수리항목"].ToString(), Convert.ToInt32(dr["수리비"]));
+                    items.Add(repairItem);
+                }
+            }
+            else
+            {
+                Console.WriteLine("데이터가 존재하지 않습니다");
+                Console.WriteLine("=============================");
+            }
+            dr.Close();
+            return items;
+        }
+        
+        public List<RepairItem> getRepairItem(string custName)
+        {
+            OracleDataReader dr = cmd.ExecuteReader();
+            int count = 1;
+            string query2 = string.Format("select repair_item_id as 번호, repair as 수리항목, price as 수리비 from repair_item_t where car_id = (select customer_t.cust_id from customer_t where customer_t.name = '{0}')", custName);
+            cmd.Connection = conn;
+            cmd.CommandText = query2;
+            cmd.CommandType = System.Data.CommandType.Text;
+            dr = cmd.ExecuteReader();
+            List<RepairItem> items = new List<RepairItem>();
+            count = 1;
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    Console.WriteLine("번호: " + count);
+                    Console.WriteLine("수리항목: " + dr["수리항목"]);
+                    Console.WriteLine("수리비: " + dr["수리비"]);
+                    Console.WriteLine("============================================");
+                    count++;
+                    RepairItem repairItem = new RepairItem(Convert.ToInt32(dr["번호"]), dr["수리항목"].ToString(), Convert.ToInt32(dr["수리비"]));
+                    items.Add(repairItem);
+                }
+            }
+            else
+            {
+                Console.WriteLine("데이터가 존재하지 않습니다");
+                Console.WriteLine("=============================");
+            }
+            dr.Close();
+            return items;
+        }
+
     }
 }
 

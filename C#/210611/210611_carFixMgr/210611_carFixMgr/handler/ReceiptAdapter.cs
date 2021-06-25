@@ -67,5 +67,21 @@ namespace _210611_carFixMgr.handler
         {
             oraHandler.showDb();
         }
+
+        public List<ReceiptVO> getReceiptDb()
+        {
+            List<ReceiptVO> listReceiptVO = oraHandler.getReceipt();
+            return listReceiptVO;
+        }
+
+        public List<RepairItem> GetRepairItemsDb()
+        {
+            return oraHandler.getRepairItem();
+        }
+
+        public List<RepairItem> GetRepairItemsDb(string custName)
+        {
+            return oraHandler.getRepairItem(custName);
+        }
     }
 }

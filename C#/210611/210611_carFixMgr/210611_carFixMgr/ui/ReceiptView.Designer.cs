@@ -34,6 +34,9 @@ namespace _210611_carFixMgr.ui
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.viewGrid = new Sunny.UI.UIDataGridView();
+            this.gridCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gridRepair = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gridPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.viewList = new System.Windows.Forms.ListView();
             this.lCount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lInDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -68,7 +71,12 @@ namespace _210611_carFixMgr.ui
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.viewGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.viewGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.viewGrid.ColumnHeadersHeight = 32;
+            this.viewGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.viewGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gridCount,
+            this.gridRepair,
+            this.gridPrice});
             this.viewGrid.EnableHeadersVisualStyles = false;
             this.viewGrid.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.viewGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
@@ -86,9 +94,25 @@ namespace _210611_carFixMgr.ui
             this.viewGrid.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.viewGrid.RowTemplate.Height = 29;
             this.viewGrid.SelectedIndex = -1;
+            this.viewGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.viewGrid.ShowGridLine = true;
             this.viewGrid.Size = new System.Drawing.Size(702, 202);
             this.viewGrid.TabIndex = 1;
+            // 
+            // gridCount
+            // 
+            this.gridCount.HeaderText = "번호";
+            this.gridCount.Name = "gridCount";
+            // 
+            // gridRepair
+            // 
+            this.gridRepair.HeaderText = "수리항목";
+            this.gridRepair.Name = "gridRepair";
+            // 
+            // gridPrice
+            // 
+            this.gridPrice.HeaderText = "수리비용";
+            this.gridPrice.Name = "gridPrice";
             // 
             // viewList
             // 
@@ -98,6 +122,7 @@ namespace _210611_carFixMgr.ui
             this.lTotalPrice,
             this.lStaffName,
             this.lCustName});
+            this.viewList.FullRowSelect = true;
             this.viewList.HideSelection = false;
             this.viewList.Location = new System.Drawing.Point(49, 132);
             this.viewList.Name = "viewList";
@@ -105,6 +130,7 @@ namespace _210611_carFixMgr.ui
             this.viewList.TabIndex = 2;
             this.viewList.UseCompatibleStateImageBehavior = false;
             this.viewList.View = System.Windows.Forms.View.Details;
+            this.viewList.SelectedIndexChanged += new System.EventHandler(this.viewList_SelectedIndexChanged);
             // 
             // lCount
             // 
@@ -147,6 +173,9 @@ namespace _210611_carFixMgr.ui
             // 
             this.viewSelect.FillColor = System.Drawing.Color.White;
             this.viewSelect.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.viewSelect.Items.AddRange(new object[] {
+            "고객명",
+            "차량번호"});
             this.viewSelect.Location = new System.Drawing.Point(166, 91);
             this.viewSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.viewSelect.MinimumSize = new System.Drawing.Size(63, 0);
@@ -325,6 +354,7 @@ namespace _210611_carFixMgr.ui
             this.Name = "ReceiptView";
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Load += new System.EventHandler(this.ReceiptView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.viewGrid)).EndInit();
             this.ResumeLayout(false);
 
@@ -349,5 +379,8 @@ namespace _210611_carFixMgr.ui
         private System.Windows.Forms.ColumnHeader lTotalPrice;
         private System.Windows.Forms.ColumnHeader lStaffName;
         private System.Windows.Forms.ColumnHeader lCustName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gridCount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gridRepair;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gridPrice;
     }
 }

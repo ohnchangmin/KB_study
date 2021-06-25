@@ -72,6 +72,7 @@
     <Compile Include="model\Car.cs" />
     <Compile Include="model\Customer.cs" />
     <Compile Include="model\Receipt.cs" />
+    <Compile Include="model\ReceiptVO.cs" />
     <Compile Include="model\RepairItem.cs" />
     <Compile Include="model\Staff.cs" />
     <Compile Include="ui\ReceiptView.cs">
