@@ -42,7 +42,7 @@ namespace gymManagement
             this.uiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton1.FillColor = System.Drawing.Color.DarkGray;
             this.uiButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiButton1.Location = new System.Drawing.Point(106, 118);
+            this.uiButton1.Location = new System.Drawing.Point(102, 118);
             this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton1.Name = "uiButton1";
             this.uiButton1.RectColor = System.Drawing.Color.Transparent;
@@ -56,7 +56,7 @@ namespace gymManagement
             this.uiButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton2.FillColor = System.Drawing.Color.CornflowerBlue;
             this.uiButton2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiButton2.Location = new System.Drawing.Point(304, 118);
+            this.uiButton2.Location = new System.Drawing.Point(300, 118);
             this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton2.Name = "uiButton2";
             this.uiButton2.RectColor = System.Drawing.Color.Transparent;
@@ -70,7 +70,7 @@ namespace gymManagement
             this.uiButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton3.FillColor = System.Drawing.Color.MediumSeaGreen;
             this.uiButton3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiButton3.Location = new System.Drawing.Point(543, 118);
+            this.uiButton3.Location = new System.Drawing.Point(539, 118);
             this.uiButton3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton3.Name = "uiButton3";
             this.uiButton3.RectColor = System.Drawing.Color.Transparent;
@@ -84,7 +84,7 @@ namespace gymManagement
             this.uiButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton4.FillColor = System.Drawing.Color.Khaki;
             this.uiButton4.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiButton4.Location = new System.Drawing.Point(106, 302);
+            this.uiButton4.Location = new System.Drawing.Point(102, 302);
             this.uiButton4.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton4.Name = "uiButton4";
             this.uiButton4.RectColor = System.Drawing.Color.Transparent;
@@ -98,7 +98,7 @@ namespace gymManagement
             this.uiButton6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton6.FillColor = System.Drawing.Color.LightSkyBlue;
             this.uiButton6.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiButton6.Location = new System.Drawing.Point(639, 302);
+            this.uiButton6.Location = new System.Drawing.Point(635, 302);
             this.uiButton6.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton6.Name = "uiButton6";
             this.uiButton6.RectColor = System.Drawing.Color.Transparent;
@@ -112,7 +112,7 @@ namespace gymManagement
             this.uiButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton5.FillColor = System.Drawing.Color.Plum;
             this.uiButton5.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiButton5.Location = new System.Drawing.Point(345, 302);
+            this.uiButton5.Location = new System.Drawing.Point(341, 302);
             this.uiButton5.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton5.Name = "uiButton5";
             this.uiButton5.RectColor = System.Drawing.Color.Transparent;
@@ -125,7 +125,7 @@ namespace gymManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(956, 575);
+            this.ClientSize = new System.Drawing.Size(950, 570);
             this.Controls.Add(this.uiButton6);
             this.Controls.Add(this.uiButton5);
             this.Controls.Add(this.uiButton4);
