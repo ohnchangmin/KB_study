@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace gymManagement.controller
 {
-    class OraController
+    public class OraController
     {
         const string ORADB =
             "Data Source=(DESCRIPTION=(ADDRESS_LIST=" +
@@ -63,6 +63,30 @@ namespace gymManagement.controller
             catch (OracleException e)
             {
                 Console.WriteLine("오라클 접속 해제 에러!");
+            }
+        }
+
+        public void showDb()
+        {
+            //string query = string.Format("SELECT ADMIN_ID as ID, ADMIN_PW as PW FROM ADMIN_T WHERE ADMIN_ID = 'ADMIN' AND ADMIN_PW = '1234'");
+            string query = "SELECT ADMIN_ID as ID, ADMIN_PW as PW FROM ADMIN_T WHERE ADMIN_ID = 'ADMIN' AND ADMIN_PW = '1234'";
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+            cmd.CommandType = System.Data.CommandType.Text;
+            OracleDataReader dr = cmd.ExecuteReader();
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    Console.WriteLine("ID: " + dr["ID"]);
+                    Console.WriteLine("PW: " + dr["PW"]);    
+                    Console.WriteLine("============================================");    
+                }
+            }
+            else
+            {
+                Console.WriteLine("데이터가 존재하지 않습니다");
+                Console.WriteLine("=============================");
             }
         }
     }

@@ -17,4 +17,4 @@ C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\b
 C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\bin\Debug\SunnyUI.dll
 C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\bin\Debug\Oracle.ManagedDataAccess.dll
 C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.csprojAssemblyReference.cache
-C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.ui.LoginForm.resources
+C:\Users\KB\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.ui.LoginMenu.resources

@@ -33,7 +33,7 @@ namespace gymManagement
             this.uiButton2 = new Sunny.UI.UIButton();
             this.uiButton3 = new Sunny.UI.UIButton();
             this.uiButton4 = new Sunny.UI.UIButton();
-            this.uiButton6 = new Sunny.UI.UIButton();
+            this.MainAdmin = new Sunny.UI.UIButton();
             this.uiButton5 = new Sunny.UI.UIButton();
             this.SuspendLayout();
             // 
@@ -42,7 +42,7 @@ namespace gymManagement
             this.uiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton1.FillColor = System.Drawing.Color.DarkGray;
             this.uiButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiButton1.Location = new System.Drawing.Point(102, 118);
+            this.uiButton1.Location = new System.Drawing.Point(76, 118);
             this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton1.Name = "uiButton1";
             this.uiButton1.RectColor = System.Drawing.Color.Transparent;
@@ -56,7 +56,7 @@ namespace gymManagement
             this.uiButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton2.FillColor = System.Drawing.Color.CornflowerBlue;
             this.uiButton2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiButton2.Location = new System.Drawing.Point(300, 118);
+            this.uiButton2.Location = new System.Drawing.Point(274, 118);
             this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton2.Name = "uiButton2";
             this.uiButton2.RectColor = System.Drawing.Color.Transparent;
@@ -70,7 +70,7 @@ namespace gymManagement
             this.uiButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton3.FillColor = System.Drawing.Color.MediumSeaGreen;
             this.uiButton3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiButton3.Location = new System.Drawing.Point(539, 118);
+            this.uiButton3.Location = new System.Drawing.Point(513, 118);
             this.uiButton3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton3.Name = "uiButton3";
             this.uiButton3.RectColor = System.Drawing.Color.Transparent;
@@ -84,7 +84,7 @@ namespace gymManagement
             this.uiButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton4.FillColor = System.Drawing.Color.Khaki;
             this.uiButton4.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiButton4.Location = new System.Drawing.Point(102, 302);
+            this.uiButton4.Location = new System.Drawing.Point(76, 302);
             this.uiButton4.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton4.Name = "uiButton4";
             this.uiButton4.RectColor = System.Drawing.Color.Transparent;
@@ -93,26 +93,27 @@ namespace gymManagement
             this.uiButton4.TabIndex = 3;
             this.uiButton4.Text = "uiButton1";
             // 
-            // uiButton6
+            // MainAdmin
             // 
-            this.uiButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton6.FillColor = System.Drawing.Color.LightSkyBlue;
-            this.uiButton6.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiButton6.Location = new System.Drawing.Point(635, 302);
-            this.uiButton6.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton6.Name = "uiButton6";
-            this.uiButton6.RectColor = System.Drawing.Color.Transparent;
-            this.uiButton6.Size = new System.Drawing.Size(218, 178);
-            this.uiButton6.Style = Sunny.UI.UIStyle.Custom;
-            this.uiButton6.TabIndex = 3;
-            this.uiButton6.Text = "uiButton1";
+            this.MainAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MainAdmin.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.MainAdmin.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.MainAdmin.Location = new System.Drawing.Point(609, 302);
+            this.MainAdmin.MinimumSize = new System.Drawing.Size(1, 1);
+            this.MainAdmin.Name = "MainAdmin";
+            this.MainAdmin.RectColor = System.Drawing.Color.Transparent;
+            this.MainAdmin.Size = new System.Drawing.Size(218, 178);
+            this.MainAdmin.Style = Sunny.UI.UIStyle.Custom;
+            this.MainAdmin.TabIndex = 3;
+            this.MainAdmin.Text = "관리자모드";
+            this.MainAdmin.Click += new System.EventHandler(this.MainAdmin_Click);
             // 
             // uiButton5
             // 
             this.uiButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton5.FillColor = System.Drawing.Color.Plum;
             this.uiButton5.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiButton5.Location = new System.Drawing.Point(341, 302);
+            this.uiButton5.Location = new System.Drawing.Point(315, 302);
             this.uiButton5.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton5.Name = "uiButton5";
             this.uiButton5.RectColor = System.Drawing.Color.Transparent;
@@ -125,8 +126,8 @@ namespace gymManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 570);
-            this.Controls.Add(this.uiButton6);
+            this.ClientSize = new System.Drawing.Size(900, 570);
+            this.Controls.Add(this.MainAdmin);
             this.Controls.Add(this.uiButton5);
             this.Controls.Add(this.uiButton4);
             this.Controls.Add(this.uiButton3);
@@ -145,7 +146,7 @@ namespace gymManagement
         private Sunny.UI.UIButton uiButton2;
         private Sunny.UI.UIButton uiButton3;
         private Sunny.UI.UIButton uiButton4;
-        private Sunny.UI.UIButton uiButton6;
+        private Sunny.UI.UIButton MainAdmin;
         private Sunny.UI.UIButton uiButton5;
     }
 }

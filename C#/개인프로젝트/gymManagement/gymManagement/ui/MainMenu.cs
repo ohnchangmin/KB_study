@@ -1,4 +1,5 @@
-﻿using gymManagement.ui;
+﻿using gymManagement.controller;
+using gymManagement.ui;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,14 +14,21 @@ namespace gymManagement
 {
     public partial class MainMenu : MetroFramework.Forms.MetroForm
     {
+        OraController orc;
         public MainMenu()
         {
             InitializeComponent();
+            orc = new OraController();
         }
 
         private void gymNewCus_Click(object sender, EventArgs e)
         {
             new NewRegi().ShowDialog();
+        }
+
+        private void MainAdmin_Click(object sender, EventArgs e)
+        {
+            new LoginMenu(orc).ShowDialog();
         }
     }
 }
