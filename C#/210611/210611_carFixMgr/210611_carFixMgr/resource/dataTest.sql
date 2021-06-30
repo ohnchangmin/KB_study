@@ -1,7 +1,8 @@
-insert into staff_t values (staff_t_SEQ.nextval, '전우치', '010-2222-2222', '대구 동구 신천1동', '19800912', '과장', '정규직', '300만원');
-insert into staff_t values (staff_t_SEQ.nextval, '박우치', '010-2222-2222', '대구 동구 신천1동', '19800912', '대리', '정규직', '230만원');
-insert into staff_t values (staff_t_SEQ.nextval, '김우치', '010-2222-2222', '대구 동구 신천1동', '19800912', '부장', '정규직', '400만원');
-insert into staff_t values (staff_t_SEQ.nextval, '최우치', '010-2222-2222', '대구 동구 신천1동', '19800912', '과장', '정규직', '200만원');
+insert into staff_t values (staff_t_SEQ.nextval, '김점검', '010-2222-2222', '대구 동구 신천1동', '19800912', '과장', '정규직', '300만원');
+insert into staff_t values (staff_t_SEQ.nextval, '박수리', '010-2222-2222', '대구 동구 신천1동', '19800912', '대리', '정규직', '230만원');
+insert into staff_t values (staff_t_SEQ.nextval, '오고침', '010-2222-2222', '대구 동구 신천1동', '19800912', '부장', '정규직', '400만원');
+insert into staff_t values (staff_t_SEQ.nextval, '최교체', '010-2222-2222', '대구 동구 신천1동', '19800912', '과장', '정규직', '200만원');
+commit
 
 insert all into car_t values(car_t_SEQ.NEXTVAl,'그랜저','12가1234','2500cc이하','2020년식')
 into customer_t values(CUSTOMER_T_SEQ.NEXTVAL,'홍길동','010-1234-7890','19820520',Car_t_seq.currval)

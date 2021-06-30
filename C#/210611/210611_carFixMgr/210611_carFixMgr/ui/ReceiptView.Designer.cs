@@ -42,6 +42,7 @@ namespace _210611_carFixMgr.ui
             this.lInDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lTotalPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lStaffName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lCarNum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lCustName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             this.viewSelect = new Sunny.UI.UIComboBox();
@@ -121,6 +122,7 @@ namespace _210611_carFixMgr.ui
             this.lInDate,
             this.lTotalPrice,
             this.lStaffName,
+            this.lCarNum,
             this.lCustName});
             this.viewList.FullRowSelect = true;
             this.viewList.HideSelection = false;
@@ -150,6 +152,11 @@ namespace _210611_carFixMgr.ui
             // 
             this.lStaffName.Text = "담당자";
             this.lStaffName.Width = 100;
+            // 
+            // lCarNum
+            // 
+            this.lCarNum.Text = "차량번호";
+            this.lCarNum.Width = 100;
             // 
             // lCustName
             // 
@@ -222,6 +229,7 @@ namespace _210611_carFixMgr.ui
             this.viewSearch.Symbol = 61442;
             this.viewSearch.TabIndex = 6;
             this.viewSearch.Text = "검색";
+            this.viewSearch.Click += new System.EventHandler(this.viewSearch_Click);
             // 
             // viewSearchAll
             // 
@@ -238,6 +246,7 @@ namespace _210611_carFixMgr.ui
             this.viewSearchAll.Symbol = 57591;
             this.viewSearchAll.TabIndex = 7;
             this.viewSearchAll.Text = "전체검색";
+            this.viewSearchAll.Click += new System.EventHandler(this.viewSearchAll_Click);
             // 
             // viewConfirm
             // 
@@ -382,5 +391,6 @@ namespace _210611_carFixMgr.ui
         private System.Windows.Forms.DataGridViewTextBoxColumn gridCount;
         private System.Windows.Forms.DataGridViewTextBoxColumn gridRepair;
         private System.Windows.Forms.DataGridViewTextBoxColumn gridPrice;
+        private System.Windows.Forms.ColumnHeader lCarNum;
     }
 }

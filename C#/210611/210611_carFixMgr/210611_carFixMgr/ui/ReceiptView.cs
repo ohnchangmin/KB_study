@@ -17,6 +17,7 @@ namespace _210611_carFixMgr.ui
     partial class ReceiptView : MaterialForm
     {
         private ReceiptAdapter adapter;
+        List<ReceiptVO> receiptList;
 
         public ReceiptView()
         {
@@ -50,13 +51,16 @@ namespace _210611_carFixMgr.ui
                 string strPrice = string.Format("{0:#,0}원", listReceiptVO[i].TotalPrice);
                 viewList.Items.Add(new ListViewItem(
                     new string[]
-                    {(i+1).ToString(), listReceiptVO[i].Indate, strPrice, listReceiptVO[i].StaffName, listReceiptVO[i].CustName}));
+                    {(i+1).ToString(), listReceiptVO[i].Indate, strPrice, listReceiptVO[i].StaffName, listReceiptVO[i].CarNum, listReceiptVO[i].CustName}));
             }
             CommUtill.setRowColor(viewList, Color.WhiteSmoke, Color.White);
-            int index = viewList.Items.Count - 1;
-            viewList.Items[index].Selected = true;
-            viewList.Items[index].Focused = true;
-            viewList.EnsureVisible(index);
+            if (viewList.Items.Count > 0)
+            {
+                int index = viewList.Items.Count - 1;
+                viewList.Items[index].Selected = true;
+                viewList.Items[index].Focused = true;
+                viewList.EnsureVisible(index);
+            }
         }
 
         //public void initList(List<RepairItem> listRepairItem)
@@ -81,9 +85,9 @@ namespace _210611_carFixMgr.ui
                         (i+1).ToString(), listRepairItem[i].Repair.ToString(), strPrice
                     });
             }
-            int count = viewGrid.Rows.Count - 1;
+/*            int count = viewGrid.Rows.Count - 1;
             viewGrid.FirstDisplayedScrollingRowIndex = count;
-            viewGrid.CurrentCell = viewGrid.Rows[count - 1].Cells[0];
+            viewGrid.CurrentCell = viewGrid.Rows[count - 1].Cells[0];*/
         }
 
 
@@ -95,14 +99,12 @@ namespace _210611_carFixMgr.ui
         private void ReceiptView_Load(object sender, EventArgs e)
         {
             CommUtill.colorListViewHeader(ref viewList, Color.Gray, Color.White);
-            List<ReceiptVO> listReceiptVO = adapter.getReceiptDb();
-            initList(listReceiptVO);
+            receiptList = adapter.getReceiptDbVO();
+            initList(receiptList);
         }
 
         private void viewList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            viewGrid.ClearRows();
-
             if (viewList.SelectedItems.Count != 0)
             {
                 int n = viewList.SelectedItems[0].Index;
@@ -110,14 +112,17 @@ namespace _210611_carFixMgr.ui
                 string date = viewList.Items[n].SubItems[1].Text;
                 string price = viewList.Items[n].SubItems[2].Text;
                 string staff = viewList.Items[n].SubItems[3].Text;
-                string cust = viewList.Items[n].SubItems[4].Text;
+                string carNum = viewList.Items[n].SubItems[4].Text;
+                string cust = viewList.Items[n].SubItems[5].Text;
                 //Console.WriteLine("번호: " + num);
                 //Console.WriteLine("접수날짜: " + date);
                 //Console.WriteLine("총결제금액: " + price);
                 //Console.WriteLine("담당자: " + staff);
                 //Console.WriteLine("고객명: " + cust);
+                int receiptId = receiptList[n].ReceiptId;
 
-                List<RepairItem> list = adapter.GetRepairItemsDb(cust);
+                List<RepairItem> list = adapter.GetRepairItemsDb(receiptId);
+                viewGrid.ClearRows();
                 initGrid(list);
 
                 //for (int i = 0; i < list.Count; i++)
@@ -128,7 +133,37 @@ namespace _210611_carFixMgr.ui
 
             }
         }
+        public void searchList()
+        {   
+            string select = viewSelect.Text;
+            string input = viewInput.Text;
+            receiptList = adapter.getReceiptDbVO(select, input);
+            initList(receiptList);
+        }
 
-        
+        private void viewSearch_Click(object sender, EventArgs e)
+        {
+            if (viewSelect.Text.Equals("검색항목 선택"))
+            {
+                MessageBox.Show("검색항목을 선택해주세요.", "입력");
+                return;
+            }
+            else
+            {
+                viewList.Items.Clear();
+                searchList();
+            }
+        }
+
+        private void viewSearchAll_Click(object sender, EventArgs e)
+        {
+            viewList.Items.Clear();
+            receiptList = adapter.getReceiptDbVO();
+            initList(receiptList);
+            viewSelect.SelectedIndex = -1;
+            viewSelect.Text = "검색항목 선택";
+            viewInput.Text = "";
+            
+        }
     }
 }
