@@ -30,10 +30,15 @@ namespace gymManagement.ui
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.exitLogin = new Sunny.UI.UISymbolButton();
+            this.loginBtn = new System.Windows.Forms.Button();
             this.loginForgotPw = new System.Windows.Forms.Button();
-            this.loginInput = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.loginPw = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -41,11 +46,6 @@ namespace gymManagement.ui
             this.loginId = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -66,8 +66,52 @@ namespace gymManagement.ui
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(394, 570);
+            this.panel1.Size = new System.Drawing.Size(400, 570);
             this.panel1.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(285, 520);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(84, 16);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "LOGIN ADMIN";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(284, 300);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 24);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Sysyem";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(160, 260);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(209, 24);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "GYM Management";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(205, 220);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(164, 24);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Welcom to the";
             // 
             // pictureBox1
             // 
@@ -81,17 +125,56 @@ namespace gymManagement.ui
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.uiSymbolButton1);
-            this.panel2.Controls.Add(this.loginInput);
+            this.panel2.Controls.Add(this.exitLogin);
+            this.panel2.Controls.Add(this.loginBtn);
             this.panel2.Controls.Add(this.loginForgotPw);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(394, 0);
+            this.panel2.Location = new System.Drawing.Point(400, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(506, 570);
+            this.panel2.Size = new System.Drawing.Size(500, 570);
             this.panel2.TabIndex = 1;
+            // 
+            // exitLogin
+            // 
+            this.exitLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exitLogin.FillColor = System.Drawing.SystemColors.Control;
+            this.exitLogin.FillHoverColor = System.Drawing.SystemColors.Control;
+            this.exitLogin.FillPressColor = System.Drawing.SystemColors.Control;
+            this.exitLogin.FillSelectedColor = System.Drawing.SystemColors.Control;
+            this.exitLogin.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.exitLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.exitLogin.ForeHoverColor = System.Drawing.SystemColors.ActiveCaption;
+            this.exitLogin.Location = new System.Drawing.Point(447, 3);
+            this.exitLogin.MinimumSize = new System.Drawing.Size(1, 1);
+            this.exitLogin.Name = "exitLogin";
+            this.exitLogin.RectColor = System.Drawing.SystemColors.Control;
+            this.exitLogin.RectDisableColor = System.Drawing.SystemColors.Control;
+            this.exitLogin.RectHoverColor = System.Drawing.SystemColors.Control;
+            this.exitLogin.RectPressColor = System.Drawing.SystemColors.Control;
+            this.exitLogin.RectSelectedColor = System.Drawing.SystemColors.Control;
+            this.exitLogin.Size = new System.Drawing.Size(50, 50);
+            this.exitLogin.Style = Sunny.UI.UIStyle.Custom;
+            this.exitLogin.Symbol = 61453;
+            this.exitLogin.TabIndex = 3;
+            this.exitLogin.Click += new System.EventHandler(this.exitLogin_Click);
+            // 
+            // loginBtn
+            // 
+            this.loginBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.loginBtn.FlatAppearance.BorderSize = 0;
+            this.loginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loginBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginBtn.ForeColor = System.Drawing.Color.White;
+            this.loginBtn.Location = new System.Drawing.Point(162, 339);
+            this.loginBtn.Name = "loginBtn";
+            this.loginBtn.Size = new System.Drawing.Size(177, 55);
+            this.loginBtn.TabIndex = 2;
+            this.loginBtn.Text = "LOGIN";
+            this.loginBtn.UseVisualStyleBackColor = false;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
             // loginForgotPw
             // 
@@ -100,26 +183,12 @@ namespace gymManagement.ui
             this.loginForgotPw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginForgotPw.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginForgotPw.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.loginForgotPw.Location = new System.Drawing.Point(184, 400);
+            this.loginForgotPw.Location = new System.Drawing.Point(162, 400);
             this.loginForgotPw.Name = "loginForgotPw";
             this.loginForgotPw.Size = new System.Drawing.Size(177, 38);
             this.loginForgotPw.TabIndex = 2;
             this.loginForgotPw.Text = "Forgot Password ?";
             this.loginForgotPw.UseVisualStyleBackColor = false;
-            // 
-            // loginInput
-            // 
-            this.loginInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.loginInput.FlatAppearance.BorderSize = 0;
-            this.loginInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loginInput.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginInput.ForeColor = System.Drawing.Color.White;
-            this.loginInput.Location = new System.Drawing.Point(184, 339);
-            this.loginInput.Name = "loginInput";
-            this.loginInput.Size = new System.Drawing.Size(177, 55);
-            this.loginInput.TabIndex = 2;
-            this.loginInput.Text = "LOGIN";
-            this.loginInput.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -128,7 +197,7 @@ namespace gymManagement.ui
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Location = new System.Drawing.Point(0, 267);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(506, 49);
+            this.panel4.Size = new System.Drawing.Size(500, 49);
             this.panel4.TabIndex = 1;
             // 
             // loginPw
@@ -138,7 +207,7 @@ namespace gymManagement.ui
             this.loginPw.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.loginPw.Location = new System.Drawing.Point(58, 13);
             this.loginPw.Name = "loginPw";
-            this.loginPw.Size = new System.Drawing.Size(445, 24);
+            this.loginPw.Size = new System.Drawing.Size(430, 24);
             this.loginPw.TabIndex = 3;
             this.loginPw.UseSystemPasswordChar = true;
             // 
@@ -159,7 +228,7 @@ namespace gymManagement.ui
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Location = new System.Drawing.Point(0, 202);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(506, 49);
+            this.panel3.Size = new System.Drawing.Size(500, 49);
             this.panel3.TabIndex = 1;
             // 
             // loginId
@@ -169,7 +238,7 @@ namespace gymManagement.ui
             this.loginId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.loginId.Location = new System.Drawing.Point(58, 13);
             this.loginId.Name = "loginId";
-            this.loginId.Size = new System.Drawing.Size(445, 24);
+            this.loginId.Size = new System.Drawing.Size(430, 24);
             this.loginId.TabIndex = 3;
             // 
             // pictureBox2
@@ -193,75 +262,7 @@ namespace gymManagement.ui
             this.label1.TabIndex = 0;
             this.label1.Text = "Login to your account";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(205, 220);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Welcom to the";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(160, 260);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(209, 24);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "GYM Management";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(284, 300);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 24);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Sysyem";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(285, 520);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 16);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "LOGIN ADMIN";
-            // 
-            // uiSymbolButton1
-            // 
-            this.uiSymbolButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiSymbolButton1.FillColor = System.Drawing.SystemColors.Control;
-            this.uiSymbolButton1.FillHoverColor = System.Drawing.SystemColors.Control;
-            this.uiSymbolButton1.FillPressColor = System.Drawing.SystemColors.Control;
-            this.uiSymbolButton1.FillSelectedColor = System.Drawing.SystemColors.Control;
-            this.uiSymbolButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.uiSymbolButton1.ForeHoverColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uiSymbolButton1.Location = new System.Drawing.Point(453, 3);
-            this.uiSymbolButton1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolButton1.Name = "uiSymbolButton1";
-            this.uiSymbolButton1.RectColor = System.Drawing.SystemColors.Control;
-            this.uiSymbolButton1.RectDisableColor = System.Drawing.SystemColors.Control;
-            this.uiSymbolButton1.RectHoverColor = System.Drawing.SystemColors.Control;
-            this.uiSymbolButton1.RectPressColor = System.Drawing.SystemColors.Control;
-            this.uiSymbolButton1.RectSelectedColor = System.Drawing.SystemColors.Control;
-            this.uiSymbolButton1.Size = new System.Drawing.Size(50, 50);
-            this.uiSymbolButton1.Style = Sunny.UI.UIStyle.Custom;
-            this.uiSymbolButton1.Symbol = 61453;
-            this.uiSymbolButton1.TabIndex = 3;
-            this.uiSymbolButton1.Click += new System.EventHandler(this.uiSymbolButton1_Click);
-            // 
-            // Login
+            // LoginMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -270,7 +271,8 @@ namespace gymManagement.ui
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Login";
+            this.Name = "LoginMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "LoginForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -298,13 +300,13 @@ namespace gymManagement.ui
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button loginForgotPw;
-        private System.Windows.Forms.Button loginInput;
+        private System.Windows.Forms.Button loginBtn;
         private System.Windows.Forms.TextBox loginPw;
         private System.Windows.Forms.TextBox loginId;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private Sunny.UI.UISymbolButton uiSymbolButton1;
+        private Sunny.UI.UISymbolButton exitLogin;
     }
 }

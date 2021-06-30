@@ -74,11 +74,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="common\Login.cs" />
+    <Compile Include="controller\LoginAdapter.cs" />
     <Compile Include="controller\OraController.cs" />
     <Compile Include="model\Admin.cs" />
     <Compile Include="model\Pt.cs" />
     <Compile Include="model\Locker.cs" />
     <Compile Include="model\Trainer.cs" />
+    <Compile Include="ui\AdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\AdminMenu.Designer.cs">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="ui\Enterance.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +129,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ui\AdminMenu.resx">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ui\LoginMenu.resx">
       <DependentUpon>LoginMenu.cs</DependentUpon>
     </EmbeddedResource>

@@ -15,10 +15,12 @@ namespace gymManagement
     public partial class MainMenu : MetroFramework.Forms.MetroForm
     {
         OraController orc;
+        LoginAdapter la;
         public MainMenu()
         {
             InitializeComponent();
             orc = new OraController();
+            la = new LoginAdapter(orc);
         }
 
         private void gymNewCus_Click(object sender, EventArgs e)
@@ -28,7 +30,7 @@ namespace gymManagement
 
         private void MainAdmin_Click(object sender, EventArgs e)
         {
-            new LoginMenu(orc).ShowDialog();
+            new LoginMenu(la).ShowDialog();
         }
     }
 }

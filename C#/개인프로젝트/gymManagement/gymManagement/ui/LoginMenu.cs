@@ -1,4 +1,5 @@
-﻿using gymManagement.controller;
+﻿using gymManagement.common;
+using gymManagement.controller;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,23 +12,43 @@ using System.Windows.Forms;
 
 namespace gymManagement.ui
 {
-    public partial class LoginMenu : Form
+    partial class LoginMenu : Form
     {
-        private OraController orc;
+        private LoginAdapter la;
+        Login login;
         public LoginMenu()
         {
             InitializeComponent();
-
         }
-
-        public LoginMenu(OraController orc)
+        public LoginMenu(LoginAdapter la)
         {
             InitializeComponent();
-            this.orc = orc;
-            orc.showDb();
+            this.la = la;
         }
-
-        private void uiSymbolButton1_Click(object sender, EventArgs e)
+        public void checkLogin(Login login)
+        {
+            try
+            {
+                string id = loginId.Text;
+                string pw = loginPw.Text;
+                if (login.Id.Equals(id) && login.Password.Equals(pw))
+                {
+                    Console.WriteLine("접속성공");
+                }
+            }
+            catch (NullReferenceException)
+            {
+                MessageBox.Show("아이디 또는 패스워드가 일치하지 않습니다.");
+            }
+        }
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+            string id = loginId.Text;
+            string pw = loginPw.Text;
+            login = la.getLoginVo(id, pw);
+            checkLogin(login);
+        }        
+        private void exitLogin_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
