@@ -80,6 +80,11 @@
     <Compile Include="model\Pt.cs" />
     <Compile Include="model\Locker.cs" />
     <Compile Include="model\Trainer.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ui\AdminMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,14 +126,9 @@
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="ui\AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,13 +156,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\setting.png" />
+    <None Include="resources\muscle.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\loginID.png" />
+    <None Include="resources\letter.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\loginPassword.png" />
+    <None Include="resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\admin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

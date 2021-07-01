@@ -115,7 +115,6 @@ namespace gymManagement.ui
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::gymManagement.Properties.Resources.setting;
             this.pictureBox1.Location = new System.Drawing.Point(120, 40);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 140);
@@ -213,7 +212,6 @@ namespace gymManagement.ui
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::gymManagement.Properties.Resources.loginPassword;
             this.pictureBox3.Location = new System.Drawing.Point(21, 10);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(31, 31);
@@ -243,7 +241,6 @@ namespace gymManagement.ui
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::gymManagement.Properties.Resources.loginID;
             this.pictureBox2.Location = new System.Drawing.Point(21, 9);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(31, 31);
