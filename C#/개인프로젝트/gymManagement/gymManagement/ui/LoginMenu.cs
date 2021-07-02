@@ -41,16 +41,17 @@ namespace gymManagement.ui
                 MessageBox.Show("아이디 또는 패스워드가 일치하지 않습니다.");
             }
         }
+        private void exitLogin_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
         private void loginBtn_Click(object sender, EventArgs e)
         {
             string id = loginId.Text;
             string pw = loginPw.Text;
             login = la.getLoginVo(id, pw);
             checkLogin(login);
-        }        
-        private void exitLogin_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }
