@@ -33,6 +33,7 @@ namespace gymManagement.ui
                 string pw = loginPw.Text;
                 if (login.Id.Equals(id) && login.Password.Equals(pw))
                 {
+                    new AdminMenu().ShowDialog();
                     Console.WriteLine("접속성공");
                 }
             }

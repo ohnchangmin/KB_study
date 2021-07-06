@@ -40,3 +40,4 @@ C:\Users\KB\Downloads\KB_study\C#\개인프로젝트\gymManagement\gymManagement
 C:\Users\KB\Downloads\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.csproj.CopyComplete
 C:\Users\KB\Downloads\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.exe
 C:\Users\KB\Downloads\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.pdb
+C:\Users\KB\Downloads\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.ui.TrainerMgr.resources

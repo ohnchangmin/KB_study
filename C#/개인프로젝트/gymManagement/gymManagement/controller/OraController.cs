@@ -59,7 +59,7 @@ namespace gymManagement.controller
                 conn.Close();
                 Console.WriteLine("오라클 접속 해제!");
             }
-            catch (OracleException e)
+            catch (OracleException)
             {
                 Console.WriteLine("오라클 접속 해제 에러!");
             }
@@ -123,8 +123,9 @@ namespace gymManagement.controller
                 errMsg(e);
             }
         }
-        public void getTrainerDb()
+        public List<Trainer> getTrainerDb()
         {
+            List<Trainer> listTrainer = new List<Trainer>();
             try
             {
                 string query = "SELECT * FROM TRAINER_T";
@@ -132,13 +133,10 @@ namespace gymManagement.controller
                 cmd.CommandText = query;
                 cmd.CommandType = System.Data.CommandType.Text;
                 OracleDataReader dr = cmd.ExecuteReader();
-                List<Trainer> listTrainer = new List<Trainer>();
-
                 if (dr.HasRows)
                 {
                     while (dr.Read())
                     {
-                        Console.WriteLine("ID: " + dr["T_ID"]);
                         Console.WriteLine("트레이너 이름: " + dr["T_NAME"]);
                         Console.WriteLine("트레이너 주민등록번호: " + dr["T_RRN"]);
                         Console.WriteLine("트레이너 연락처: " + dr["T_TEL"]);
@@ -147,7 +145,8 @@ namespace gymManagement.controller
                         Console.WriteLine("직급: " + dr["T_RANK"]);
                         Console.WriteLine("급여: " + dr["T_SALARY"]);
                         Console.WriteLine("============================================");
-                        List<Trainer> listTrainerVo = new List<Trainer>(dr["T_NAME"].ToString(), dr["T_RRN"].ToString(), dr["T_TEL"].ToString(), dr["T_ADDRESS"].ToString(), dr["T_JOB_TYPE"].ToString(), dr["T_RANK"].ToString(), dr["T_SALARY"].ToString());
+                        Trainer trainerVo = new Trainer(dr["T_NAME"].ToString(), dr["T_RRN"].ToString(), dr["T_TEL"].ToString(), dr["T_ADDRESS"].ToString(), dr["T_JOB_TYPE"].ToString(), dr["T_RANK"].ToString(), dr["T_SALARY"].ToString());
+                        listTrainer.Add(trainerVo);
                     }
                 }
                 else
@@ -155,11 +154,13 @@ namespace gymManagement.controller
                     Console.WriteLine("데이터가 존재하지 않습니다");
                     Console.WriteLine("=============================");
                 }
+                
             }
             catch(OracleException e)
             {
                 errMsg(e);
             }
+            return listTrainer;
         }
     }
 }

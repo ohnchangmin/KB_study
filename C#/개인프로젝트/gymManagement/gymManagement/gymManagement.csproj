@@ -74,6 +74,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="common\Login.cs" />
+    <Compile Include="common\ThemeColor.cs" />
+    <Compile Include="controller\Adapter.cs" />
     <Compile Include="controller\LoginAdapter.cs" />
     <Compile Include="controller\OraController.cs" />
     <Compile Include="model\Admin.cs" />
@@ -187,6 +189,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\user512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\슬라이드1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\onGym.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

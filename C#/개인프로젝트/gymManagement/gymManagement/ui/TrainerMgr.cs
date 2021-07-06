@@ -1,4 +1,5 @@
-﻿using System;
+﻿using gymManagement.controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,16 @@ namespace gymManagement.ui
 {
     public partial class TrainerMgr : Form
     {
+        OraController orc = new OraController();
+        Adapter ad = new Adapter(orc);
         public TrainerMgr()
         {
             InitializeComponent();
+        }
+
+        private void TrainerMgr_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
