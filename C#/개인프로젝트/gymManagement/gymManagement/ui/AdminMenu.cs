@@ -1,4 +1,5 @@
 ﻿using gymManagement.common;
+using gymManagement.controller;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,17 +12,19 @@ using System.Windows.Forms;
 
 namespace gymManagement.ui
 {
-    public partial class AdminMenu : Form
+    partial class AdminMenu : Form
     {
         private Button currentButton;
         private Random random;
         private int tempIndex;
         private Form activeForm;
+        private Adapter ad;
         //private Form activeForm;
 
-        public AdminMenu()
+        public AdminMenu(Adapter ad)
         {
             InitializeComponent();
+            this.ad = ad;
             random = new Random();
         }       
         private Color SelectThemeColor()
@@ -90,7 +93,7 @@ namespace gymManagement.ui
         private void setTrainer_Click(object sender, EventArgs e)
         {            
             adminTitle.Text = "트레이너 관리";
-            OpenChildForm(new ui.TrainerMgr(), sender);       
+            OpenChildForm(new ui.TrainerMgr(ad), sender);       
         }
 
         private void setPrice_Click(object sender, EventArgs e)
@@ -101,6 +104,11 @@ namespace gymManagement.ui
         private void setAccount_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+        }
+
+        private void closeAdminMenu_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

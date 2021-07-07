@@ -15,15 +15,18 @@ namespace gymManagement.ui
     partial class LoginMenu : Form
     {
         private LoginAdapter la;
+        private Adapter ad;
         Login login;
         public LoginMenu()
         {
             InitializeComponent();
         }
-        public LoginMenu(LoginAdapter la)
+        public LoginMenu(LoginAdapter la, Adapter ad)
         {
             InitializeComponent();
             this.la = la;
+            this.ad = ad;
+            this.ActiveControl = loginId;
         }
         public void checkLogin(Login login)
         {
@@ -33,7 +36,8 @@ namespace gymManagement.ui
                 string pw = loginPw.Text;
                 if (login.Id.Equals(id) && login.Password.Equals(pw))
                 {
-                    new AdminMenu().ShowDialog();
+                    new AdminMenu(ad).ShowDialog();
+                    Close();
                     Console.WriteLine("접속성공");
                 }
             }

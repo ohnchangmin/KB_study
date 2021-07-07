@@ -33,12 +33,13 @@ namespace gymManagement.ui
             this.adminLogoSpace = new System.Windows.Forms.Panel();
             this.adminTitleBar = new System.Windows.Forms.Panel();
             this.adminTitle = new System.Windows.Forms.Label();
+            this.panelDesktopPane = new System.Windows.Forms.Panel();
+            this.closeAdminMenu = new System.Windows.Forms.Button();
             this.setAccount = new System.Windows.Forms.Button();
             this.setPrice = new System.Windows.Forms.Button();
             this.setTrainer = new System.Windows.Forms.Button();
             this.sendMessage = new System.Windows.Forms.Button();
             this.adminLogo = new System.Windows.Forms.PictureBox();
-            this.panelDesktopPane = new System.Windows.Forms.Panel();
             this.adminSideMenu.SuspendLayout();
             this.adminLogoSpace.SuspendLayout();
             this.adminTitleBar.SuspendLayout();
@@ -48,6 +49,7 @@ namespace gymManagement.ui
             // adminSideMenu
             // 
             this.adminSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.adminSideMenu.Controls.Add(this.closeAdminMenu);
             this.adminSideMenu.Controls.Add(this.setAccount);
             this.adminSideMenu.Controls.Add(this.setPrice);
             this.adminSideMenu.Controls.Add(this.setTrainer);
@@ -90,6 +92,32 @@ namespace gymManagement.ui
             this.adminTitle.Size = new System.Drawing.Size(74, 25);
             this.adminTitle.TabIndex = 0;
             this.adminTitle.Text = "HOME";
+            // 
+            // panelDesktopPane
+            // 
+            this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktopPane.Location = new System.Drawing.Point(190, 95);
+            this.panelDesktopPane.Name = "panelDesktopPane";
+            this.panelDesktopPane.Size = new System.Drawing.Size(974, 475);
+            this.panelDesktopPane.TabIndex = 2;
+            // 
+            // closeAdminMenu
+            // 
+            this.closeAdminMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.closeAdminMenu.FlatAppearance.BorderSize = 0;
+            this.closeAdminMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeAdminMenu.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeAdminMenu.ForeColor = System.Drawing.Color.Gainsboro;
+            this.closeAdminMenu.Image = global::gymManagement.Properties.Resources.exit1;
+            this.closeAdminMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.closeAdminMenu.Location = new System.Drawing.Point(0, 375);
+            this.closeAdminMenu.Name = "closeAdminMenu";
+            this.closeAdminMenu.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.closeAdminMenu.Size = new System.Drawing.Size(190, 70);
+            this.closeAdminMenu.TabIndex = 5;
+            this.closeAdminMenu.Text = "나가기";
+            this.closeAdminMenu.UseVisualStyleBackColor = true;
+            this.closeAdminMenu.Click += new System.EventHandler(this.closeAdminMenu_Click);
             // 
             // setAccount
             // 
@@ -173,14 +201,6 @@ namespace gymManagement.ui
             this.adminLogo.TabIndex = 0;
             this.adminLogo.TabStop = false;
             // 
-            // panelDesktopPane
-            // 
-            this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktopPane.Location = new System.Drawing.Point(190, 95);
-            this.panelDesktopPane.Name = "panelDesktopPane";
-            this.panelDesktopPane.Size = new System.Drawing.Size(974, 475);
-            this.panelDesktopPane.TabIndex = 2;
-            // 
             // AdminMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -217,5 +237,6 @@ namespace gymManagement.ui
         private System.Windows.Forms.Label adminTitle;
         private System.Windows.Forms.PictureBox adminLogo;
         private System.Windows.Forms.Panel panelDesktopPane;
+        private System.Windows.Forms.Button closeAdminMenu;
     }
 }

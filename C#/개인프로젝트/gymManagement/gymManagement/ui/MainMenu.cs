@@ -16,11 +16,13 @@ namespace gymManagement
     {
         OraController orc;
         LoginAdapter la;
+        Adapter ad;
         public MainMenu()
         {
             InitializeComponent();
             orc = new OraController();
             la = new LoginAdapter(orc);
+            ad = new Adapter(orc);
         }
 
         private void gymNewCus_Click(object sender, EventArgs e)
@@ -30,7 +32,7 @@ namespace gymManagement
 
         private void MainAdmin_Click(object sender, EventArgs e)
         {
-            new LoginMenu(la).ShowDialog();
+            new LoginMenu(la, ad).ShowDialog();
         }
     }
 }
