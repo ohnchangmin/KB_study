@@ -30,20 +30,20 @@ namespace gymManagement.ui
         private void InitializeComponent()
         {
             this.adminSideMenu = new System.Windows.Forms.Panel();
-            this.adminLogoSpace = new System.Windows.Forms.Panel();
-            this.adminTitleBar = new System.Windows.Forms.Panel();
-            this.adminTitle = new System.Windows.Forms.Label();
-            this.panelDesktopPane = new System.Windows.Forms.Panel();
             this.closeAdminMenu = new System.Windows.Forms.Button();
             this.setAccount = new System.Windows.Forms.Button();
             this.setPrice = new System.Windows.Forms.Button();
             this.setTrainer = new System.Windows.Forms.Button();
             this.sendMessage = new System.Windows.Forms.Button();
+            this.adminLogoSpace = new System.Windows.Forms.Panel();
             this.adminLogo = new System.Windows.Forms.PictureBox();
+            this.adminTitleBar = new System.Windows.Forms.Panel();
+            this.adminTitle = new System.Windows.Forms.Label();
+            this.panelDesktopPane = new System.Windows.Forms.Panel();
             this.adminSideMenu.SuspendLayout();
             this.adminLogoSpace.SuspendLayout();
-            this.adminTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.adminLogo)).BeginInit();
+            this.adminTitleBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // adminSideMenu
@@ -60,46 +60,6 @@ namespace gymManagement.ui
             this.adminSideMenu.Name = "adminSideMenu";
             this.adminSideMenu.Size = new System.Drawing.Size(190, 570);
             this.adminSideMenu.TabIndex = 0;
-            // 
-            // adminLogoSpace
-            // 
-            this.adminLogoSpace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.adminLogoSpace.Controls.Add(this.adminLogo);
-            this.adminLogoSpace.Dock = System.Windows.Forms.DockStyle.Top;
-            this.adminLogoSpace.Location = new System.Drawing.Point(0, 0);
-            this.adminLogoSpace.Name = "adminLogoSpace";
-            this.adminLogoSpace.Size = new System.Drawing.Size(190, 95);
-            this.adminLogoSpace.TabIndex = 0;
-            // 
-            // adminTitleBar
-            // 
-            this.adminTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.adminTitleBar.Controls.Add(this.adminTitle);
-            this.adminTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.adminTitleBar.Location = new System.Drawing.Point(190, 0);
-            this.adminTitleBar.Name = "adminTitleBar";
-            this.adminTitleBar.Size = new System.Drawing.Size(974, 95);
-            this.adminTitleBar.TabIndex = 1;
-            // 
-            // adminTitle
-            // 
-            this.adminTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.adminTitle.AutoSize = true;
-            this.adminTitle.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminTitle.ForeColor = System.Drawing.Color.White;
-            this.adminTitle.Location = new System.Drawing.Point(451, 36);
-            this.adminTitle.Name = "adminTitle";
-            this.adminTitle.Size = new System.Drawing.Size(74, 25);
-            this.adminTitle.TabIndex = 0;
-            this.adminTitle.Text = "HOME";
-            // 
-            // panelDesktopPane
-            // 
-            this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktopPane.Location = new System.Drawing.Point(190, 95);
-            this.panelDesktopPane.Name = "panelDesktopPane";
-            this.panelDesktopPane.Size = new System.Drawing.Size(974, 475);
-            this.panelDesktopPane.TabIndex = 2;
             // 
             // closeAdminMenu
             // 
@@ -191,6 +151,16 @@ namespace gymManagement.ui
             this.sendMessage.UseVisualStyleBackColor = true;
             this.sendMessage.Click += new System.EventHandler(this.sendMessage_Click);
             // 
+            // adminLogoSpace
+            // 
+            this.adminLogoSpace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.adminLogoSpace.Controls.Add(this.adminLogo);
+            this.adminLogoSpace.Dock = System.Windows.Forms.DockStyle.Top;
+            this.adminLogoSpace.Location = new System.Drawing.Point(0, 0);
+            this.adminLogoSpace.Name = "adminLogoSpace";
+            this.adminLogoSpace.Size = new System.Drawing.Size(190, 95);
+            this.adminLogoSpace.TabIndex = 0;
+            // 
             // adminLogo
             // 
             this.adminLogo.Image = global::gymManagement.Properties.Resources.onGym;
@@ -200,6 +170,37 @@ namespace gymManagement.ui
             this.adminLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.adminLogo.TabIndex = 0;
             this.adminLogo.TabStop = false;
+            // 
+            // adminTitleBar
+            // 
+            this.adminTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.adminTitleBar.Controls.Add(this.adminTitle);
+            this.adminTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.adminTitleBar.Location = new System.Drawing.Point(190, 0);
+            this.adminTitleBar.Name = "adminTitleBar";
+            this.adminTitleBar.Size = new System.Drawing.Size(974, 95);
+            this.adminTitleBar.TabIndex = 1;
+            // 
+            // adminTitle
+            // 
+            this.adminTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.adminTitle.AutoSize = true;
+            this.adminTitle.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminTitle.ForeColor = System.Drawing.Color.White;
+            this.adminTitle.Location = new System.Drawing.Point(451, 36);
+            this.adminTitle.Name = "adminTitle";
+            this.adminTitle.Size = new System.Drawing.Size(74, 25);
+            this.adminTitle.TabIndex = 0;
+            this.adminTitle.Text = "HOME";
+            this.adminTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panelDesktopPane
+            // 
+            this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktopPane.Location = new System.Drawing.Point(190, 95);
+            this.panelDesktopPane.Name = "panelDesktopPane";
+            this.panelDesktopPane.Size = new System.Drawing.Size(974, 475);
+            this.panelDesktopPane.TabIndex = 2;
             // 
             // AdminMenu
             // 
@@ -218,9 +219,9 @@ namespace gymManagement.ui
             this.Text = "ADMINMENU";
             this.adminSideMenu.ResumeLayout(false);
             this.adminLogoSpace.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.adminLogo)).EndInit();
             this.adminTitleBar.ResumeLayout(false);
             this.adminTitleBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.adminLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

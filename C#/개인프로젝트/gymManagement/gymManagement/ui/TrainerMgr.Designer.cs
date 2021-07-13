@@ -30,12 +30,12 @@ namespace gymManagement.ui
         private void InitializeComponent()
         {
             this.trainerName = new System.Windows.Forms.TextBox();
-            this.trainerRrnF = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.trainerRrn1 = new System.Windows.Forms.TextBox();
+            this.trainerTel1 = new System.Windows.Forms.TextBox();
+            this.trainerAdress = new System.Windows.Forms.TextBox();
+            this.trainerJobType = new System.Windows.Forms.TextBox();
+            this.trainerRank = new System.Windows.Forms.TextBox();
+            this.trainerSalary = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,16 +43,16 @@ namespace gymManagement.ui
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.trainerRrnB = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.trainerRrn2 = new System.Windows.Forms.TextBox();
+            this.trainerTel2 = new System.Windows.Forms.TextBox();
+            this.trainerTel3 = new System.Windows.Forms.TextBox();
             this.trainerInsert = new System.Windows.Forms.Button();
-            this.trainerModify = new System.Windows.Forms.Button();
+            this.trainerUpdate = new System.Windows.Forms.Button();
             this.trainerDelete = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.trainerSave = new System.Windows.Forms.Button();
             this.viewTrainer = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -70,47 +70,47 @@ namespace gymManagement.ui
             this.trainerName.Size = new System.Drawing.Size(100, 21);
             this.trainerName.TabIndex = 0;
             // 
-            // trainerRrnF
+            // trainerRrn1
             // 
-            this.trainerRrnF.Location = new System.Drawing.Point(366, 250);
-            this.trainerRrnF.Name = "trainerRrnF";
-            this.trainerRrnF.Size = new System.Drawing.Size(83, 21);
-            this.trainerRrnF.TabIndex = 0;
+            this.trainerRrn1.Location = new System.Drawing.Point(366, 250);
+            this.trainerRrn1.Name = "trainerRrn1";
+            this.trainerRrn1.Size = new System.Drawing.Size(83, 21);
+            this.trainerRrn1.TabIndex = 0;
             // 
-            // textBox3
+            // trainerTel1
             // 
-            this.textBox3.Location = new System.Drawing.Point(366, 220);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(49, 21);
-            this.textBox3.TabIndex = 0;
+            this.trainerTel1.Location = new System.Drawing.Point(366, 220);
+            this.trainerTel1.Name = "trainerTel1";
+            this.trainerTel1.Size = new System.Drawing.Size(49, 21);
+            this.trainerTel1.TabIndex = 0;
             // 
-            // textBox4
+            // trainerAdress
             // 
-            this.textBox4.Location = new System.Drawing.Point(153, 250);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 21);
-            this.textBox4.TabIndex = 0;
+            this.trainerAdress.Location = new System.Drawing.Point(153, 250);
+            this.trainerAdress.Name = "trainerAdress";
+            this.trainerAdress.Size = new System.Drawing.Size(100, 21);
+            this.trainerAdress.TabIndex = 0;
             // 
-            // textBox5
+            // trainerJobType
             // 
-            this.textBox5.Location = new System.Drawing.Point(153, 347);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 21);
-            this.textBox5.TabIndex = 0;
+            this.trainerJobType.Location = new System.Drawing.Point(153, 347);
+            this.trainerJobType.Name = "trainerJobType";
+            this.trainerJobType.Size = new System.Drawing.Size(100, 21);
+            this.trainerJobType.TabIndex = 0;
             // 
-            // textBox6
+            // trainerRank
             // 
-            this.textBox6.Location = new System.Drawing.Point(153, 282);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 21);
-            this.textBox6.TabIndex = 0;
+            this.trainerRank.Location = new System.Drawing.Point(153, 282);
+            this.trainerRank.Name = "trainerRank";
+            this.trainerRank.Size = new System.Drawing.Size(100, 21);
+            this.trainerRank.TabIndex = 0;
             // 
-            // textBox7
+            // trainerSalary
             // 
-            this.textBox7.Location = new System.Drawing.Point(153, 314);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 21);
-            this.textBox7.TabIndex = 0;
+            this.trainerSalary.Location = new System.Drawing.Point(153, 314);
+            this.trainerSalary.Name = "trainerSalary";
+            this.trainerSalary.Size = new System.Drawing.Size(100, 21);
+            this.trainerSalary.TabIndex = 0;
             // 
             // label1
             // 
@@ -175,26 +175,26 @@ namespace gymManagement.ui
             this.label7.TabIndex = 1;
             this.label7.Text = "급여";
             // 
-            // trainerRrnB
+            // trainerRrn2
             // 
-            this.trainerRrnB.Location = new System.Drawing.Point(472, 250);
-            this.trainerRrnB.Name = "trainerRrnB";
-            this.trainerRrnB.Size = new System.Drawing.Size(84, 21);
-            this.trainerRrnB.TabIndex = 0;
+            this.trainerRrn2.Location = new System.Drawing.Point(472, 250);
+            this.trainerRrn2.Name = "trainerRrn2";
+            this.trainerRrn2.Size = new System.Drawing.Size(84, 21);
+            this.trainerRrn2.TabIndex = 0;
             // 
-            // textBox9
+            // trainerTel2
             // 
-            this.textBox9.Location = new System.Drawing.Point(437, 220);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(49, 21);
-            this.textBox9.TabIndex = 0;
+            this.trainerTel2.Location = new System.Drawing.Point(437, 220);
+            this.trainerTel2.Name = "trainerTel2";
+            this.trainerTel2.Size = new System.Drawing.Size(49, 21);
+            this.trainerTel2.TabIndex = 0;
             // 
-            // textBox10
+            // trainerTel3
             // 
-            this.textBox10.Location = new System.Drawing.Point(507, 221);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(49, 21);
-            this.textBox10.TabIndex = 0;
+            this.trainerTel3.Location = new System.Drawing.Point(507, 221);
+            this.trainerTel3.Name = "trainerTel3";
+            this.trainerTel3.Size = new System.Drawing.Size(49, 21);
+            this.trainerTel3.TabIndex = 0;
             // 
             // trainerInsert
             // 
@@ -204,15 +204,16 @@ namespace gymManagement.ui
             this.trainerInsert.TabIndex = 3;
             this.trainerInsert.Text = "추가";
             this.trainerInsert.UseVisualStyleBackColor = true;
+            this.trainerInsert.Click += new System.EventHandler(this.trainerInsert_Click);
             // 
-            // trainerModify
+            // trainerUpdate
             // 
-            this.trainerModify.Location = new System.Drawing.Point(420, 296);
-            this.trainerModify.Name = "trainerModify";
-            this.trainerModify.Size = new System.Drawing.Size(65, 72);
-            this.trainerModify.TabIndex = 3;
-            this.trainerModify.Text = "수정";
-            this.trainerModify.UseVisualStyleBackColor = true;
+            this.trainerUpdate.Location = new System.Drawing.Point(420, 296);
+            this.trainerUpdate.Name = "trainerUpdate";
+            this.trainerUpdate.Size = new System.Drawing.Size(65, 72);
+            this.trainerUpdate.TabIndex = 3;
+            this.trainerUpdate.Text = "수정";
+            this.trainerUpdate.UseVisualStyleBackColor = true;
             // 
             // trainerDelete
             // 
@@ -250,14 +251,14 @@ namespace gymManagement.ui
             this.label10.TabIndex = 6;
             this.label10.Text = "-";
             // 
-            // button1
+            // trainerSave
             // 
-            this.button1.Location = new System.Drawing.Point(746, 216);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 55);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "조회";
-            this.button1.UseVisualStyleBackColor = true;
+            this.trainerSave.Location = new System.Drawing.Point(746, 352);
+            this.trainerSave.Name = "trainerSave";
+            this.trainerSave.Size = new System.Drawing.Size(148, 55);
+            this.trainerSave.TabIndex = 7;
+            this.trainerSave.Text = "저장";
+            this.trainerSave.UseVisualStyleBackColor = true;
             // 
             // viewTrainer
             // 
@@ -319,12 +320,12 @@ namespace gymManagement.ui
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(958, 436);
             this.Controls.Add(this.viewTrainer);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.trainerSave);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.trainerDelete);
-            this.Controls.Add(this.trainerModify);
+            this.Controls.Add(this.trainerUpdate);
             this.Controls.Add(this.trainerInsert);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -333,15 +334,15 @@ namespace gymManagement.ui
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.trainerRrnB);
-            this.Controls.Add(this.trainerRrnF);
+            this.Controls.Add(this.trainerSalary);
+            this.Controls.Add(this.trainerRank);
+            this.Controls.Add(this.trainerJobType);
+            this.Controls.Add(this.trainerAdress);
+            this.Controls.Add(this.trainerTel3);
+            this.Controls.Add(this.trainerTel2);
+            this.Controls.Add(this.trainerTel1);
+            this.Controls.Add(this.trainerRrn2);
+            this.Controls.Add(this.trainerRrn1);
             this.Controls.Add(this.trainerName);
             this.Name = "TrainerMgr";
             this.Text = "TrainerMgr";
@@ -354,12 +355,12 @@ namespace gymManagement.ui
         #endregion
 
         private System.Windows.Forms.TextBox trainerName;
-        private System.Windows.Forms.TextBox trainerRrnF;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox trainerRrn1;
+        private System.Windows.Forms.TextBox trainerTel1;
+        private System.Windows.Forms.TextBox trainerAdress;
+        private System.Windows.Forms.TextBox trainerJobType;
+        private System.Windows.Forms.TextBox trainerRank;
+        private System.Windows.Forms.TextBox trainerSalary;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -367,16 +368,16 @@ namespace gymManagement.ui
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox trainerRrnB;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox trainerRrn2;
+        private System.Windows.Forms.TextBox trainerTel2;
+        private System.Windows.Forms.TextBox trainerTel3;
         private System.Windows.Forms.Button trainerInsert;
-        private System.Windows.Forms.Button trainerModify;
+        private System.Windows.Forms.Button trainerUpdate;
         private System.Windows.Forms.Button trainerDelete;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button trainerSave;
         private System.Windows.Forms.ListView viewTrainer;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
