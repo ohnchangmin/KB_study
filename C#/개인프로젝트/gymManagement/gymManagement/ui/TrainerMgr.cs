@@ -38,7 +38,7 @@ namespace gymManagement.ui
             string name = trainerName.Text;
             string rrn = trainerRrn1.Text + '-' + trainerRrn2.Text;
             string tel = trainerTel1.Text + '-' + trainerTel2.Text + '-' + trainerTel3.Text;
-            string address = trainerAdress.Text;
+            string address = trainerAddress.Text;
             string jobType = trainerJobType.Text;
             string rank = trainerRank.Text;
             string salary = trainerSalary.Text;
@@ -51,6 +51,13 @@ namespace gymManagement.ui
         private void trainerInsert_Click(object sender, EventArgs e)
         {
             showList(insertTrainer());
+            trainerName.Clear();
+            trainerRrn1.Clear();
+            trainerRrn2.Clear();
+            trainerTel1.Clear();
+            trainerTel2.Clear();
+            trainerTel3.Clear();
+            trainerAddress.Clear();
         }
     }
 }

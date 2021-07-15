@@ -32,7 +32,7 @@ namespace gymManagement.ui
             this.trainerName = new System.Windows.Forms.TextBox();
             this.trainerRrn1 = new System.Windows.Forms.TextBox();
             this.trainerTel1 = new System.Windows.Forms.TextBox();
-            this.trainerAdress = new System.Windows.Forms.TextBox();
+            this.trainerAddress = new System.Windows.Forms.TextBox();
             this.trainerJobType = new System.Windows.Forms.TextBox();
             this.trainerRank = new System.Windows.Forms.TextBox();
             this.trainerSalary = new System.Windows.Forms.TextBox();
@@ -84,12 +84,12 @@ namespace gymManagement.ui
             this.trainerTel1.Size = new System.Drawing.Size(49, 21);
             this.trainerTel1.TabIndex = 0;
             // 
-            // trainerAdress
+            // trainerAddress
             // 
-            this.trainerAdress.Location = new System.Drawing.Point(153, 250);
-            this.trainerAdress.Name = "trainerAdress";
-            this.trainerAdress.Size = new System.Drawing.Size(100, 21);
-            this.trainerAdress.TabIndex = 0;
+            this.trainerAddress.Location = new System.Drawing.Point(153, 250);
+            this.trainerAddress.Name = "trainerAddress";
+            this.trainerAddress.Size = new System.Drawing.Size(100, 21);
+            this.trainerAddress.TabIndex = 0;
             // 
             // trainerJobType
             // 
@@ -337,7 +337,7 @@ namespace gymManagement.ui
             this.Controls.Add(this.trainerSalary);
             this.Controls.Add(this.trainerRank);
             this.Controls.Add(this.trainerJobType);
-            this.Controls.Add(this.trainerAdress);
+            this.Controls.Add(this.trainerAddress);
             this.Controls.Add(this.trainerTel3);
             this.Controls.Add(this.trainerTel2);
             this.Controls.Add(this.trainerTel1);
@@ -357,7 +357,7 @@ namespace gymManagement.ui
         private System.Windows.Forms.TextBox trainerName;
         private System.Windows.Forms.TextBox trainerRrn1;
         private System.Windows.Forms.TextBox trainerTel1;
-        private System.Windows.Forms.TextBox trainerAdress;
+        private System.Windows.Forms.TextBox trainerAddress;
         private System.Windows.Forms.TextBox trainerJobType;
         private System.Windows.Forms.TextBox trainerRank;
         private System.Windows.Forms.TextBox trainerSalary;
