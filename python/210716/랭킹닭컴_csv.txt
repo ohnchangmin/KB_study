@@ -1,0 +1,26 @@
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+url = 'https://rankingdak.com/content/content.php?cont=weekly'
+req = requests.get(url)
+html = req.content.decode('utf-8', 'replace')
+soup = BeautifulSoup(html, 'html.parser')
+title = soup.select('p.prd_name')
+price = soup.select('strong.price')
+#title = soup.select('#prd_basic > li:nth-child(1) > div > div.info2 > table > tbody > tr > td.item_np > p.prd_name')
+
+title_list=[]
+price_list=[]
+#print(title)
+#print(price)
+
+for i in range(len(title)):
+    title_list.append(title[i].text)
+    price_list.append(price[i].text)
+
+print(title_list)
+print(price_list)
+
+result_file = pd.DataFrame({'메뉴':title_list, '가격':price_list})
+result_file.to_csv("C:\\Users\\KB\\Desktop\\pycharm\\pythonproject\\result_file.csv", index=False, encoding='euc-kr')
