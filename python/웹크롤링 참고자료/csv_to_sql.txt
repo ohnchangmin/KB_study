@@ -1,0 +1,18 @@
+import pandas as pd
+import pymysql
+from sqlalchemy import create_engine
+
+db = pymysql.connect(user = 'root', host = 'localhost', passwd = '1234', port = 3306, db = 'ng')
+cursor = db.cursor()
+
+f = open('C:\\Users\\KB\\Documents\\R\\result.csv')
+df = pd.read_csv(f)
+df.columns = ['newtitle', 'newscomname']
+engine = create_engine("mysql+pymysql://root:1234@localhost/ng")
+conn = engine.connect()
+df.to_sql(name = "aaa", con = engine)
+
+conn.close()
+
+sql = "select * from news limit 5"
+pd.read_sql(sql,db)
