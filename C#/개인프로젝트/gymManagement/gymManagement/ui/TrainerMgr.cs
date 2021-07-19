@@ -23,8 +23,6 @@ namespace gymManagement.ui
 
         private void TrainerMgr_Load(object sender, EventArgs e)
         {
-            TextBox[] arr = {trainerName, trainerRrn1, trainerRrn2, trainerTel1, trainerTel2, trainerTel3,
-                            trainerAddress, trainerJobType, trainerRank, trainerSalary};
             showList(ad.getTrainerVo());
         }
         private void showList(List<Trainer> list)
@@ -51,10 +49,24 @@ namespace gymManagement.ui
             return list;
         }
 
-        private void insertFormClear(TextBox[] arr)
+        private void textBoxCheck()
         {
-            /*TextBox[] arr = {trainerName, trainerRrn1, trainerRrn2, trainerTel1, trainerTel2, trainerTel3,
-                            trainerAddress, trainerJobType, trainerRank, trainerSalary};*/
+            TextBox[] arr = {trainerName, trainerRrn1, trainerRrn2, trainerTel1, trainerTel2, trainerTel3,
+                            trainerAddress, trainerJobType, trainerRank, trainerSalary};
+
+            for(int i = 0; i<arr.Length; i++)
+            {
+                if(arr[i].Equals(' ') || arr[i].Equals(null))
+                {
+
+                }
+            }
+        }
+
+        private void textBoxClear()
+        {
+            TextBox[] arr = {trainerName, trainerRrn1, trainerRrn2, trainerTel1, trainerTel2, trainerTel3,
+                            trainerAddress, trainerJobType, trainerRank, trainerSalary};
 
             for (int i = 0; i < arr.Length; i++)
             {
@@ -71,7 +83,7 @@ namespace gymManagement.ui
         private void trainerInsert_Click(object sender, EventArgs e)
         {
             showList(insertTrainer());
-            insertFormClear();
+            textBoxClear();
         }
     }
 }
