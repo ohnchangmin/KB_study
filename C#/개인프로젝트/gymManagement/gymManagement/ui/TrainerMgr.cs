@@ -44,23 +44,63 @@ namespace gymManagement.ui
             string salary = trainerSalary.Text;
 
             List<Trainer> list = new List<Trainer>();
-           
-            list.Add(new Trainer(name, rrn, tel, address, jobType, rank, salary));
-            return list;
-        }
 
-        private void textBoxCheck()
-        {
-            TextBox[] arr = {trainerName, trainerRrn1, trainerRrn2, trainerTel1, trainerTel2, trainerTel3,
-                            trainerAddress, trainerJobType, trainerRank, trainerSalary};
-
-            for(int i = 0; i<arr.Length; i++)
+            if (name.Equals("") || name.Equals(null))
             {
-                if(arr[i].Equals(' ') || arr[i].Equals(null))
-                {
-
-                }
+                Console.WriteLine("이름을 입력해주세요");
+                ActiveControl = trainerName;
             }
+            else if (trainerRrn1.Text.Equals("") || trainerRrn1.Text.Equals(null))
+            {
+                Console.WriteLine("주민등록번호 앞자리를 입력해주세요");
+                ActiveControl = trainerRrn1;
+            }
+            else if (trainerRrn2.Text.Equals("") || trainerRrn2.Text.Equals(null))
+            {
+                Console.WriteLine("주민등록번호 뒷자리를 입력해주세요");
+                ActiveControl = trainerRrn2;
+            }
+            else if (trainerTel1.Text.Equals("") || trainerTel1.Text.Equals(null))
+            {
+                Console.WriteLine("전화번호를 입력해주세요");
+                ActiveControl = trainerTel1;
+            }
+            else if (trainerTel2.Text.Equals("") || trainerTel2.Text.Equals(null))
+            {
+                Console.WriteLine("전화번호를 입력해주세요");
+                ActiveControl = trainerTel2;
+            }
+            else if (trainerTel3.Text.Equals("") || trainerTel3.Text.Equals(null))
+            {
+                Console.WriteLine("전화번호를 입력해주세요");
+                ActiveControl = trainerTel3;
+            }
+            else if (jobType.Equals("") || jobType.Equals(null))
+            {
+                Console.WriteLine("근로형태를 입력해주세요");
+                ActiveControl = trainerJobType;
+            }
+            else if (address.Equals("") || address.Equals(null))
+            {
+                Console.WriteLine("주소를 입력해주세요");
+                ActiveControl = trainerAddress;
+            }
+            else if (rank.Equals("") || rank.Equals(null))
+            {
+                Console.WriteLine("직급을 입력해주세요");
+                ActiveControl = trainerRank;
+            }
+            else if (salary.Equals("") || salary.Equals(null))
+            {
+                Console.WriteLine("급여를 입력해주세요");
+                ActiveControl = trainerSalary;
+            }
+            else
+            {
+                list.Add(new Trainer(name, rrn, tel, address, jobType, rank, salary));
+                textBoxClear();
+            }
+            return list;
         }
 
         private void textBoxClear()
@@ -74,16 +114,9 @@ namespace gymManagement.ui
             }
         }
 
-       /* private void initTextBox()
-        {
-            TextBox[] arr = {trainerName, trainerRrn1, trainerRrn2, trainerTel1, trainerTel2, trainerTel3,
-                            trainerAddress, trainerJobType, trainerRank, trainerSalary};
-        }*/
-
         private void trainerInsert_Click(object sender, EventArgs e)
         {
-            showList(insertTrainer());
-            textBoxClear();
+            showList(insertTrainer());            
         }
     }
 }

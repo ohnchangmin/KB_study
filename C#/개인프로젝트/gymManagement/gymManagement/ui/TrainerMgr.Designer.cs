@@ -65,57 +65,57 @@ namespace gymManagement.ui
             // 
             // trainerName
             // 
-            this.trainerName.Location = new System.Drawing.Point(153, 223);
+            this.trainerName.Location = new System.Drawing.Point(107, 217);
             this.trainerName.Name = "trainerName";
-            this.trainerName.Size = new System.Drawing.Size(100, 21);
+            this.trainerName.Size = new System.Drawing.Size(195, 21);
             this.trainerName.TabIndex = 0;
             // 
             // trainerRrn1
             // 
-            this.trainerRrn1.Location = new System.Drawing.Point(366, 250);
+            this.trainerRrn1.Location = new System.Drawing.Point(475, 215);
             this.trainerRrn1.Name = "trainerRrn1";
-            this.trainerRrn1.Size = new System.Drawing.Size(83, 21);
+            this.trainerRrn1.Size = new System.Drawing.Size(85, 21);
             this.trainerRrn1.TabIndex = 0;
             // 
             // trainerTel1
             // 
-            this.trainerTel1.Location = new System.Drawing.Point(366, 220);
+            this.trainerTel1.Location = new System.Drawing.Point(107, 247);
             this.trainerTel1.Name = "trainerTel1";
-            this.trainerTel1.Size = new System.Drawing.Size(49, 21);
+            this.trainerTel1.Size = new System.Drawing.Size(50, 21);
             this.trainerTel1.TabIndex = 0;
             // 
             // trainerAddress
             // 
-            this.trainerAddress.Location = new System.Drawing.Point(153, 250);
+            this.trainerAddress.Location = new System.Drawing.Point(107, 279);
             this.trainerAddress.Name = "trainerAddress";
-            this.trainerAddress.Size = new System.Drawing.Size(100, 21);
+            this.trainerAddress.Size = new System.Drawing.Size(195, 21);
             this.trainerAddress.TabIndex = 0;
             // 
             // trainerJobType
             // 
-            this.trainerJobType.Location = new System.Drawing.Point(153, 347);
+            this.trainerJobType.Location = new System.Drawing.Point(475, 248);
             this.trainerJobType.Name = "trainerJobType";
-            this.trainerJobType.Size = new System.Drawing.Size(100, 21);
+            this.trainerJobType.Size = new System.Drawing.Size(195, 21);
             this.trainerJobType.TabIndex = 0;
             // 
             // trainerRank
             // 
-            this.trainerRank.Location = new System.Drawing.Point(153, 282);
+            this.trainerRank.Location = new System.Drawing.Point(107, 311);
             this.trainerRank.Name = "trainerRank";
-            this.trainerRank.Size = new System.Drawing.Size(100, 21);
+            this.trainerRank.Size = new System.Drawing.Size(195, 21);
             this.trainerRank.TabIndex = 0;
             // 
             // trainerSalary
             // 
-            this.trainerSalary.Location = new System.Drawing.Point(153, 314);
+            this.trainerSalary.Location = new System.Drawing.Point(107, 341);
             this.trainerSalary.Name = "trainerSalary";
-            this.trainerSalary.Size = new System.Drawing.Size(100, 21);
+            this.trainerSalary.Size = new System.Drawing.Size(195, 21);
             this.trainerSalary.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(118, 226);
+            this.label1.Location = new System.Drawing.Point(48, 220);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 1;
@@ -124,7 +124,7 @@ namespace gymManagement.ui
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(283, 255);
+            this.label2.Location = new System.Drawing.Point(392, 220);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 12);
             this.label2.TabIndex = 1;
@@ -133,7 +133,7 @@ namespace gymManagement.ui
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(319, 226);
+            this.label3.Location = new System.Drawing.Point(48, 253);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 12);
             this.label3.TabIndex = 1;
@@ -142,7 +142,7 @@ namespace gymManagement.ui
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(118, 255);
+            this.label4.Location = new System.Drawing.Point(48, 282);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 12);
             this.label4.TabIndex = 1;
@@ -151,7 +151,7 @@ namespace gymManagement.ui
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(94, 352);
+            this.label5.Location = new System.Drawing.Point(392, 253);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 12);
             this.label5.TabIndex = 1;
@@ -160,7 +160,7 @@ namespace gymManagement.ui
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(118, 285);
+            this.label6.Location = new System.Drawing.Point(48, 317);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 12);
             this.label6.TabIndex = 1;
@@ -169,7 +169,7 @@ namespace gymManagement.ui
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(118, 317);
+            this.label7.Location = new System.Drawing.Point(48, 347);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(29, 12);
             this.label7.TabIndex = 1;
@@ -177,28 +177,28 @@ namespace gymManagement.ui
             // 
             // trainerRrn2
             // 
-            this.trainerRrn2.Location = new System.Drawing.Point(472, 250);
+            this.trainerRrn2.Location = new System.Drawing.Point(585, 215);
             this.trainerRrn2.Name = "trainerRrn2";
-            this.trainerRrn2.Size = new System.Drawing.Size(84, 21);
+            this.trainerRrn2.Size = new System.Drawing.Size(85, 21);
             this.trainerRrn2.TabIndex = 0;
             // 
             // trainerTel2
             // 
-            this.trainerTel2.Location = new System.Drawing.Point(437, 220);
+            this.trainerTel2.Location = new System.Drawing.Point(180, 247);
             this.trainerTel2.Name = "trainerTel2";
-            this.trainerTel2.Size = new System.Drawing.Size(49, 21);
+            this.trainerTel2.Size = new System.Drawing.Size(50, 21);
             this.trainerTel2.TabIndex = 0;
             // 
             // trainerTel3
             // 
-            this.trainerTel3.Location = new System.Drawing.Point(507, 221);
+            this.trainerTel3.Location = new System.Drawing.Point(252, 247);
             this.trainerTel3.Name = "trainerTel3";
-            this.trainerTel3.Size = new System.Drawing.Size(49, 21);
+            this.trainerTel3.Size = new System.Drawing.Size(50, 21);
             this.trainerTel3.TabIndex = 0;
             // 
             // trainerInsert
             // 
-            this.trainerInsert.Location = new System.Drawing.Point(348, 296);
+            this.trainerInsert.Location = new System.Drawing.Point(463, 311);
             this.trainerInsert.Name = "trainerInsert";
             this.trainerInsert.Size = new System.Drawing.Size(65, 72);
             this.trainerInsert.TabIndex = 3;
@@ -208,7 +208,7 @@ namespace gymManagement.ui
             // 
             // trainerUpdate
             // 
-            this.trainerUpdate.Location = new System.Drawing.Point(420, 296);
+            this.trainerUpdate.Location = new System.Drawing.Point(535, 311);
             this.trainerUpdate.Name = "trainerUpdate";
             this.trainerUpdate.Size = new System.Drawing.Size(65, 72);
             this.trainerUpdate.TabIndex = 3;
@@ -217,7 +217,7 @@ namespace gymManagement.ui
             // 
             // trainerDelete
             // 
-            this.trainerDelete.Location = new System.Drawing.Point(491, 296);
+            this.trainerDelete.Location = new System.Drawing.Point(606, 311);
             this.trainerDelete.Name = "trainerDelete";
             this.trainerDelete.Size = new System.Drawing.Size(65, 72);
             this.trainerDelete.TabIndex = 3;
@@ -227,7 +227,7 @@ namespace gymManagement.ui
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(421, 225);
+            this.label8.Location = new System.Drawing.Point(164, 252);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(11, 12);
             this.label8.TabIndex = 4;
@@ -236,7 +236,7 @@ namespace gymManagement.ui
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(492, 225);
+            this.label9.Location = new System.Drawing.Point(236, 252);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(11, 12);
             this.label9.TabIndex = 5;
@@ -245,7 +245,7 @@ namespace gymManagement.ui
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(455, 253);
+            this.label10.Location = new System.Drawing.Point(568, 220);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(11, 12);
             this.label10.TabIndex = 6;
