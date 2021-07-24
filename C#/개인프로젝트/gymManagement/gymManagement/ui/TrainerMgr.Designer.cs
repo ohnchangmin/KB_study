@@ -270,6 +270,7 @@ namespace gymManagement.ui
             this.columnHeader5,
             this.columnHeader6,
             this.columnHeader7});
+            this.viewTrainer.FullRowSelect = true;
             this.viewTrainer.HideSelection = false;
             this.viewTrainer.Location = new System.Drawing.Point(50, 12);
             this.viewTrainer.Name = "viewTrainer";
@@ -277,6 +278,7 @@ namespace gymManagement.ui
             this.viewTrainer.TabIndex = 8;
             this.viewTrainer.UseCompatibleStateImageBehavior = false;
             this.viewTrainer.View = System.Windows.Forms.View.Details;
+            this.viewTrainer.SelectedIndexChanged += new System.EventHandler(this.viewList_SelectedIndexChanged);
             // 
             // columnHeader1
             // 

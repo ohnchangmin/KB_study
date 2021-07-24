@@ -118,5 +118,42 @@ namespace gymManagement.ui
         {
             showList(insertTrainer());            
         }
+        private void viewList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (viewTrainer.SelectedItems.Count != 0)
+            {
+                int n = viewTrainer.SelectedItems[0].Index;
+                string name = viewTrainer.Items[n].SubItems[0].Text;
+                string rrn = viewTrainer.Items[n].SubItems[1].Text;
+                string tel = viewTrainer.Items[n].SubItems[2].Text;
+                string address = viewTrainer.Items[n].SubItems[3].Text;
+                string jobType = viewTrainer.Items[n].SubItems[4].Text;
+                string rank = viewTrainer.Items[n].SubItems[5].Text;
+                string salary = viewTrainer.Items[n].SubItems[6].Text;
+               
+                Console.WriteLine("이름: " + name);
+                Console.WriteLine("주민번호: " + rrn);
+                Console.WriteLine("전화번호: " + tel);
+                Console.WriteLine("주소: " + address);
+                Console.WriteLine("잡타입: " + jobType);
+                Console.WriteLine("랭크: " + rank);
+                Console.WriteLine("샐러리: " + salary);
+
+
+
+                //int receiptId = receiptList[n].ReceiptId;
+
+                //List<RepairItem> list = adapter.GetRepairItemsDb(receiptId);
+                //viewGrid.ClearRows();
+                //initGrid(list);
+
+                //for (int i = 0; i < list.Count; i++)
+                //{
+                //    Console.WriteLine("수리항목: " + list[i].Repair);
+                //    Console.WriteLine("수리비: " + list[i].Price);
+                //}
+
+            }
+        }
     }
 }
