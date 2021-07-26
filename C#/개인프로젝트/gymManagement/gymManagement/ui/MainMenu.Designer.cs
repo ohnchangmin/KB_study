@@ -30,10 +30,10 @@ namespace gymManagement
         private void InitializeComponent()
         {
             this.uiButton1 = new Sunny.UI.UIButton();
-            this.uiButton2 = new Sunny.UI.UIButton();
+            this.mainCustomer = new Sunny.UI.UIButton();
             this.uiButton3 = new Sunny.UI.UIButton();
             this.uiButton4 = new Sunny.UI.UIButton();
-            this.MainAdmin = new Sunny.UI.UIButton();
+            this.mainAdmin = new Sunny.UI.UIButton();
             this.uiButton5 = new Sunny.UI.UIButton();
             this.SuspendLayout();
             // 
@@ -51,19 +51,19 @@ namespace gymManagement
             this.uiButton1.TabIndex = 3;
             this.uiButton1.Text = "uiButton1";
             // 
-            // uiButton2
+            // mainCustomer
             // 
-            this.uiButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton2.FillColor = System.Drawing.Color.CornflowerBlue;
-            this.uiButton2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiButton2.Location = new System.Drawing.Point(274, 118);
-            this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton2.Name = "uiButton2";
-            this.uiButton2.RectColor = System.Drawing.Color.Transparent;
-            this.uiButton2.Size = new System.Drawing.Size(233, 178);
-            this.uiButton2.Style = Sunny.UI.UIStyle.Custom;
-            this.uiButton2.TabIndex = 3;
-            this.uiButton2.Text = "uiButton1";
+            this.mainCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainCustomer.FillColor = System.Drawing.Color.CornflowerBlue;
+            this.mainCustomer.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.mainCustomer.Location = new System.Drawing.Point(274, 118);
+            this.mainCustomer.MinimumSize = new System.Drawing.Size(1, 1);
+            this.mainCustomer.Name = "mainCustomer";
+            this.mainCustomer.RectColor = System.Drawing.Color.Transparent;
+            this.mainCustomer.Size = new System.Drawing.Size(233, 178);
+            this.mainCustomer.Style = Sunny.UI.UIStyle.Custom;
+            this.mainCustomer.TabIndex = 3;
+            this.mainCustomer.Text = "uiButton1";
             // 
             // uiButton3
             // 
@@ -93,20 +93,20 @@ namespace gymManagement
             this.uiButton4.TabIndex = 3;
             this.uiButton4.Text = "uiButton1";
             // 
-            // MainAdmin
+            // mainAdmin
             // 
-            this.MainAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MainAdmin.FillColor = System.Drawing.Color.LightSkyBlue;
-            this.MainAdmin.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.MainAdmin.Location = new System.Drawing.Point(609, 302);
-            this.MainAdmin.MinimumSize = new System.Drawing.Size(1, 1);
-            this.MainAdmin.Name = "MainAdmin";
-            this.MainAdmin.RectColor = System.Drawing.Color.Transparent;
-            this.MainAdmin.Size = new System.Drawing.Size(218, 178);
-            this.MainAdmin.Style = Sunny.UI.UIStyle.Custom;
-            this.MainAdmin.TabIndex = 3;
-            this.MainAdmin.Text = "관리자모드";
-            this.MainAdmin.Click += new System.EventHandler(this.MainAdmin_Click);
+            this.mainAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainAdmin.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.mainAdmin.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.mainAdmin.Location = new System.Drawing.Point(609, 302);
+            this.mainAdmin.MinimumSize = new System.Drawing.Size(1, 1);
+            this.mainAdmin.Name = "mainAdmin";
+            this.mainAdmin.RectColor = System.Drawing.Color.Transparent;
+            this.mainAdmin.Size = new System.Drawing.Size(218, 178);
+            this.mainAdmin.Style = Sunny.UI.UIStyle.Custom;
+            this.mainAdmin.TabIndex = 3;
+            this.mainAdmin.Text = "관리자모드";
+            this.mainAdmin.Click += new System.EventHandler(this.MainAdmin_Click);
             // 
             // uiButton5
             // 
@@ -127,11 +127,11 @@ namespace gymManagement
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 570);
-            this.Controls.Add(this.MainAdmin);
+            this.Controls.Add(this.mainAdmin);
             this.Controls.Add(this.uiButton5);
             this.Controls.Add(this.uiButton4);
             this.Controls.Add(this.uiButton3);
-            this.Controls.Add(this.uiButton2);
+            this.Controls.Add(this.mainCustomer);
             this.Controls.Add(this.uiButton1);
             this.Name = "MainMenu";
             this.Style = MetroFramework.MetroColorStyle.Purple;
@@ -143,10 +143,10 @@ namespace gymManagement
         #endregion
 
         private Sunny.UI.UIButton uiButton1;
-        private Sunny.UI.UIButton uiButton2;
+        private Sunny.UI.UIButton mainCustomer;
         private Sunny.UI.UIButton uiButton3;
         private Sunny.UI.UIButton uiButton4;
-        private Sunny.UI.UIButton MainAdmin;
+        private Sunny.UI.UIButton mainAdmin;
         private Sunny.UI.UIButton uiButton5;
     }
 }

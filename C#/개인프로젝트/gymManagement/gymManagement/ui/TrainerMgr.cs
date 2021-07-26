@@ -32,7 +32,7 @@ namespace gymManagement.ui
                 viewTrainer.Items.Add(new ListViewItem(new string[] { list[i].Name, list[i].Rrn, list[i].Tel, list[i].Address, list[i].JobType, list[i].Rank, list[i].Salary }));
             }
         }
-
+    
         private List<Trainer> insertTrainer()
         {
             string name = trainerName.Text;
@@ -102,7 +102,7 @@ namespace gymManagement.ui
             }
             return list;
         }
-
+    
         private void textBoxClear()
         {
             TextBox[] arr = {trainerName, trainerRrn1, trainerRrn2, trainerTel1, trainerTel2, trainerTel3,
@@ -116,7 +116,7 @@ namespace gymManagement.ui
 
         private void trainerInsert_Click(object sender, EventArgs e)
         {
-            showList(insertTrainer());            
+            showList(insertTrainer());
         }
         private void viewList_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -139,20 +139,20 @@ namespace gymManagement.ui
                 Console.WriteLine("랭크: " + rank);
                 Console.WriteLine("샐러리: " + salary);
 
+                char sp = '-';
+                string[] rrnSplit = rrn.Split(sp);
+                string[] telSplit = tel.Split(sp);
 
-
-                //int receiptId = receiptList[n].ReceiptId;
-
-                //List<RepairItem> list = adapter.GetRepairItemsDb(receiptId);
-                //viewGrid.ClearRows();
-                //initGrid(list);
-
-                //for (int i = 0; i < list.Count; i++)
-                //{
-                //    Console.WriteLine("수리항목: " + list[i].Repair);
-                //    Console.WriteLine("수리비: " + list[i].Price);
-                //}
-
+                trainerName.Text = name;
+                trainerRrn1.Text = rrnSplit[0];
+                trainerRrn2.Text = rrnSplit[1];
+                trainerTel1.Text = telSplit[0];
+                trainerTel2.Text = telSplit[1];
+                trainerTel3.Text = telSplit[2];
+                trainerAddress.Text = address;
+                trainerJobType.Text = jobType;
+                trainerRank.Text = rank;
+                trainerSalary.Text = salary;
             }
         }
     }

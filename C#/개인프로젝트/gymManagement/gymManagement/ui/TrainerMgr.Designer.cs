@@ -273,6 +273,7 @@ namespace gymManagement.ui
             this.viewTrainer.FullRowSelect = true;
             this.viewTrainer.HideSelection = false;
             this.viewTrainer.Location = new System.Drawing.Point(50, 12);
+            this.viewTrainer.MultiSelect = false;
             this.viewTrainer.Name = "viewTrainer";
             this.viewTrainer.Size = new System.Drawing.Size(844, 182);
             this.viewTrainer.TabIndex = 8;
