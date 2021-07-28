@@ -1,5 +1,4 @@
-﻿using MetroFramework.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,9 +10,9 @@ using System.Windows.Forms;
 
 namespace gymManagement.ui
 {
-    public partial class NewRegi : MetroForm
+    public partial class CustomerMenu : Form
     {
-        public NewRegi()
+        public CustomerMenu()
         {
             InitializeComponent();
         }

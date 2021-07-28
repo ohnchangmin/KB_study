@@ -63,7 +63,7 @@ namespace gymManagement
             this.mainCustomer.Size = new System.Drawing.Size(233, 178);
             this.mainCustomer.Style = Sunny.UI.UIStyle.Custom;
             this.mainCustomer.TabIndex = 3;
-            this.mainCustomer.Text = "uiButton1";
+            this.mainCustomer.Text = "고객관리";
             // 
             // uiButton3
             // 

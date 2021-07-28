@@ -155,5 +155,34 @@ namespace gymManagement.ui
                 trainerSalary.Text = salary;
             }
         }
+
+        private void trainerUpdate_Click(object sender, EventArgs e)
+        {
+            if (viewTrainer.SelectedItems.Count != 0)
+            {
+                string name = trainerName.Text;
+                string rrn = trainerRrn1.Text + '-' + trainerRrn2.Text;
+                string tel = trainerTel1.Text + '-' + trainerTel2.Text + '-' + trainerTel3.Text;
+                string address = trainerAddress.Text;
+                string jobType = trainerJobType.Text;
+                string rank = trainerRank.Text;
+                string salary = trainerSalary.Text;
+
+                int n = viewTrainer.SelectedItems[0].Index;
+                viewTrainer.Items[n].SubItems[0].Text = name;
+                viewTrainer.Items[n].SubItems[1].Text = rrn;
+                viewTrainer.Items[n].SubItems[2].Text = tel;
+                viewTrainer.Items[n].SubItems[3].Text = address;
+                viewTrainer.Items[n].SubItems[4].Text = jobType;
+                viewTrainer.Items[n].SubItems[5].Text = rank;
+                viewTrainer.Items[n].SubItems[6].Text = salary;
+            }
+        }
+
+        private void trainerDelete_Click(object sender, EventArgs e)
+        {
+            int n = viewTrainer.SelectedItems[0].Index;
+            viewTrainer.Items[n].Remove();
+        }
     }
 }

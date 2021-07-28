@@ -214,6 +214,7 @@ namespace gymManagement.ui
             this.trainerUpdate.TabIndex = 3;
             this.trainerUpdate.Text = "수정";
             this.trainerUpdate.UseVisualStyleBackColor = true;
+            this.trainerUpdate.Click += new System.EventHandler(this.trainerUpdate_Click);
             // 
             // trainerDelete
             // 
@@ -223,6 +224,7 @@ namespace gymManagement.ui
             this.trainerDelete.TabIndex = 3;
             this.trainerDelete.Text = "삭제";
             this.trainerDelete.UseVisualStyleBackColor = true;
+            this.trainerDelete.Click += new System.EventHandler(this.trainerDelete_Click);
             // 
             // label8
             // 
