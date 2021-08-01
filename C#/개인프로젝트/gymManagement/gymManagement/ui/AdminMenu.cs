@@ -19,6 +19,7 @@ namespace gymManagement.ui
         private int tempIndex;
         private Form activeForm;
         private Adapter ad;
+        ThemeColor theme = new ThemeColor();
         //private Form activeForm;
 
         public AdminMenu(Adapter ad)
@@ -27,17 +28,17 @@ namespace gymManagement.ui
             this.ad = ad;
             random = new Random();
         }       
-        private Color SelectThemeColor()
-        {
-            int index = random.Next(ThemeColor.ColorList.Count);
-            while (tempIndex == index)
-            {
-                index = random.Next(ThemeColor.ColorList.Count);
-            }
-            tempIndex = index;
-            string color = ThemeColor.ColorList[index];
-            return ColorTranslator.FromHtml(color);
-        }
+        //private Color SelectThemeColor()
+        //{
+        //    int index = random.Next(ThemeColor.ColorList.Count);
+        //    while (tempIndex == index)
+        //    {
+        //        index = random.Next(ThemeColor.ColorList.Count);
+        //    }
+        //    tempIndex = index;
+        //    string color = ThemeColor.ColorList[index];
+        //    return ColorTranslator.FromHtml(color);
+        //}
         private void ActivateButton(object btnSender)
         {
             if (btnSender != null)
@@ -45,7 +46,7 @@ namespace gymManagement.ui
                 if (currentButton != (Button)btnSender)
                 {
                     DisableButton();
-                    Color color = SelectThemeColor();
+                    Color color = theme.SelectThemeColor();
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
@@ -58,6 +59,7 @@ namespace gymManagement.ui
                 }
             }
         }
+
         private void DisableButton()
         {
             foreach (Control previousBtn in adminSideMenu.Controls)
@@ -70,6 +72,7 @@ namespace gymManagement.ui
                 }
             }
         }
+
         private void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)
@@ -84,6 +87,7 @@ namespace gymManagement.ui
             childForm.BringToFront();
             childForm.Show();
         }
+
         private void sendMessage_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);

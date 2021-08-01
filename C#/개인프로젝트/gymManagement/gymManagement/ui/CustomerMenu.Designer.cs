@@ -33,9 +33,9 @@ namespace gymManagement.ui
             this.adminSideMenu = new System.Windows.Forms.Panel();
             this.closeAdminMenu = new System.Windows.Forms.Button();
             this.setAccount = new System.Windows.Forms.Button();
-            this.setPrice = new System.Windows.Forms.Button();
-            this.setTrainer = new System.Windows.Forms.Button();
-            this.sendMessage = new System.Windows.Forms.Button();
+            this.cusExtension = new System.Windows.Forms.Button();
+            this.cusSelect = new System.Windows.Forms.Button();
+            this.cusRegi = new System.Windows.Forms.Button();
             this.adminLogoSpace = new System.Windows.Forms.Panel();
             this.adminLogo = new System.Windows.Forms.PictureBox();
             this.adminTitleBar = new System.Windows.Forms.Panel();
@@ -59,9 +59,9 @@ namespace gymManagement.ui
             this.adminSideMenu.Controls.Add(this.panelDesktopPane);
             this.adminSideMenu.Controls.Add(this.closeAdminMenu);
             this.adminSideMenu.Controls.Add(this.setAccount);
-            this.adminSideMenu.Controls.Add(this.setPrice);
-            this.adminSideMenu.Controls.Add(this.setTrainer);
-            this.adminSideMenu.Controls.Add(this.sendMessage);
+            this.adminSideMenu.Controls.Add(this.cusExtension);
+            this.adminSideMenu.Controls.Add(this.cusSelect);
+            this.adminSideMenu.Controls.Add(this.cusRegi);
             this.adminSideMenu.Controls.Add(this.adminLogoSpace);
             this.adminSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.adminSideMenu.Location = new System.Drawing.Point(0, 0);
@@ -103,56 +103,57 @@ namespace gymManagement.ui
             this.setAccount.Text = "정보수정";
             this.setAccount.UseVisualStyleBackColor = true;
             // 
-            // setPrice
+            // cusExtension
             // 
-            this.setPrice.Dock = System.Windows.Forms.DockStyle.Top;
-            this.setPrice.FlatAppearance.BorderSize = 0;
-            this.setPrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.setPrice.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.setPrice.ForeColor = System.Drawing.Color.Gainsboro;
-            this.setPrice.Image = global::gymManagement.Properties.Resources.money;
-            this.setPrice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.setPrice.Location = new System.Drawing.Point(0, 235);
-            this.setPrice.Name = "setPrice";
-            this.setPrice.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.setPrice.Size = new System.Drawing.Size(190, 70);
-            this.setPrice.TabIndex = 3;
-            this.setPrice.Text = "회원조회";
-            this.setPrice.UseVisualStyleBackColor = true;
+            this.cusExtension.Dock = System.Windows.Forms.DockStyle.Top;
+            this.cusExtension.FlatAppearance.BorderSize = 0;
+            this.cusExtension.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cusExtension.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cusExtension.ForeColor = System.Drawing.Color.Gainsboro;
+            this.cusExtension.Image = global::gymManagement.Properties.Resources.money;
+            this.cusExtension.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cusExtension.Location = new System.Drawing.Point(0, 235);
+            this.cusExtension.Name = "cusExtension";
+            this.cusExtension.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.cusExtension.Size = new System.Drawing.Size(190, 70);
+            this.cusExtension.TabIndex = 3;
+            this.cusExtension.Text = "기간연장";
+            this.cusExtension.UseVisualStyleBackColor = true;
             // 
-            // setTrainer
+            // cusSelect
             // 
-            this.setTrainer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.setTrainer.FlatAppearance.BorderSize = 0;
-            this.setTrainer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.setTrainer.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.setTrainer.ForeColor = System.Drawing.Color.Gainsboro;
-            this.setTrainer.Image = global::gymManagement.Properties.Resources.muscle;
-            this.setTrainer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.setTrainer.Location = new System.Drawing.Point(0, 165);
-            this.setTrainer.Name = "setTrainer";
-            this.setTrainer.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.setTrainer.Size = new System.Drawing.Size(190, 70);
-            this.setTrainer.TabIndex = 2;
-            this.setTrainer.Text = "기간연장";
-            this.setTrainer.UseVisualStyleBackColor = true;
+            this.cusSelect.Dock = System.Windows.Forms.DockStyle.Top;
+            this.cusSelect.FlatAppearance.BorderSize = 0;
+            this.cusSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cusSelect.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cusSelect.ForeColor = System.Drawing.Color.Gainsboro;
+            this.cusSelect.Image = global::gymManagement.Properties.Resources.muscle;
+            this.cusSelect.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cusSelect.Location = new System.Drawing.Point(0, 165);
+            this.cusSelect.Name = "cusSelect";
+            this.cusSelect.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.cusSelect.Size = new System.Drawing.Size(190, 70);
+            this.cusSelect.TabIndex = 2;
+            this.cusSelect.Text = "회원조회";
+            this.cusSelect.UseVisualStyleBackColor = true;
             // 
-            // sendMessage
+            // cusRegi
             // 
-            this.sendMessage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.sendMessage.FlatAppearance.BorderSize = 0;
-            this.sendMessage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sendMessage.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sendMessage.ForeColor = System.Drawing.Color.Gainsboro;
-            this.sendMessage.Image = global::gymManagement.Properties.Resources.letter;
-            this.sendMessage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sendMessage.Location = new System.Drawing.Point(0, 95);
-            this.sendMessage.Name = "sendMessage";
-            this.sendMessage.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.sendMessage.Size = new System.Drawing.Size(190, 70);
-            this.sendMessage.TabIndex = 1;
-            this.sendMessage.Text = "신규등록";
-            this.sendMessage.UseVisualStyleBackColor = true;
+            this.cusRegi.Dock = System.Windows.Forms.DockStyle.Top;
+            this.cusRegi.FlatAppearance.BorderSize = 0;
+            this.cusRegi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cusRegi.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cusRegi.ForeColor = System.Drawing.Color.Gainsboro;
+            this.cusRegi.Image = global::gymManagement.Properties.Resources.letter;
+            this.cusRegi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cusRegi.Location = new System.Drawing.Point(0, 95);
+            this.cusRegi.Name = "cusRegi";
+            this.cusRegi.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.cusRegi.Size = new System.Drawing.Size(190, 70);
+            this.cusRegi.TabIndex = 1;
+            this.cusRegi.Text = "신규등록";
+            this.cusRegi.UseVisualStyleBackColor = true;
+            this.cusRegi.Click += new System.EventHandler(this.cusRegi_Click);
             // 
             // adminLogoSpace
             // 
@@ -223,9 +224,9 @@ namespace gymManagement.ui
         private System.Windows.Forms.Panel adminSideMenu;
         private System.Windows.Forms.Button closeAdminMenu;
         private System.Windows.Forms.Button setAccount;
-        private System.Windows.Forms.Button setPrice;
-        private System.Windows.Forms.Button setTrainer;
-        private System.Windows.Forms.Button sendMessage;
+        private System.Windows.Forms.Button cusExtension;
+        private System.Windows.Forms.Button cusSelect;
+        private System.Windows.Forms.Button cusRegi;
         private System.Windows.Forms.Panel adminLogoSpace;
         private System.Windows.Forms.PictureBox adminLogo;
         private System.Windows.Forms.Panel adminTitleBar;

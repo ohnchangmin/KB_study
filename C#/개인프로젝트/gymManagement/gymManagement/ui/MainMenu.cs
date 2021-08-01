@@ -27,7 +27,7 @@ namespace gymManagement
 
         private void gymNewCus_Click(object sender, EventArgs e)
         {
-            new NewRegi().ShowDialog();
+            new CustomerMenu().ShowDialog();
         }
 
         private void MainAdmin_Click(object sender, EventArgs e)

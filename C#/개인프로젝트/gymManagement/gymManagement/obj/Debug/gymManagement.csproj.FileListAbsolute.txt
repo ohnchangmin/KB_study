@@ -55,7 +55,6 @@ C:\Users\온창민\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManag
 C:\Users\온창민\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.ui.AdminMenu.resources
 C:\Users\온창민\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.ui.LoginMenu.resources
 C:\Users\온창민\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.MainMenu.resources
-C:\Users\온창민\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.ui.NewRegi.resources
 C:\Users\온창민\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.ui.TrainerMgr.resources
 C:\Users\온창민\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.csproj.GenerateResource.cache
 C:\Users\온창민\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.csproj.CoreCompileInputs.cache
@@ -63,3 +62,5 @@ C:\Users\온창민\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManag
 C:\Users\온창민\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.exe
 C:\Users\온창민\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.pdb
 C:\Users\온창민\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.csproj.AssemblyReference.cache
+C:\Users\온창민\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.ui.CusRegi.resources
+C:\Users\온창민\Desktop\KB_study\C#\개인프로젝트\gymManagement\gymManagement\obj\Debug\gymManagement.ui.CustomerMenu.resources

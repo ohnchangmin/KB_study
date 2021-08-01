@@ -9,6 +9,9 @@ namespace gymManagement.common
 {
     class ThemeColor
     {
+        private Random random = new Random();
+        private int tempIndex;
+
         public static Color PrimaryColor { get; set; }
         public static Color SecondaryColor { get; set; }
         public static List<string> ColorList = new List<string>() { "#3F51B5",
@@ -59,6 +62,18 @@ namespace gymManagement.common
                 blue = (255 - blue) * correctionFactor + blue;
             }
             return Color.FromArgb(color.A, (byte)red, (byte)green, (byte)blue);
+        }
+
+        public Color SelectThemeColor()
+        {
+            int index = random.Next(ColorList.Count);
+            while (tempIndex == index)
+            {
+                index = random.Next(ColorList.Count);
+            }
+            tempIndex = index;
+            string color = ColorList[index];
+            return ColorTranslator.FromHtml(color);
         }
     }
 }
