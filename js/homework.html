@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>태어난 연도를 입력하세요</h2>
+    <input id='birth_year' type="text"><button onclick='zodiac()'>입력</button><br>
+    <img src="" alt="">
+
+    <h2>태어난 달을 입력하세요</h2>
+    <input id='brith_month' type="text"><br><button>입력</button><br>
+    <img src="" alt="">
+
+    <!-- prompt를 써도 좋고, input에 있는 걸 읽어와도 좋음.
+         1. 내가 태어난 연도를 입력하면 그 연도에 맞는 동물을 출력 (12지신)
+         2. 내가 태어난 계절을 입력하면 그 계절에 맞는 이미지가 출력
+         단 12, 1, 2 는 겨울, 3,4,5는 봄, 6,7,8은 여름, 9,10,11은 가을
+         br태그는 한 줄 띄는거, 띄어쓰기는 '&nbsp;'(p태그 등에서 쓰임)
+         ex) <p>안녕 &nbsp; &nbsp; &nbsp; 하세요-->
+
+    <script>
+        
+        function zodiac()
+        {
+            var birth_year = document.getElementById('birth_year')
+            var zodiac = birth_year % 12
+            switch (zodiac) {
+                case 0:
+                    
+                    break;
+            
+                default:
+                    break;
+            }
+        }
+
+    </script>
+</body>
+</html>

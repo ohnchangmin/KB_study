@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*p테그이면서 id값이 one인 녀석*/
+        p#one
+        {
+            color:blue
+        }
+        p#two
+        {
+            color: blueviolet;
+        }
+        .colorbaby
+        {
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <p id = "one">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur placeat obcaecati architecto beatae molestias, facilis nihil, nemo sapiente quis necessitatibus natus aliquam, rerum maxime illum? Inventore officia distinctio vitae tempora.</p>
+    <p id = "two">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam mollitia totam harum est odio ex veritatis hic consectetur, sit sunt assumenda rem, ullam delectus aspernatur, debitis ducimus nemo optio adipisci?</p>
+    <p class = "colorbaby">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore suscipit aperiam, architecto amet, omnis at dolorem cumque eveniet culpa alias voluptatum, eum labore minima sint est et ullam hic!</p>
+    <p id = "three"></p>
+    <script>
+        var now = new Date();
+        document.write("현재 시각: " + now + "<br>")
+        document.getElementById('three').innerText = "크롬 자동번역도 모르는 이동준쌤"
+        document.getElementById('three').style.color = "springgreen"
+        document.getElementById('one').style.background = "gold"
+    </script>
+</body>
+</html>

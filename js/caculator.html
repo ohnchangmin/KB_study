@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input class="one" type="text">
+        <span>+</span>
+        <input class="two" type="text">
+        <span>=</span>
+        <span class="result">결과가 여기 나옴</span>
+    </div>
+    <div>
+        <input type="button" value="합" onclick="calculator('+')">
+        <input type="button" value="빼기" onclick="calculator('-')">
+        <input type="button" value="곱하기" onclick="calculator('*')">
+        <input type="button" value="나누기" onclick="calculator('/')">
+    </div>
+    <script>
+        function calculator(param) {
+            switch (param) {
+                case "+":
+                    sum();
+                    break;
+
+                case "-":
+                    minus();
+                    break;
+
+                case "*":
+                    multi();
+                    break;
+
+                case "/":
+                    div();
+                    break;
+
+
+                default:
+                    break;
+            }
+        }
+
+        function sum() {
+            var one = document.getElementsByClassName('one')[0].value
+            var two = document.getElementsByClassName('two')[0].value
+            document.getElementsByClassName('result')[0].innerHTML = Number(one) + Number(two)
+        }
+
+        function minus() {
+            var one = document.getElementsByClassName('one')[0].value
+            var two = document.getElementsByClassName('two')[0].value
+            document.getElementsByClassName('result')[0].innerHTML = Number(one) - Number(two)
+        }
+
+        function multi() {
+            var one = document.getElementsByClassName('one')[0].value
+            var two = document.getElementsByClassName('two')[0].value
+            document.getElementsByClassName('result')[0].innerHTML = Number(one) * Number(two)
+        }
+
+        function div() {
+            var one = document.getElementsByClassName('one')[0].value
+            var two = document.getElementsByClassName('two')[0].value
+            document.getElementsByClassName('result')[0].innerHTML = Number(one) / Number(two)
+        }
+    </script>
+</body>
+
+</html>
