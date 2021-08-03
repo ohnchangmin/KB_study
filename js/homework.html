@@ -8,8 +8,8 @@
 </head>
 <body>
     <h2>태어난 연도를 입력하세요</h2>
-    <input id='birth_year' type="text"><button onclick='zodiac()'>입력</button><br>
-    <img src="" alt="">
+    <input id='birth_year' type="text"><button onclick='zodiac()'>입력</button><br><br>
+    <img id = 'zodiac_img' src="" alt="">
 
     <h2>태어난 달을 입력하세요</h2>
     <input id='brith_month' type="text"><br><button>입력</button><br>
@@ -26,13 +26,60 @@
         
         function zodiac()
         {
-            var birth_year = document.getElementById('birth_year')
-            var zodiac = birth_year % 12
+            var zodiac_img = document.getElementById('zodiac_img')
+            var birth_year = document.getElementById('birth_year').value
+            var zodiac = Number(birth_year) % 12
+            var zodiac_arr_img = ['0.png', '1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png',
+            '9.png', '10.png', '11.png', '12.png']
+
+            console.log(zodiac)
+            
             switch (zodiac) {
                 case 0:
-                    
-                    break;
-            
+                    zodiac_img.src = zodiac_arr_img[zodiac]
+                    break
+                
+                case 1:
+                    zodiac_img.src = zodiac_arr_img[zodiac]
+                    break
+
+                case 2:
+                    zodiac_img.src = zodiac_arr_img[zodiac]
+                    break
+
+                case 3:
+                    zodiac_img.src = zodiac_arr_img[zodiac]
+                    break
+
+                case 4:
+                    zodiac_img.src = zodiac_arr_img[zodiac]
+                    break
+
+                case 5:
+                    zodiac_img.src = zodiac_arr_img[zodiac]
+                    break
+
+                case 6:
+                    zodiac_img.src = zodiac_arr_img[zodiac]
+                    break
+
+                case 7:
+                    zodiac_img.src = zodiac_arr_img[zodiac]
+                    break
+
+                case 8:
+                    zodiac_img.src = zodiac_arr_img[zodiac]
+                    break
+                case 9:
+                    zodiac_img.src = zodiac_arr_img[zodiac]
+                    break
+                case 10:
+                    zodiac_img.src = zodiac_arr_img[zodiac]
+                    break
+                case 11:
+                    zodiac_img.src = zodiac_arr_img[zodiac]
+                    break
+
                 default:
                     break;
             }
