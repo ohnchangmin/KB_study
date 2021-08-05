@@ -36,17 +36,17 @@ namespace gymManagement.ui
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.trainerSalary = new System.Windows.Forms.TextBox();
-            this.trainerRank = new System.Windows.Forms.TextBox();
-            this.trainerAddress = new System.Windows.Forms.TextBox();
-            this.trainerTel3 = new System.Windows.Forms.TextBox();
-            this.trainerTel2 = new System.Windows.Forms.TextBox();
-            this.trainerTel1 = new System.Windows.Forms.TextBox();
-            this.trainerName = new System.Windows.Forms.TextBox();
+            this.cust_address = new System.Windows.Forms.TextBox();
+            this.cust_birth = new System.Windows.Forms.TextBox();
+            this.cust_gender = new System.Windows.Forms.TextBox();
+            this.cust_tel3 = new System.Windows.Forms.TextBox();
+            this.cust_tel2 = new System.Windows.Forms.TextBox();
+            this.cust_tel1 = new System.Windows.Forms.TextBox();
+            this.cust_name = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cust_expire_date = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cust_regi_date = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label9
@@ -112,54 +112,54 @@ namespace gymManagement.ui
             this.label1.TabIndex = 17;
             this.label1.Text = "이름";
             // 
-            // trainerSalary
+            // cust_address
             // 
-            this.trainerSalary.Location = new System.Drawing.Point(71, 154);
-            this.trainerSalary.Name = "trainerSalary";
-            this.trainerSalary.Size = new System.Drawing.Size(195, 21);
-            this.trainerSalary.TabIndex = 6;
+            this.cust_address.Location = new System.Drawing.Point(71, 154);
+            this.cust_address.Name = "cust_address";
+            this.cust_address.Size = new System.Drawing.Size(195, 21);
+            this.cust_address.TabIndex = 6;
             // 
-            // trainerRank
+            // cust_birth
             // 
-            this.trainerRank.Location = new System.Drawing.Point(71, 124);
-            this.trainerRank.Name = "trainerRank";
-            this.trainerRank.Size = new System.Drawing.Size(195, 21);
-            this.trainerRank.TabIndex = 7;
+            this.cust_birth.Location = new System.Drawing.Point(71, 124);
+            this.cust_birth.Name = "cust_birth";
+            this.cust_birth.Size = new System.Drawing.Size(195, 21);
+            this.cust_birth.TabIndex = 7;
             // 
-            // trainerAddress
+            // cust_gender
             // 
-            this.trainerAddress.Location = new System.Drawing.Point(71, 92);
-            this.trainerAddress.Name = "trainerAddress";
-            this.trainerAddress.Size = new System.Drawing.Size(195, 21);
-            this.trainerAddress.TabIndex = 8;
+            this.cust_gender.Location = new System.Drawing.Point(71, 92);
+            this.cust_gender.Name = "cust_gender";
+            this.cust_gender.Size = new System.Drawing.Size(195, 21);
+            this.cust_gender.TabIndex = 8;
             // 
-            // trainerTel3
+            // cust_tel3
             // 
-            this.trainerTel3.Location = new System.Drawing.Point(216, 60);
-            this.trainerTel3.Name = "trainerTel3";
-            this.trainerTel3.Size = new System.Drawing.Size(50, 21);
-            this.trainerTel3.TabIndex = 9;
+            this.cust_tel3.Location = new System.Drawing.Point(216, 60);
+            this.cust_tel3.Name = "cust_tel3";
+            this.cust_tel3.Size = new System.Drawing.Size(50, 21);
+            this.cust_tel3.TabIndex = 9;
             // 
-            // trainerTel2
+            // cust_tel2
             // 
-            this.trainerTel2.Location = new System.Drawing.Point(144, 60);
-            this.trainerTel2.Name = "trainerTel2";
-            this.trainerTel2.Size = new System.Drawing.Size(50, 21);
-            this.trainerTel2.TabIndex = 10;
+            this.cust_tel2.Location = new System.Drawing.Point(144, 60);
+            this.cust_tel2.Name = "cust_tel2";
+            this.cust_tel2.Size = new System.Drawing.Size(50, 21);
+            this.cust_tel2.TabIndex = 10;
             // 
-            // trainerTel1
+            // cust_tel1
             // 
-            this.trainerTel1.Location = new System.Drawing.Point(71, 60);
-            this.trainerTel1.Name = "trainerTel1";
-            this.trainerTel1.Size = new System.Drawing.Size(50, 21);
-            this.trainerTel1.TabIndex = 11;
+            this.cust_tel1.Location = new System.Drawing.Point(71, 60);
+            this.cust_tel1.Name = "cust_tel1";
+            this.cust_tel1.Size = new System.Drawing.Size(50, 21);
+            this.cust_tel1.TabIndex = 11;
             // 
-            // trainerName
+            // cust_name
             // 
-            this.trainerName.Location = new System.Drawing.Point(71, 30);
-            this.trainerName.Name = "trainerName";
-            this.trainerName.Size = new System.Drawing.Size(195, 21);
-            this.trainerName.TabIndex = 12;
+            this.cust_name.Location = new System.Drawing.Point(71, 30);
+            this.cust_name.Name = "cust_name";
+            this.cust_name.Size = new System.Drawing.Size(195, 21);
+            this.cust_name.TabIndex = 12;
             // 
             // label2
             // 
@@ -170,12 +170,12 @@ namespace gymManagement.ui
             this.label2.TabIndex = 21;
             this.label2.Text = "회원만료일";
             // 
-            // textBox1
+            // cust_expire_date
             // 
-            this.textBox1.Location = new System.Drawing.Point(71, 210);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 21);
-            this.textBox1.TabIndex = 20;
+            this.cust_expire_date.Location = new System.Drawing.Point(71, 210);
+            this.cust_expire_date.Name = "cust_expire_date";
+            this.cust_expire_date.Size = new System.Drawing.Size(195, 21);
+            this.cust_expire_date.TabIndex = 20;
             // 
             // label5
             // 
@@ -186,12 +186,12 @@ namespace gymManagement.ui
             this.label5.TabIndex = 23;
             this.label5.Text = "회원등록일";
             // 
-            // textBox2
+            // cust_regi_date
             // 
-            this.textBox2.Location = new System.Drawing.Point(71, 184);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 21);
-            this.textBox2.TabIndex = 22;
+            this.cust_regi_date.Location = new System.Drawing.Point(71, 184);
+            this.cust_regi_date.Name = "cust_regi_date";
+            this.cust_regi_date.Size = new System.Drawing.Size(195, 21);
+            this.cust_regi_date.TabIndex = 22;
             // 
             // CusRegi
             // 
@@ -199,9 +199,9 @@ namespace gymManagement.ui
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 436);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.cust_regi_date);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cust_expire_date);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -209,13 +209,13 @@ namespace gymManagement.ui
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.trainerSalary);
-            this.Controls.Add(this.trainerRank);
-            this.Controls.Add(this.trainerAddress);
-            this.Controls.Add(this.trainerTel3);
-            this.Controls.Add(this.trainerTel2);
-            this.Controls.Add(this.trainerTel1);
-            this.Controls.Add(this.trainerName);
+            this.Controls.Add(this.cust_address);
+            this.Controls.Add(this.cust_birth);
+            this.Controls.Add(this.cust_gender);
+            this.Controls.Add(this.cust_tel3);
+            this.Controls.Add(this.cust_tel2);
+            this.Controls.Add(this.cust_tel1);
+            this.Controls.Add(this.cust_name);
             this.Name = "CusRegi";
             this.Text = "CusRegi";
             this.ResumeLayout(false);
@@ -232,16 +232,16 @@ namespace gymManagement.ui
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox trainerSalary;
-        private System.Windows.Forms.TextBox trainerRank;
-        private System.Windows.Forms.TextBox trainerAddress;
-        private System.Windows.Forms.TextBox trainerTel3;
-        private System.Windows.Forms.TextBox trainerTel2;
-        private System.Windows.Forms.TextBox trainerTel1;
-        private System.Windows.Forms.TextBox trainerName;
+        private System.Windows.Forms.TextBox cust_address;
+        private System.Windows.Forms.TextBox cust_birth;
+        private System.Windows.Forms.TextBox cust_gender;
+        private System.Windows.Forms.TextBox cust_tel3;
+        private System.Windows.Forms.TextBox cust_tel2;
+        private System.Windows.Forms.TextBox cust_tel1;
+        private System.Windows.Forms.TextBox cust_name;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox cust_expire_date;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox cust_regi_date;
     }
 }
