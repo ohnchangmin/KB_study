@@ -17,16 +17,15 @@ namespace gymManagement.ui
             InitializeComponent();
         }
 
-        public void cus_info()
+        public void cust_info()
         {
             string name = cust_name.Text;
             string tel = cust_tel1.Text + cust_tel2.Text + cust_tel3;
-            string gender;
-            string birth;
-            string address;
-            string regi_date;
-            string expire_date;
-
+            string gender = cust_gender.Text;
+            string birth = cust_birth.Text;
+            string address = cust_address.Text;
+            string regi_date = cust_regi_date.Text;
+            string expire_date = cust_expire_date.Text;
         }
     }
 }
