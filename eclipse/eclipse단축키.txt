@@ -1,1 +1,2 @@
 shift + ctrl + w = 창 다 닫기
+shift + ctrl + o = 자동 import

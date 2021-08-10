@@ -1,0 +1,7 @@
+1. build path java 1.8
+2. project facets java 1.8
+3. web.xml -> 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee https://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+===>
+xsi:schemaLocation="http://Java.sun.com/xml/ns/javaee https://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+4. cglib 라이브러리 pom.xml dependency - @configuration 사용할라면 cglib.jar 파일 추가해야 돼
