@@ -43,7 +43,8 @@
 </head>
 
 <body>
-
+  <!-- 스크롤값 -->
+  <div class="scroll">0</div>
   <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
     <div class="container">
@@ -70,7 +71,8 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/" target="_blank">About Me</a>
+            <!-- <a class="nav-link" href="#me" target="_blank">About Me</a> -->
+            <a class="nav-link" href="#me" >About Me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank">Free download</a>
@@ -302,7 +304,7 @@
 
         </div>
         <!--Grid row-->
-
+<div id="me">
       </section>
       <!--Section: Main info-->
 
@@ -322,11 +324,15 @@
             <!--First row-->
             <div class="row">
               <div class="col-1 mr-3">
-                <i class="fas fa-code fa-2x indigo-text"></i>
+                <!-- <i class="fas fa-code fa-2x indigo-text"></i> -->
+                <i class="far fa-address-card fa-2x indigo-text"></i>
               </div>
               <div class="col-10">
                 <h3 class="feature-title">Introduction</h3>
-                <p class="grey-text">신입개발자</p>
+                <hr style="margin-bottom: 30px;">
+                <p class="grey-text">안녕하세요 신입개발자 온창민입니다.</p>
+                <br>
+                <p class="grey-text">코딩 실력, 커뮤니케이션 능력 향상을 위해 꾸준히 노력합니다.</p>
               </div>
             </div>
             <!--/First row-->
@@ -336,11 +342,15 @@
             <!--Second row-->
             <div class="row">
               <div class="col-1 mr-3">
-                <i class="fas fa-book fa-2x blue-text"></i>
+                <!-- <i class="fas fa-book fa-2x blue-text"></i> -->
+                <i class="fas fa-code fa-2x blue-text"></i>
               </div>
               <div class="col-10">
                 <h3 class="feature-title">Skill</h3>
+                <hr style="margin-bottom: 30px;">
                 <p class="grey-text">Java, C#</p>
+                <br>
+                <p class="grey-text">Visual Studio, Eclipse</p>
                 <br>
                 <p class="grey-text">Oracle</p>
                 <br>
@@ -412,6 +422,7 @@
                 </span>
               </div>
             </div>
+            </div>>
             <!--/Third row-->
 
           <!-- </div> -->
@@ -427,10 +438,10 @@
           </div> -->
           <!--/Grid column-->
 
-        </div>
+       
         <!--/Grid row-->
 
-      </section>
+      </section> </div>
       <!--Section: Main features & Quick Start-->
 
       <hr class="my-5">
@@ -797,6 +808,7 @@
   <!--/.Footer-->
 
   <!-- SCRIPTS -->
+  <script src="js/skrollr.js"></script>
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
