@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #first{background-color: yellow;}
+        #second{background-color: springgreen;}
+        #third{background-color: salmon;}
+    </style>
+</head>
+<body>
+    <h1 id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur molestias nemo beatae recusandae assumenda deserunt. Quos nobis numquam in necessitatibus vitae culpa, praesentium, porro vel facere aspernatur asperiores nesciunt odio.</h1>
+    <h1 id="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt sunt laudantium, corporis excepturi fugiat ipsum animi quasi nulla repellendus eius cum iure, omnis quia enim corrupti. Aliquam odio est esse.        </h1>
+    <h1 id="third">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, rem pariatur? Non doloribus tempora, ipsam ea cupiditate accusamus, at nihil quasi nam minima cumque nemo magnam dolores ducimus blanditiis et.</h1>
+
+    <script>
+        let h1Tags = document.getElementsByTagName("h1")
+        for(let i = 0; i<h1Tags.length; i++){
+            let h1Tag = h1Tags.item(i);
+            h1Tag.style.color = "#FF00FF"
+        }
+    </script>
+    <!-- 3개의 h1태그를 만드세요.
+    각 태그의 id값은 first second third라고 지정
+    h1태그인 것에 대해서 글자색은 (255,0,255)
+    
+    위의 스타일 태그를 이용해야 합니다.
+    first태그는 백그라운드 yellow
+    second태그는 백그라운드 spring green
+    third태그는 백그라운드를 아무거나 하고싶은거-->
+</body>
+</html>
