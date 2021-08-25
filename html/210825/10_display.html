@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box
+        {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background: tomato;
+        }
+        #box2
+        {
+            /* inline은 width, height가 없음 */
+            display: inline;
+            width: 200px;
+            height: 200px;
+            background: wheat;
+        }
+        #box3
+        {
+            /* display가 블럭이면 한줄 다 차지 */
+            width: 200px;
+            height: 200px;
+            background: teal;
+        }
+    </style>
+</head>
+<body>
+    <span>Dummy</span>
+    <div id="box">
+        <span>Lorem, ipsum.</span>
+    </div>
+    <div id="box2">
+        Lorem, ipsum dolor.
+    </div>
+    <div id="box3">
+        Lorem, ipsum dolor.
+    </div>
+    <span>Dummy2</span>
+</body>
+</html>

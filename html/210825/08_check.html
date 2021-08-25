@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 태그의 타입을 선택하는 선택자 */
+        input[type=text]
+        {
+            background: yellow;
+        }
+    </style>
+    <style>
+        /* input[type = checkbox] -> type이 checkbox인 태그 */
+        /* input[type = checkbox]:checked -> check가 된 상태는 태그 */
+        /* +: 동위 선택자 */
+        input[type=checkbox]:checked+div
+        {
+            height: 300px;
+            color: tomato;
+        }
+        div
+        {
+            /* 태그의 크기를 뛰어넘는 많은 양의 객체가 있으면 그건 다 숨김 */
+            overflow:hidden;
+            height: 0;
+            /* 애니매이션 효과 */
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+<body>
+    <!-- 둘 다 사실상 type이 텍스트인데 -->
+    <!-- css입장에서는 type 'text'라고 정의 안돼있으면 -->
+    <!-- 스타일을 적용하지 않는다. -->
+    <input type="text">
+    <input type>
+    <input type="checkbox">
+    <div>
+        <h1>lorem</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus dis tinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos error ipsam, pariatur ad molestiae fugit aliquam vero voluptates, reprehenderit modi ducimus distinctio minus repellat! Sit impedit illum ducimus a.</p>
+    </div>
+</body>
+</html>

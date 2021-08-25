@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #opa
+        {
+            background: cadetblue;
+            opacity: 0.3; /* 투명도, 0~1의 값을 갖고, 자식 태그까지 같이 투명하게 해버림 */
+        }
+        #alpha
+        {
+            background: rgba(81, 132, 228, 0.3); /* 투명도, 0~1의 값을 갖고, 자식 태그에게 영향을 주지 않음 */
+        }
+    </style>
+</head>
+<body>
+    <div id="opa">
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <div id="alpha">
+        <p>Lorem ipsum dolor sit.</p>
+    </div>
+</body>
+</html>
