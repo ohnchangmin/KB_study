@@ -1,9 +1,14 @@
 import pandas as pd
 import numpy as np
 
+import matplotlib.pyplot as plt
+
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import Ridge
+from sklearn.linear_model import Lasso
 
 '''
 pip install pandas
@@ -94,3 +99,56 @@ test_score = lr.score(test_poly, test_target)
 
 print("훈련데이터로 알고리즘 점수 = ", train_score)
 print("테스트데이터로 알고리즘 점수 = ", test_score)
+
+ss = StandardScaler()
+ss.fit(train_poly)
+
+train_scaled = ss.transform(train_poly)
+test_scaled = ss.transform(test_poly)
+
+print(train_scaled[:5])
+print(test_scaled[:5])
+
+ridge = Ridge()
+ridge.fit(train_scaled, train_target)
+
+print(ridge.score(train_scaled,train_target))
+print(ridge.score(test_scaled,test_target))
+
+train_score = []
+test_score = []
+
+alpha_list = [0.001, 0.01, 0.1, 1, 10, 100]
+
+for alpha in alpha_list:
+ ridge = Ridge(alpha=alpha)
+ ridge.fit(train_scaled, train_target)
+ train_s = ridge.score(train_scaled, train_target)
+ test_s = ridge.score(test_scaled, test_target)
+ train_score.append(train_s)
+ test_score.append(test_s)
+
+plt.plot(np.log10(alpha_list),train_score)
+plt.plot(np.log10(alpha_list),test_score)
+
+plt.xlabel('alpha')
+plt.ylabel('R^2')
+plt.show()
+
+alpha_list = [0.001, 0.01, 0.1, 1, 10, 100]
+
+for alpha in alpha_list:
+ lasso = Lasso(alpha=alpha)
+ lasso.fit(train_scaled, train_target)
+ train_s = lasso.score(train_scaled, train_target)
+ test_s = lasso.score(test_scaled, test_target)
+ train_score.append(train_s)
+ test_score.append(test_s)
+
+plt.plot(np.log10(alpha_list),train_score)
+plt.plot(np.log10(alpha_list),test_score)
+
+plt.xlabel('alpha')
+plt.ylabel('R^2')
+plt.show()
+
