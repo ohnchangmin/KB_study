@@ -7,12 +7,21 @@
 	<select id="select" resultType="com.cm.org1.MemberDto">
 		select * from member
 	</select>
+	<select id="selectone" parameterType="int" resultType="com.cm.org1.MemberDto">
+		select * from member where idx=#{idx}
+	</select>
 	<!-- <insert id="insert" parameterType="java.lang.String"> insert into test 
 		values (#{para1}, "1234") </insert> -->
 
-	<insert id="insert">
-		insert into member (id, pw, age, gender)
+	<insert id="insert" parameterType="com.cm.org1.MemberDto">
+		insert into member 
+		(id, pw, age, gender)
 		values
-		('aa', 'aa', 12, 'male');
+		(#{id}, #{pw}, #{age}, #{gender});
 	</insert>
+	<update id="update" parameterType="com.cm.org1.MemberDto">
+		update member
+		set id=#{id}, pw=#{pw}, age=#{age}, gender=#{gender}
+		where idx=#{idx}
+	</update>
 </mapper>

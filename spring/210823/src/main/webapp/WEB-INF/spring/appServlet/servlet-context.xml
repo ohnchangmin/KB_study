@@ -28,15 +28,22 @@
 
 	<beans:bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<!-- <beans:property name="driverClassName" -->
+		<!-- value="com.mysql.jdbc.Driver"></beans:property> -->
+		<!-- <beans:property name="url" -->
+		<!-- value="jdbc:mysql://127.0.0.1:3306/spring?useSSL=false&amp;serverTimezone=UTC"> -->
+		<!-- </beans:property> -->
 		<beans:property name="driverClassName"
-			value="com.mysql.jdbc.Driver"></beans:property>
+			value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy" />
 		<beans:property name="url"
-			value="jdbc:mysql://127.0.0.1:3306/spring?useSSL=false&amp;serverTimezone=UTC">
-		</beans:property>
+			value="jdbc:log4jdbc:mysql://127.0.0.1:3306/spring?allowPublicKeyRetrieval=true&amp;useSSL=false&amp;serverTimezone=UTC" />
 		<beans:property name="username" value="root"></beans:property>
 		<beans:property name="password" value="1234"></beans:property>
 	</beans:bean>
-	
+
+
+
+
 	<!-- 위에꺼랑 두개 연결돼있어야 함 -->
 	<beans:bean id="sqlSessionFactory"
 		class="org.mybatis.spring.SqlSessionFactoryBean">

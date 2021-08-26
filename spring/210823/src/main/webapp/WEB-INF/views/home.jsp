@@ -13,6 +13,7 @@
 home.hsp<br>
 <a href="memberlist">memberlist</a><br>
 <a href="memberinsert">memberinsert</a><br>
+<a href="memberinsertform">memberinsertform</a><br>
 </P>
 </body>
 </html>
