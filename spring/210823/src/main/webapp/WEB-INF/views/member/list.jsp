@@ -44,6 +44,7 @@ $('#update').on('click',function(){})
 <%-- 		${dto}<br> --%>
 <%-- 	</c:forEach> --%>
 <!-- 	<br> -->
+<div style="margin-bottom: 30px;"><a href="org1">home</a></div>
 	<div>
 		<table>
 			<tr>
@@ -67,7 +68,7 @@ $('#update').on('click',function(){})
 <!-- 					<button id="update">수정</button> -->
 					</td>
 					<td>
-						<a href="deleteform">삭제</a>
+						<a href="memberdelete?idx=${dto.idx}">삭제</a>
 <!-- 					<button id="delete">삭제</button> -->
 					</td>
 				</tr>

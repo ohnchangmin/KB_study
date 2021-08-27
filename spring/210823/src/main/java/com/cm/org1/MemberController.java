@@ -81,4 +81,11 @@ public class MemberController {
 		sqlsession.update("member.update",dto);
 		return "redirect:memberlist"; //update성공하고나면 memberlist로 이동
 	}
+	
+	@RequestMapping(value = "memberdelete")
+	public String memberdelete(int idx) {
+		System.out.println("idx= " + idx);
+		sqlsession.delete("member.delete",idx);
+		return "redirect:memberlist"; //update성공하고나면 memberlist로 이동
+	}
 }
