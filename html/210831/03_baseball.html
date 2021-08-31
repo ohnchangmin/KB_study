@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button
+        {
+            width: 30px;
+            height: 30px;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        button#answer,
+        button#submit,
+        button#cancel
+        {
+            width: 100px;
+            height: 50px;
+        }
+        #input
+        {
+            position: fixed;
+            top: 50px;
+            left: 150px;
+        }
+        #time
+        {
+            position: fixed;
+            top: 50px;
+            left: 500px;
+        }
+    </style>
+    <script>
+        window.onload=function()
+        {
+            // 무작위의 숫자 3개를 뽑아본다.
+            let array = []
+            let output = ''
+
+            do{
+                let computer = Math.floor(Math.random()*10)
+                const idx = array.indexOf(computer) //indexOf(value): value가 해당하는 배열에 없으면 -1값을 반환한다. 만약 해당하는 값이 있으면 그 값의 index를 반환한다.
+                if(idx==-1)
+                {
+                    array.push(computer)
+                    output += computer
+                }
+            }while(array.length<3)
+            
+            console.log(output)
+            
+            // 0.15초 정도에 한번씩 타이머가 증가한다.
+            let time=document.querySelector('#time')
+            let timecount=0
+            let timeCountInterval = setInterval(function()
+            {
+                timecount++
+                time.innerHTML = timecount
+            },150)
+            // 각 버튼들을 클릭했을 때 해당하는 명령들을 하도록 한다.
+            let button = document.querySelectorAll('.choiceValue')
+            let h1output = document.querySelector('#output')
+            for(let i=0; i<buttons.length; i++)
+            {
+                button[i].addEventListener('click', function()
+                {
+                    // id가 output인 태그에 글자 i가 없는 경우
+                    if(h1output.innerHTML.includes(i)==false)
+                    {
+                        if(h1output.innerHTML.length<3)
+                        {
+                            h1output.innerHTML += i;
+                        }
+                    }
+                })
+            }
+            // 취소 기능
+            let cancel = document.querySelector('#cancel')
+            let answer = document.querySelector('#answer')
+            cancel.addEventListener('click', function()
+            {
+                h1output.innerHTML = '';
+                answer.innerHTML = '정답은?'
+            })
+
+            //정답 기능
+            answer.addEventListener('click', function()
+            {
+                this.innerHTML = '정답은 ' + output
+            })
+
+            // 정답 확인 기능(제출 가능)
+            let h3input = document.querySelector('#input')
+            let submit = document.querySelector('#submit')
+
+            submit.addEventListener('click', function(){
+                if(h1output.innerText.length != 3)
+                {
+                    alert("3글자가 안됐잖아")
+                    return
+                
+
+                    if(parseInt(output)==parseInt(h1output.innerHTML))
+                    {
+                        //timecount값(=현재 시간값)에 따라서 조건문 다르게 주기
+                        alert('정답')
+                    }
+                    // 여태까지 입력한 값들 지우기
+                    // 숫자 다시 섞어서 새로운 숫자 나타나게 하기
+                    // answer 버튼의 text들 원래대로 두기
+                    // timecount값도 0으로 돌려야 함
+                    timecount=0;
+
+                    clearInterval(timeCountInterval)
+
+                    timeCountInterval
+                }
+                else
+                {
+                    alert('오답')
+                    // 스트라이크 볼 여부 나타내기
+                    let arr = [output[0], output[1], output[2]]
+                    let ball = 0
+                    let strike = 0
+
+                    for(let j=0; j<h1output.innerHTML.length; j++)
+                    {
+                        let test = arr.indexOf(h1output.innerHTML[j])
+                        if(test != -1)
+                        {
+                            if(arr[j]==h1output.innerHTML[j])
+                            {
+                                strike++
+                            }
+                            else
+                            {
+                                ball++
+                            }
+                        }
+                    }
+
+                    if(ball==0 && strike ==0)
+                    {
+                        h3input.innerHTML += '['+h1output.innerHTML+']'+'    '+ 'out'
+                        h3input.innerHTML += '<br>'
+                        h1output.innerHTML = ''
+                    }
+                    else
+                    {
+                        h3input.innerHTML += '['+h1output.innerHTML+']'+'    '+ strike +'S' +ball +'B'
+                        h3input.innerHTML += '<br>'
+                        h1output.innerHTML = ''
+                    }
+                    // 시도 회수에 따라서 정답이 아닌 숫자를 무작위로 하나씩 제거
+                    // 3번째 5번째 7번째 8번째  숫자를 하나씩 제거
+                    // 글자색을 빨간색으로 해도 되고 해당 버튼을 안보이게 하거나 비활성화 하거나
+                    // 9번째가 되면 게임오버
+                }
+            })
+        }
+    </script>
+</head>
+
+<body>
+    <div style="height: 60px;">
+        <h1 id="output" style="margin-left: 170px"></h1>
+    </div>
+   
+    <div>
+        <div style="margin-bottom: 20px;">
+            <button class="choiceValue">0</button>
+            <button class="choiceValue">1</button>
+            <button class="choiceValue">2</button>
+            <button class="choiceValue">3</button>
+            <button class="choiceValue">4</button>
+        </div>
+        <div style="margin-bottom: 20px;">
+            <button class="choiceValue">5</button>
+            <button class="choiceValue">6</button>
+            <button class="choiceValue">7</button>
+            <button class="choiceValue">8</button>
+            <button class="choiceValue">9</button>
+        </div>
+        <button id="cancel" style="margin-right: 20px;">취소</button>
+        <button id="submit" style="margin-top: 20px;">제출</button>
+    </div>
+        
+    <div style="height: 60px;">
+        <h3 id="input" style="margin-left: 170px;"></h3>
+        <h5 id="time"></h5>
+    </div>
+
+    <button id="answer">정답은?</button>
+</body>
+
+</html>
