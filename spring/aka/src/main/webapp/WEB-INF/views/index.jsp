@@ -22,6 +22,7 @@
 					<div><h5>PASSWORD</h5></div>
 					<div><input type="text" name="pw"></div>
 					<div><input type="submit" value="로그인"></div>
+					<div>${text}</div>
 				</div>			
 			</div>
 		</div>

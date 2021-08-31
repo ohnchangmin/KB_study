@@ -14,3 +14,13 @@ d3.select("#myGraph")
   .attr("y",function(d,i){
       return i*45;
   })
+  
+  d3.select("#testBtn")
+  .on("click",function(){
+    d3.selectAll("rect")
+    .transition()
+    .duration(3000)
+    .attr("width", function(){
+        return (Math.random()*300)+1;
+    })
+});

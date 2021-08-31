@@ -24,12 +24,15 @@ svg {
 </head>
 <body>
 	<form action="loginchk" method="post">
+	<div>${sessionScope.dto.id}님 환영합니다.</div>
 		<div id="root">
 			<div class="container">
 				<div class="left_panel" style="padding: 20px;">
 					<h1>데이터에 따른 그래프 표시</h1>
 					<svg id="myGraph"></svg>
-					<button type="button" id="testBtn">업데이트버튼</button>
+					<div>
+					<button type="button" id="testBtn">update</button>
+					</div>
 					<script src="/aka/resources/d3/sample01.js"></script>
 				</div>
 				<div class="right_panel">
