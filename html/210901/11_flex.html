@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            width: 960px;
+            margin: 0 auto;
+            
+        }
+        #aside
+        {
+            width: 200px;
+            margin-left: 10px;
+            background-color: lightcoral;
+            /* float: left; */
+        }
+        #section
+        {
+            width: 740px;
+            margin-left: 10px;
+            background-color: lightskyblue;
+            /* float: right; */
+        }
+        #wrap
+        {
+            overflow: hidden;
+            display: flex;
+        }
+
+        /* 표준 웹페이지 */
+        /* 부모 태그: overflow hidden */
+        /* 자식 태그: float */
+
+        /* 새로운 방법1 */
+        /* flex속성 이용 */
+        /* 새로운 방법2 */
+        /* grid속성 */
+    </style>
+</head>
+<body>
+    <div id="header">header</div>
+    <div id="navigation"></div>
+    <div id="wrap">
+        <div id="aside">Aside</div>
+        <div id="section"><h1>Section</h1></div>
+    </div>
+    <div id="footer"><h1>Footer</h1></div>
+</body>
+</html>

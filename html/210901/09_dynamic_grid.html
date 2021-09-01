@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ress css, 에릭마이어 css, HTML Doctor css와 같이 '초기화 적용' */
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .container
+        {
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 10px;
+            display: grid;
+
+            grid-template: 70px 1fr 70px / 200px 1fr;
+            gap: 10px;
+        }
+        .container>div
+        {
+            background-color: steelblue;  
+            color:white;
+        }
+        /* class 속성에 cell이라는 글자가 포함된 태그 */
+        [class*=cell]
+        {
+            border: 5px solid black;
+            border-radius: 10px;
+
+            /* 여백 */
+            padding: 10px;
+        }
+        .cell-header
+        {
+            grid-column: 1/3;
+        }
+        .cell-aside
+        {
+            grid-column: 2/1;
+        }
+        .cell-footer
+        {
+            grid-column: 3/1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cell-header">header</div>
+        <div class="cell-aside">aside</div>
+        <div class="cell-section">section</div>
+        <div class="cell-footer">footer</div>
+    </div>
+</body>
+</html>
