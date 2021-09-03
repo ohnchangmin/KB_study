@@ -18,6 +18,9 @@
     .bar{
         fill:blue;
     }
+    .pie{
+    	fill: orange; stroke: black;
+    }
 </style>
 </head>
 <body>
@@ -44,7 +47,7 @@
 			<div class="rightbtndiv">
 				<button type="button" id="piebtn">update</button>
 			</div>
-<!-- 			<script src="/aka/resources/d3/pie.js"></script> -->
+			<script src="/aka/resources/d3/pie.js"></script>
 		</div>
 	</div>
 </div>
